@@ -36,14 +36,14 @@ jobs:
           });
           return response.data.number
 
-    - name: Request reviewers
-      uses: actions/github-script@v2
-      with:
-        github-token: ${{secrets.PRAPPROVAL_SECRET}}
-        script: |
-          github.pulls.requestReviewers({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: ${{ steps.create-pr.outputs.result }},
-              team_reviewers: ['runner-images-team']
-          })
+#    - name: Request reviewers
+#      uses: actions/github-script@v2
+#      with:
+#        github-token: ${{secrets.PRAPPROVAL_SECRET}}
+#        script: |
+#          github.pulls.requestReviewers({
+#              owner: context.repo.owner,
+#              repo: context.repo.repo,
+#              pull_number: ${{ steps.create-pr.outputs.result }},
+#              team_reviewers: ['runner-images-team']
+#          })
