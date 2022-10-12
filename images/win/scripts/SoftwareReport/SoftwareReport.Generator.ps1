@@ -320,5 +320,5 @@ if ($cachedImages) {
 }
 
 Test-BlankElement -Markdown $markdown
-$markdown | Out-File -FilePath "C:\InstalledSoftware2.md"
+$markdown | Out-File -FilePath "C:\InstalledSoftware.md"
 $archive.ToJson() | Out-File -FilePath "C:\InstalledSoftwareArchive.json"
