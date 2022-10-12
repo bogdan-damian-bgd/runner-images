@@ -1,6 +1,6 @@
 # Microsoft Windows Server 2022 Datacenter
 - OS Version: 10.0.20348 Build 1006
-- Image Version: 20221002.2
+- Image Version: 
 
 ## Enabled windows optional features
 - Windows Subsystem for Linux [WSLv1]
@@ -21,14 +21,14 @@
 ### Package Management
 - Chocolatey 1.1.0
 - Composer 2.4.2
-- Helm 3.9.4
+- Helm 3.10.0
 - Miniconda 4.12.0 (pre-installed on the image but not added to PATH)
 - NPM 8.15.0
 - NuGet 6.3.0.131
 - pip 22.2.2 (python 3.9)
 - Pipx 1.1.0
 - RubyGems 3.2.33
-- Vcpkg (build from master \<5f1441730>)
+- Vcpkg (build from master \<083f103cf>)
 - Yarn 1.22.19
 
 #### Environment variables
@@ -41,26 +41,26 @@
 - Ant 1.10.12
 - Gradle 7.5
 - Maven 3.8.6
-- sbt 1.7.1
+- sbt 1.7.2
 
 ### Tools
 - 7zip 22.01
 - aria2 1.36.0
-- azcopy 10.16.0
+- azcopy 10.16.1
 - Bazel 5.3.1
 - Bazelisk 1.13.2
 - Bicep 0.10.61
 - Cabal 3.8.1.0
 - CMake 3.24.2
 - CodeQL Action Bundle 2.11.0
+- Docker 20.10.18
 - Docker Compose v1 1.29.2
 - Docker Compose v2 2.11.2
-- Docker master-dockerproject-2022-03-26
 - Docker-wincred 0.7.0
 - ghc 9.4.2
 - Git 2.37.3.windows.1
 - Git LFS 3.2.0
-- ImageMagick 7.1.0-49
+- ImageMagick 7.1.0-50
 - InnoSetup 6.2.1
 - jq 1.6
 - Kind 0.16.0
@@ -71,7 +71,7 @@
 - NSIS v3.08
 - OpenSSL 1.1.1
 - Packer 1.8.2
-- Pulumi v3.40.2
+- Pulumi v3.42.0
 - R 4.2.1
 - Service Fabric SDK 9.0.1028.9590
 - Stack 2.9.1
@@ -85,12 +85,12 @@
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.127
-- AWS CLI 2.8.0
-- AWS SAM CLI 1.58.0
+- AWS CLI 2.8.2
+- AWS SAM CLI 1.59.0
 - AWS Session Manager CLI 1.2.339.0
 - Azure CLI 2.40.0
 - Azure DevOps CLI extension 0.25.0
-- GitHub CLI 2.16.1
+- GitHub CLI 2.17.0
 - Hub CLI 2.14.2
 
 ### Rust Tools
@@ -101,18 +101,18 @@
 
 #### Packages
 - bindgen 0.60.1
-- cargo-audit 0.17.0
+- cargo-audit 0.17.2
 - cargo-outdated 0.11.1
 - cbindgen 0.24.3
 - Clippy 0.1.64
 - Rustfmt 1.5.1
 
 ### Browsers and webdrivers
-- Google Chrome 106.0.5249.91
+- Google Chrome 106.0.5249.103
 - Chrome Driver 106.0.5249.61
-- Microsoft Edge 105.0.1343.53
-- Microsoft Edge Driver 105.0.1343.53
-- Mozilla Firefox 105.0.1
+- Microsoft Edge 106.0.1370.42
+- Microsoft Edge Driver 106.0.1370.37
+- Mozilla Firefox 105.0.3
 - Gecko Driver 0.31.0
 - IE Driver 3.150.1.1
 - Selenium server 4.5.0
@@ -154,8 +154,8 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Version | Architecture | Environment Variable |
 | ------- | ------------ | -------------------- |
 | 1.17.13 (Default) | x64          | GOROOT_1_17_X64      |
-| 1.18.6  | x64          | GOROOT_1_18_X64      |
-| 1.19.1  | x64          | GOROOT_1_19_X64      |
+| 1.18.7  | x64          | GOROOT_1_18_X64      |
+| 1.19.2  | x64          | GOROOT_1_19_X64      |
 
 #### Node
 | Version | Architecture |
@@ -567,13 +567,13 @@ All other versions are saved but not installed.
 #### Powershell Modules
 | Module             | Version          |
 | ------------------ | ---------------- |
-| AWSPowerShell      | 4.1.179          |
+| AWSPowerShell      | 4.1.184          |
 | DockerMsftProvider | 1.0.0.8          |
 | MarkdownPS         | 1.9              |
-| Microsoft.Graph    | 1.12.2           |
+| Microsoft.Graph    | 1.12.3           |
 | Pester             | 3.4.0<br>5.3.3   |
 | PowerShellGet      | 1.0.0.1<br>2.2.5 |
-| PSScriptAnalyzer   | 1.21.0           |
+| PSScriptAnalyzer   | 1.20.0<br>1.21.0 |
 | PSWindowsUpdate    | 2.2.0.3          |
 | SqlServer          | 21.1.18256       |
 | VSSetup            | 2.2.16           |

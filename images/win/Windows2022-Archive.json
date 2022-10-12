@@ -1,0 +1,267 @@
+[
+    {
+      "Id": "OSVersion",
+      "Title": "OS Version: 10.0.20348 Build 1006",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Image Version",
+      "Title": "Image Version: ",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "WSL",
+      "Title": "Windows Subsystem for Linux [WSLv1]",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Enabled windows optional features",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Bash",
+      "Title": "Bash 5.1.16(1)-release",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Go",
+      "Title": "Go 1.17.13",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Julia",
+      "Title": "Julia 1.8.2",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "LLVM",
+      "Title": "LLVM 14.0.6",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Node",
+      "Title": "Node 16.17.1",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Perl",
+      "Title": "Perl 5.32.1",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "PHP",
+      "Title": "PHP 8.1.11",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Python",
+      "Title": "Python 3.9.13",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Ruby",
+      "Title": "Ruby 3.0.4p208",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Kotlin",
+      "Title": "Kotlin 1.7.20",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Language and Runtime",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Choco",
+      "Title": "Chocolatey 1.1.0",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Conda",
+      "Title": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Composer",
+      "Title": "Composer 2.4.2",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Helm",
+      "Title": "Helm 3.10.0",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "NPM",
+      "Title": "NPM 8.15.0",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Nuget",
+      "Title": "NuGet 6.3.0.131",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Pipx",
+      "Title": "Pipx 1.1.0",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Pip",
+      "Title": "pip 22.2.2 (python 3.9)",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Ruby",
+      "Title": "RubyGems 3.2.33",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Vcpkg",
+      "Title": "Vcpkg (build from master \\<083f103cf>)",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    },
+    {
+      "Id": "Yarn",
+      "Title": "Yarn 1.22.19",
+      "Headers": [
+        "Microsoft Windows Server 2022 Datacenter",
+        "Installed Software",
+        "Package Management",
+        "",
+        ""
+      ]
+    }
+  ]
+  

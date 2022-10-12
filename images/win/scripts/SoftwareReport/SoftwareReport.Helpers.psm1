@@ -1,3 +1,46 @@
+class ArchiveItem {
+    [string] $Id
+    [string] $Title
+    [string[]] $Headers
+}
+
+class ArchiveItems {
+    hidden [System.Collections.ArrayList] $items
+    hidden [string[]] $activeHeaders
+
+    ArchiveItems() {
+        $this.items = New-Object System.Collections.ArrayList
+        $this.activeHeaders = New-Object string[] 5
+    }
+
+    [string] Add($Title, $Id) {
+        $item = [ArchiveItem]::New()
+        $item.Id = $Id
+        $item.Title = $Title
+        $item.Headers = $this.activeHeaders | ForEach-Object { $_ } 
+        $this.items.Add($item) | Out-Null
+
+        return $Title
+    }
+
+    [string] SetHeader($Name, $Level) {
+        if ($Level -lt 1 -or $Level -gt $this.activeHeaders.Length) {
+            Write-Warning"[!] [ArchiveItems] Header level must be 1..5"
+            return $Name
+        }
+
+        $this.activeHeaders[$Level-1] = $Name
+        for ($i = $Level; $i -lt $this.activeHeaders.Length; $i++) {
+            $this.activeHeaders[$i] = ""
+        }
+        return $Name
+    }
+
+    [string] ToJson() {
+        return ConvertTo-Json $this.items -Depth 10
+    }
+}
+
 function Build-MarkdownElement
 {
     <#

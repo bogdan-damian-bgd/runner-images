@@ -1,3 +1,7 @@
+####################  START OF DEMO SECTION  ####################
+
+using module ./SoftwareReport.Helpers.psm1
+
 $global:ErrorActionPreference = "Stop"
 $global:ProgressPreference = "SilentlyContinue"
 $ErrorView = "NormalView"
@@ -16,56 +20,59 @@ Import-Module (Join-Path $PSScriptRoot "SoftwareReport.WebServers.psm1") -Disabl
 Import-Module (Join-Path $PSScriptRoot "SoftwareReport.VisualStudio.psm1") -DisableNameChecking
 
 $markdown = ""
+$archive = [ArchiveItems]::New()
 
 $OSName = Get-OSName
-$markdown += New-MDHeader "$OSName" -Level 1
+$markdown += New-MDHeader $archive.SetHeader("$OSName", 1) -Level 1
 
 $OSVersion = Get-OSVersion
 $markdown += New-MDList -Style Unordered -Lines @(
-    "$OSVersion"
-    "Image Version: $env:IMAGE_VERSION"
+    $archive.Add("$OSVersion", "OSVersion")
+    $archive.Add("Image Version: $env:IMAGE_VERSION", "Image Version")
 )
 
 if ((Test-IsWin19) -or (Test-IsWin22))
 {
-    $markdown += New-MDHeader "Enabled windows optional features" -Level 2
+    $markdown += New-MDHeader $archive.SetHeader("Enabled windows optional features", 2) -Level 2
     $markdown += New-MDList -Style Unordered -Lines @(
-        "Windows Subsystem for Linux [WSLv1]"
+        $archive.Add("Windows Subsystem for Linux [WSLv1]", "WSL")
     )
 }
 
-$markdown += New-MDHeader "Installed Software" -Level 2
-$markdown += New-MDHeader "Language and Runtime" -Level 3
+$markdown += New-MDHeader $archive.SetHeader("Installed Software", 2) -Level 2
+$markdown += New-MDHeader $archive.SetHeader("Language and Runtime", 3) -Level 3
 $languageTools = @(
-    (Get-BashVersion),
-    (Get-GoVersion),
-    (Get-JuliaVersion),
-    (Get-LLVMVersion),
-    (Get-NodeVersion),
-    (Get-PerlVersion)
-    (Get-PHPVersion),
-    (Get-PythonVersion),
-    (Get-RubyVersion),
-    (Get-KotlinVersion)
+    $archive.Add((Get-BashVersion), "Bash")
+    $archive.Add((Get-GoVersion), "Go")
+    $archive.Add((Get-JuliaVersion), "Julia")
+    $archive.Add((Get-LLVMVersion), "LLVM")
+    $archive.Add((Get-NodeVersion), "Node")
+    $archive.Add((Get-PerlVersion), "Perl")
+    $archive.Add((Get-PHPVersion), "PHP")
+    $archive.Add((Get-PythonVersion), "Python")
+    $archive.Add((Get-RubyVersion), "Ruby")
+    $archive.Add((Get-KotlinVersion), "Kotlin")
 )
 $markdown += New-MDList -Style Unordered -Lines ($languageTools | Sort-Object)
 
+$markdown += New-MDHeader $archive.SetHeader("Package Management", 3) -Level 3
 $packageManagementList = @(
-    (Get-ChocoVersion),
-    (Get-CondaVersion),
-    (Get-ComposerVersion),
-    (Get-HelmVersion),
-    (Get-NPMVersion),
-    (Get-NugetVersion),
-    (Get-PipxVersion),
-    (Get-PipVersion),
-    (Get-RubyGemsVersion),
-    (Get-VcpkgVersion),
-    (Get-YarnVersion)
+    $archive.Add((Get-ChocoVersion), "Choco")
+    $archive.Add((Get-CondaVersion), "Conda")
+    $archive.Add((Get-ComposerVersion), "Composer")
+    $archive.Add((Get-HelmVersion), "Helm")
+    $archive.Add((Get-NPMVersion), "NPM")
+    $archive.Add((Get-NugetVersion), "Nuget")
+    $archive.Add((Get-PipxVersion), "Pipx")
+    $archive.Add((Get-PipVersion), "Pip")
+    $archive.Add((Get-RubyGemsVersion), "Ruby")
+    $archive.Add((Get-VcpkgVersion), "Vcpkg")
+    $archive.Add((Get-YarnVersion), "Yarn")
 )
 
-$markdown += New-MDHeader "Package Management" -Level 3
 $markdown += New-MDList -Style Unordered -Lines ($packageManagementList | Sort-Object)
+
+####################  END OF DEMO SECTION  ####################
 
 $markdown += New-MDHeader "Environment variables" -Level 4
 $markdown += Build-PackageManagementEnvironmentTable | New-MDTable
@@ -313,4 +320,5 @@ if ($cachedImages) {
 }
 
 Test-BlankElement -Markdown $markdown
-$markdown | Out-File -FilePath "C:\InstalledSoftware.md"
+$markdown | Out-File -FilePath "C:\InstalledSoftware2.md"
+$archive.ToJson() | Out-File -FilePath "C:\InstalledSoftwareArchive.json"
