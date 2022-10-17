@@ -17,10 +17,14 @@ class ArchiveItems {
         $item = [ArchiveItem]::New()
         $item.Id = $Id
         $item.Title = $Title
-        $item.Headers = $this.activeHeaders | ForEach-Object { $_ } 
+        $item.Headers = $this.activeHeaders | ForEach-Object { $_ } | Where-Object { $_.Length -ge 1 }
         $this.items.Add($item) | Out-Null
 
         return $Title
+    }
+
+    [string] Add($TitleIdPair) {
+        return $this.Add($TitleIdPair[0], $TitleIdPair[1])
     }
 
     [string] SetHeader($Name, $Level) {
@@ -39,6 +43,31 @@ class ArchiveItems {
     [string] ToJson() {
         return ConvertTo-Json $this.items -Depth 10
     }
+
+    [string] ToJsonGrouped() {
+        $grouped = $this.items | Group-Object -Property @{ expression={ $_.Headers -join ';'}}
+
+        $final = @()
+        foreach ($group in $grouped) {
+            $headersPath = $group.Group[0].Headers -join ' > '
+        
+            $groupItems = @()
+            foreach ($item in $grouped.Group) {
+                $groupItems += [PSCustomObject]@{
+                    $item.Id = $item.Title
+                }       
+            }
+            $final += [PSCustomObject]@{
+                $headersPath = $groupItems
+            }
+        }
+
+        return ConvertTo-Json $final -Depth 10
+    }
+}
+
+function Build-ArchiveItem {
+    return [ArchiveItem]::New()
 }
 
 function Build-MarkdownElement

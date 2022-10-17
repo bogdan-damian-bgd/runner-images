@@ -42,35 +42,36 @@ if ((Test-IsWin19) -or (Test-IsWin22))
 $markdown += New-MDHeader $archive.SetHeader("Installed Software", 2) -Level 2
 $markdown += New-MDHeader $archive.SetHeader("Language and Runtime", 3) -Level 3
 $languageTools = @(
-    $archive.Add((Get-BashVersion), "Bash")
-    $archive.Add((Get-GoVersion), "Go")
-    $archive.Add((Get-JuliaVersion), "Julia")
-    $archive.Add((Get-LLVMVersion), "LLVM")
-    $archive.Add((Get-NodeVersion), "Node")
-    $archive.Add((Get-PerlVersion), "Perl")
-    $archive.Add((Get-PHPVersion), "PHP")
-    $archive.Add((Get-PythonVersion), "Python")
-    $archive.Add((Get-RubyVersion), "Ruby")
-    $archive.Add((Get-KotlinVersion), "Kotlin")
+    ((Get-BashVersion), "Bash"),
+    ((Get-GoVersion), "Go"),
+    ((Get-JuliaVersion), "Julia"),
+    ((Get-LLVMVersion), "LLVM"),
+    ((Get-NodeVersion), "Node"),
+    ((Get-PerlVersion), "Perl"),
+    ((Get-PHPVersion), "PHP"),
+    ((Get-PythonVersion), "Python"),
+    ((Get-RubyVersion), "Ruby"),
+    ((Get-KotlinVersion), "Kotlin")
 )
-$markdown += New-MDList -Style Unordered -Lines ($languageTools | Sort-Object)
+$laguageToolsTitles = $languageTools | Foreach-Object {$archive.Add($_)}
+$markdown += New-MDList -Style Unordered -Lines ($laguageToolsTitles | Sort-Object)
 
 $markdown += New-MDHeader $archive.SetHeader("Package Management", 3) -Level 3
 $packageManagementList = @(
-    $archive.Add((Get-ChocoVersion), "Choco")
-    $archive.Add((Get-CondaVersion), "Conda")
-    $archive.Add((Get-ComposerVersion), "Composer")
-    $archive.Add((Get-HelmVersion), "Helm")
-    $archive.Add((Get-NPMVersion), "NPM")
-    $archive.Add((Get-NugetVersion), "Nuget")
-    $archive.Add((Get-PipxVersion), "Pipx")
-    $archive.Add((Get-PipVersion), "Pip")
-    $archive.Add((Get-RubyGemsVersion), "Ruby")
-    $archive.Add((Get-VcpkgVersion), "Vcpkg")
-    $archive.Add((Get-YarnVersion), "Yarn")
+    ((Get-ChocoVersion), "Choco"),
+    ((Get-CondaVersion), "Conda"),
+    ((Get-ComposerVersion), "Composer"),
+    ((Get-HelmVersion), "Helm"),
+    ((Get-NPMVersion), "NPM"),
+    ((Get-NugetVersion), "Nuget"),
+    ((Get-PipxVersion), "Pipx"),
+    ((Get-PipVersion), "Pip"),
+    ((Get-RubyGemsVersion), "Ruby"),
+    ((Get-VcpkgVersion), "Vcpkg"),
+    ((Get-YarnVersion), "Yarn")
 )
-
-$markdown += New-MDList -Style Unordered -Lines ($packageManagementList | Sort-Object)
+$packageManagementListTitles = $packageManagementList | Foreach-Object {$archive.Add($_)}
+$markdown += New-MDList -Style Unordered -Lines ($packageManagementListTitles | Sort-Object)
 
 ####################  END OF DEMO SECTION  ####################
 
@@ -321,4 +322,5 @@ if ($cachedImages) {
 
 Test-BlankElement -Markdown $markdown
 $markdown | Out-File -FilePath "C:\InstalledSoftware.md"
-$archive.ToJson() | Out-File -FilePath "C:\InstalledSoftwareArchive.json"
+$archive.ToJson() | Out-File -FilePath "C:\InstalledSoftwareArchive-Table.json"
+$archive.ToJsonGrouped() | Out-File -FilePath "C:\InstalledSoftwareArchive-Grouped.json"
