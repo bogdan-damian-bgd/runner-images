@@ -52,7 +52,7 @@ class ArchiveItems {
             $headersPath = $group.Group[0].Headers -join ' > '
         
             $groupItems = @()
-            foreach ($item in $grouped.Group) {
+            foreach ($item in $group.Group) {
                 $groupItems += [PSCustomObject]@{
                     $item.Id = $item.Title
                 }       
