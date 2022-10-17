@@ -1,0 +1,306 @@
+[
+  {
+    "Microsoft Windows Server 2022 Datacenter": [
+      {
+        "OSVersion": "OS Version: 10.0.20348 Build 1129"
+      },
+      {
+        "Image Version": "Image Version: "
+      },
+      {
+        "WSL": "Windows Subsystem for Linux [WSLv1]"
+      },
+      {
+        "Bash": "Bash 5.1.16(1)-release"
+      },
+      {
+        "Go": "Go 1.17.13"
+      },
+      {
+        "Julia": "Julia 1.8.2"
+      },
+      {
+        "LLVM": "LLVM 14.0.6"
+      },
+      {
+        "Node": "Node 16.18.0"
+      },
+      {
+        "Perl": "Perl 5.32.1"
+      },
+      {
+        "PHP": "PHP 8.1.11"
+      },
+      {
+        "Python": "Python 3.9.13"
+      },
+      {
+        "Ruby": "Ruby 3.0.4p208"
+      },
+      {
+        "Kotlin": "Kotlin 1.7.20"
+      },
+      {
+        "Choco": "Chocolatey 1.1.0"
+      },
+      {
+        "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
+      },
+      {
+        "Composer": "Composer 2.4.2"
+      },
+      {
+        "Helm": "Helm 3.10.0"
+      },
+      {
+        "NPM": "NPM 8.19.2"
+      },
+      {
+        "Nuget": "NuGet 6.3.1.1"
+      },
+      {
+        "Pipx": "Pipx 1.1.0"
+      },
+      {
+        "Pip": "pip 22.2.2 (python 3.9)"
+      },
+      {
+        "Ruby": "RubyGems 3.2.33"
+      },
+      {
+        "Vcpkg": "Vcpkg (build from master \\<6d2d1dc84>)"
+      },
+      {
+        "Yarn": "Yarn 1.22.19"
+      }
+    ]
+  },
+  {
+    "Microsoft Windows Server 2022 Datacenter > Enabled windows optional features": [
+      {
+        "OSVersion": "OS Version: 10.0.20348 Build 1129"
+      },
+      {
+        "Image Version": "Image Version: "
+      },
+      {
+        "WSL": "Windows Subsystem for Linux [WSLv1]"
+      },
+      {
+        "Bash": "Bash 5.1.16(1)-release"
+      },
+      {
+        "Go": "Go 1.17.13"
+      },
+      {
+        "Julia": "Julia 1.8.2"
+      },
+      {
+        "LLVM": "LLVM 14.0.6"
+      },
+      {
+        "Node": "Node 16.18.0"
+      },
+      {
+        "Perl": "Perl 5.32.1"
+      },
+      {
+        "PHP": "PHP 8.1.11"
+      },
+      {
+        "Python": "Python 3.9.13"
+      },
+      {
+        "Ruby": "Ruby 3.0.4p208"
+      },
+      {
+        "Kotlin": "Kotlin 1.7.20"
+      },
+      {
+        "Choco": "Chocolatey 1.1.0"
+      },
+      {
+        "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
+      },
+      {
+        "Composer": "Composer 2.4.2"
+      },
+      {
+        "Helm": "Helm 3.10.0"
+      },
+      {
+        "NPM": "NPM 8.19.2"
+      },
+      {
+        "Nuget": "NuGet 6.3.1.1"
+      },
+      {
+        "Pipx": "Pipx 1.1.0"
+      },
+      {
+        "Pip": "pip 22.2.2 (python 3.9)"
+      },
+      {
+        "Ruby": "RubyGems 3.2.33"
+      },
+      {
+        "Vcpkg": "Vcpkg (build from master \\<6d2d1dc84>)"
+      },
+      {
+        "Yarn": "Yarn 1.22.19"
+      }
+    ]
+  },
+  {
+    "Microsoft Windows Server 2022 Datacenter > Installed Software > Language and Runtime": [
+      {
+        "OSVersion": "OS Version: 10.0.20348 Build 1129"
+      },
+      {
+        "Image Version": "Image Version: "
+      },
+      {
+        "WSL": "Windows Subsystem for Linux [WSLv1]"
+      },
+      {
+        "Bash": "Bash 5.1.16(1)-release"
+      },
+      {
+        "Go": "Go 1.17.13"
+      },
+      {
+        "Julia": "Julia 1.8.2"
+      },
+      {
+        "LLVM": "LLVM 14.0.6"
+      },
+      {
+        "Node": "Node 16.18.0"
+      },
+      {
+        "Perl": "Perl 5.32.1"
+      },
+      {
+        "PHP": "PHP 8.1.11"
+      },
+      {
+        "Python": "Python 3.9.13"
+      },
+      {
+        "Ruby": "Ruby 3.0.4p208"
+      },
+      {
+        "Kotlin": "Kotlin 1.7.20"
+      },
+      {
+        "Choco": "Chocolatey 1.1.0"
+      },
+      {
+        "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
+      },
+      {
+        "Composer": "Composer 2.4.2"
+      },
+      {
+        "Helm": "Helm 3.10.0"
+      },
+      {
+        "NPM": "NPM 8.19.2"
+      },
+      {
+        "Nuget": "NuGet 6.3.1.1"
+      },
+      {
+        "Pipx": "Pipx 1.1.0"
+      },
+      {
+        "Pip": "pip 22.2.2 (python 3.9)"
+      },
+      {
+        "Ruby": "RubyGems 3.2.33"
+      },
+      {
+        "Vcpkg": "Vcpkg (build from master \\<6d2d1dc84>)"
+      },
+      {
+        "Yarn": "Yarn 1.22.19"
+      }
+    ]
+  },
+  {
+    "Microsoft Windows Server 2022 Datacenter > Installed Software > Package Management": [
+      {
+        "OSVersion": "OS Version: 10.0.20348 Build 1129"
+      },
+      {
+        "Image Version": "Image Version: "
+      },
+      {
+        "WSL": "Windows Subsystem for Linux [WSLv1]"
+      },
+      {
+        "Bash": "Bash 5.1.16(1)-release"
+      },
+      {
+        "Go": "Go 1.17.13"
+      },
+      {
+        "Julia": "Julia 1.8.2"
+      },
+      {
+        "LLVM": "LLVM 14.0.6"
+      },
+      {
+        "Node": "Node 16.18.0"
+      },
+      {
+        "Perl": "Perl 5.32.1"
+      },
+      {
+        "PHP": "PHP 8.1.11"
+      },
+      {
+        "Python": "Python 3.9.13"
+      },
+      {
+        "Ruby": "Ruby 3.0.4p208"
+      },
+      {
+        "Kotlin": "Kotlin 1.7.20"
+      },
+      {
+        "Choco": "Chocolatey 1.1.0"
+      },
+      {
+        "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
+      },
+      {
+        "Composer": "Composer 2.4.2"
+      },
+      {
+        "Helm": "Helm 3.10.0"
+      },
+      {
+        "NPM": "NPM 8.19.2"
+      },
+      {
+        "Nuget": "NuGet 6.3.1.1"
+      },
+      {
+        "Pipx": "Pipx 1.1.0"
+      },
+      {
+        "Pip": "pip 22.2.2 (python 3.9)"
+      },
+      {
+        "Ruby": "RubyGems 3.2.33"
+      },
+      {
+        "Vcpkg": "Vcpkg (build from master \\<6d2d1dc84>)"
+      },
+      {
+        "Yarn": "Yarn 1.22.19"
+      }
+    ]
+  }
+]
