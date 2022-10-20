@@ -1,4 +1,10 @@
+using module ./SoftwareReport.Helpers.psm1
+
 function Get-JavaVersions {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $defaultJavaPath = $env:JAVA_HOME
     $javaVersions = Get-Item env:JAVA_HOME_*_X64
     $sortRules = @{
@@ -20,5 +26,6 @@ function Get-JavaVersions {
             "Vendor" = $VendorName
             "Environment Variable" = $_.Name
         }
+        $Archive.Add($version + $defaultPostfix + "|$VendorName|$($_.Name)", "Java_$($_.Name)") | Out-Null
     }
 }

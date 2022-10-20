@@ -41,25 +41,50 @@ class ArchiveItems {
     }
 
     [string] ToJson() {
-        return ConvertTo-Json $this.items -Depth 10
+        $final = @()
+        foreach ($item in $this.items) {
+            $headersLevel = $item.Headers.Count
+            $headers = @($item.Headers[$headersLevel-1])
+            if ($headersLevel -ge 4) {
+                $headers = @($item.Headers[$headersLevel-2], $item.Headers[$headersLevel-1])
+            } 
+            $final += [PSCustomObject]@{
+                Id = $item.Id
+                Title = $item.Title
+                Headers = $headers
+            }
+        }
+        return ConvertTo-Json $final -Depth 10
     }
 
     [string] ToJsonGrouped() {
-        $grouped = $this.items | Group-Object -Property @{ expression={ $_.Headers -join ';'}}
-
+        [string[]] $lastHeaders = ($this.items[0]).Headers
+        [string] $headersPath = ""
         $final = @()
-        foreach ($group in $grouped) {
-            $headersPath = $group.Group[0].Headers -join ' > '
-        
-            $groupItems = @()
-            foreach ($item in $group.Group) {
-                $groupItems += [PSCustomObject]@{
-                    $item.Id = $item.Title
-                }       
+        $groupItems = @()
+
+        foreach ($item in $this.items) {
+            $headersLevel = $item.Headers.Count
+            $headersPath = $item.Headers[$headersLevel-1]
+            if ($headersLevel -ge 4) {
+                $headersPath = $item.Headers[$headersLevel-2] + " | " + $item.Headers[$headersLevel-1]
             }
-            $final += [PSCustomObject]@{
-                $headersPath = $groupItems
+
+            $isSameGroup = -not (Compare-Object $item.Headers $lastHeaders)
+            if (-not $isSameGroup) {
+                $final += [PSCustomObject]@{
+                    $headersPath = $groupItems
+                }
+                $lastHeaders = $item.Headers
+                $groupItems = @()
             }
+
+            $groupItems += [PSCustomObject]@{
+                $item.Id = $item.Title
+            }   
+        }
+        $final += [PSCustomObject]@{
+            $headersPath = $groupItems
         }
 
         return ConvertTo-Json $final -Depth 10
