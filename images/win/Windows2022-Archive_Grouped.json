@@ -1,6 +1,6 @@
 [
   {
-    "Microsoft Windows Server 2022 Datacenter": [
+    "Enabled windows optional features": [
       {
         "OSVersion": "OS Version: 10.0.20348 Build 1129"
       },
@@ -10,14 +10,14 @@
     ]
   },
   {
-    "Microsoft Windows Server 2022 Datacenter > Enabled windows optional features": [
+    "Language and Runtime": [
       {
         "WSL": "Windows Subsystem for Linux [WSLv1]"
       }
     ]
   },
   {
-    "Microsoft Windows Server 2022 Datacenter > Installed Software > Language and Runtime": [
+    "Package Management": [
       {
         "Bash": "Bash 5.1.16(1)-release"
       },
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "Microsoft Windows Server 2022 Datacenter > Installed Software > Package Management": [
+    "Package Management | Environment variables": [
       {
         "Choco": "Chocolatey 1.1.0"
       },
@@ -59,7 +59,7 @@
         "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
       },
       {
-        "Composer": "Composer 2.4.2"
+        "Composer": "Composer 2.4.3"
       },
       {
         "Helm": "Helm 3.10.0"
@@ -74,16 +74,1520 @@
         "Pipx": "Pipx 1.1.0"
       },
       {
-        "Pip": "pip 22.2.2 (python 3.9)"
+        "Pip": "pip 22.3 (python 3.9)"
       },
       {
         "Ruby": "RubyGems 3.2.33"
       },
       {
-        "Vcpkg": "Vcpkg (build from master \\<6d2d1dc84>)"
+        "Vcpkg": "Vcpkg (build from master \\<79fa9d85c>)"
       },
       {
         "Yarn": "Yarn 1.22.19"
+      }
+    ]
+  },
+  {
+    "Project Management": [
+      {
+        "Env_VCPKG_INSTALLATION_ROOT": "VCPKG_INSTALLATION_ROOT|C:\\vcpkg"
+      },
+      {
+        "Env_VCPKG_ROOT": "VCPKG_ROOT|C:\\vcpkg"
+      }
+    ]
+  },
+  {
+    "Tools": [
+      {
+        "Ant": "Ant 1.10.12"
+      },
+      {
+        "Gradle": "Gradle 7.5"
+      },
+      {
+        "Maven": "Maven 3.8.6"
+      },
+      {
+        "Sbt": "sbt 1.7.2"
+      }
+    ]
+  },
+  {
+    "CLI Tools": [
+      {
+        "7zip": "7zip 22.01"
+      },
+      {
+        "Aria2": "aria2 1.36.0"
+      },
+      {
+        "AzCopy": "azcopy 10.16.1"
+      },
+      {
+        "Bazel": "Bazel 5.3.2"
+      },
+      {
+        "Bazelisk": "Bazelisk 1.13.2"
+      },
+      {
+        "Bicep": "Bicep 0.11.1"
+      },
+      {
+        "Cabal": "Cabal 3.8.1.0"
+      },
+      {
+        "CMake": "CMake 3.24.2"
+      },
+      {
+        "CodeQLBundle": "CodeQL Action Bundle 2.11.0"
+      },
+      {
+        "Docker": "Docker 20.10.19"
+      },
+      {
+        "DockerCompose": "Docker Compose v1 1.29.2"
+      },
+      {
+        "DockerComposeV2": "Docker Compose v2 2.11.2"
+      },
+      {
+        "DockerWincred": "Docker-wincred 0.7.0"
+      },
+      {
+        "GHC": "ghc 9.4.2"
+      },
+      {
+        "Git": "Git 2.37.3.windows.1"
+      },
+      {
+        "GitLFS": "Git LFS 3.2.0"
+      },
+      {
+        "InnoSetup": "InnoSetup 6.2.1"
+      },
+      {
+        "JQ": "jq 1.6"
+      },
+      {
+        "Kind": "Kind 0.16.0"
+      },
+      {
+        "Kubectl": "Kubectl 1.25.3"
+      },
+      {
+        "Mercurial": "Mercurial 5.0"
+      },
+      {
+        "MinGW": "Mingw-w64 11.2.0"
+      },
+      {
+        "Newman": "Newman 5.3.2"
+      },
+      {
+        "NSIS": "NSIS v3.08"
+      },
+      {
+        "OpenSSL": "OpenSSL 1.1.1"
+      },
+      {
+        "Packer": "Packer 1.8.2"
+      },
+      {
+        "Pulumi": "Pulumi v3.43.1"
+      },
+      {
+        "R": "R 4.2.1"
+      },
+      {
+        "ServiceFabricSDK": "Service Fabric SDK 9.0.1028.9590"
+      },
+      {
+        "Stack": "Stack 2.9.1"
+      },
+      {
+        "SVN": "Subversion (SVN) 1.14.2"
+      },
+      {
+        "VSWhere": "VSWhere 3.0.3"
+      },
+      {
+        "Swig": "Swig 4.0.2"
+      },
+      {
+        "WinApp": "WinAppDriver 1.2.2009.02003"
+      },
+      {
+        "Wix": "WiX Toolset v3.11.2.4516"
+      },
+      {
+        "Zstd": "zstd 1.5.2"
+      },
+      {
+        "YAMLLint": "yamllint 1.28.0"
+      },
+      {
+        "ImageMagick": "ImageMagick 7.1.0-50"
+      }
+    ]
+  },
+  {
+    "Rust Tools": [
+      {
+        "Alibaba": "Alibaba Cloud CLI 3.0.131"
+      },
+      {
+        "AWSCLI": "AWS CLI 2.8.3"
+      },
+      {
+        "AWSSAM": "AWS SAM CLI 1.60.0"
+      },
+      {
+        "AWSSessionManager": "AWS Session Manager CLI 1.2.398.0"
+      },
+      {
+        "AzureCLI": "Azure CLI 2.41.0"
+      },
+      {
+        "AzureDevopsExt": "Azure DevOps CLI extension 0.25.0"
+      },
+      {
+        "GH": "GitHub CLI 2.17.0"
+      },
+      {
+        "Hub": "Hub CLI 2.14.2"
+      }
+    ]
+  },
+  {
+    "Rust Tools | Packages": [
+      {
+        "Rust": "Rust 1.64.0"
+      },
+      {
+        "Rustup": "Rustup 1.25.1"
+      },
+      {
+        "Cargo": "Cargo 1.64.0"
+      },
+      {
+        "Rustdoc": "Rustdoc 1.64.0"
+      }
+    ]
+  },
+  {
+    "Browsers and webdrivers": [
+      {
+        "Bindgen": "bindgen 0.61.0"
+      },
+      {
+        "CargoAudit": "cargo-audit 0.17.2"
+      },
+      {
+        "CargoOutdated": "cargo-outdated 0.11.1"
+      },
+      {
+        "Cbindgen": "cbindgen 0.24.3"
+      },
+      {
+        "Rustfmt": "Rustfmt 1.5.1"
+      },
+      {
+        "Clippy": "Clippy 0.1.64"
+      }
+    ]
+  },
+  {
+    "Browsers and webdrivers | Environment variables": [
+      {
+        "GoogleChrome": "Google Chrome 106.0.5249.119"
+      },
+      {
+        "ChromeDriver": "Chrome Driver 106.0.5249.61"
+      },
+      {
+        "MicrosoftEdge": "Microsoft Edge 106.0.1370.47"
+      },
+      {
+        "MicrosoftEdgeDriver": "Microsoft Edge Driver 106.0.1370.47"
+      },
+      {
+        "MozillaFirefox": "Mozilla Firefox 105.0.3"
+      },
+      {
+        "GeckoDriver": "Gecko Driver 0.32.0"
+      },
+      {
+        "IEDriver": "IE Driver 3.150.1.1"
+      },
+      {
+        "SeleniumServer": "Selenium server 4.5.0"
+      }
+    ]
+  },
+  {
+    "Java": [
+      {
+        "Env_CHROMEWEBDRIVER": "CHROMEWEBDRIVER|C:\\SeleniumWebDrivers\\ChromeDriver"
+      },
+      {
+        "Env_EDGEWEBDRIVER": "EDGEWEBDRIVER|C:\\SeleniumWebDrivers\\EdgeDriver"
+      },
+      {
+        "Env_GECKOWEBDRIVER": "GECKOWEBDRIVER|C:\\SeleniumWebDrivers\\GeckoDriver"
+      },
+      {
+        "Env_SELENIUM_JAR_PATH": "SELENIUM_JAR_PATH|C:\\selenium\\selenium-server.jar"
+      }
+    ]
+  },
+  {
+    "Shells": [
+      {
+        "Java_JAVA_HOME_8_X64": "8.0.345+1 (default)|Eclipse Temurin|JAVA_HOME_8_X64"
+      },
+      {
+        "Java_JAVA_HOME_11_X64": "11.0.16+101|Eclipse Temurin|JAVA_HOME_11_X64"
+      },
+      {
+        "Java_JAVA_HOME_17_X64": "17.0.4+101|Eclipse Temurin|JAVA_HOME_17_X64"
+      }
+    ]
+  },
+  {
+    "MSYS2": [
+      {
+        "Shell_gitbash.exe": "gitbash.exe|C:\\Program Files\\Git\\bin\\bash.exe"
+      },
+      {
+        "Shell_msys2bash.cmd": "msys2bash.cmd|C:\\msys64\\usr\\bin\\bash.exe"
+      },
+      {
+        "Shell_wslbash.exe": "wslbash.exe|C:\\Windows\\System32\\bash.exe"
+      }
+    ]
+  },
+  {
+    "Cached Tools | Go": [
+      {
+        "Pacman": "Pacman 6.0.1"
+      }
+    ]
+  },
+  {
+    "Cached Tools | Node": [
+      {
+        "Go_GOROOT_1_17_X64": "1.17.13 (Default)|x64|GOROOT_1_17_X64"
+      },
+      {
+        "Go_GOROOT_1_18_X64": "1.18.7|x64|GOROOT_1_18_X64"
+      },
+      {
+        "Go_GOROOT_1_19_X64": "1.19.2|x64|GOROOT_1_19_X64"
+      }
+    ]
+  },
+  {
+    "Cached Tools | Python": [
+      {
+        "Node_12.22.": "12.22.12|x64"
+      },
+      {
+        "Node_14.20.": "14.20.1|x64"
+      },
+      {
+        "Node_16.17.": "16.17.1|x64"
+      }
+    ]
+  },
+  {
+    "Cached Tools | Ruby": [
+      {
+        "Python_3.7.": "3.7.9|x64, x86"
+      },
+      {
+        "Python_3.8.": "3.8.10|x64, x86"
+      },
+      {
+        "Python_3.9.": "3.9.13 (Default)|x64, x86"
+      },
+      {
+        "Python_3.10.": "3.10.7|x64, x86"
+      }
+    ]
+  },
+  {
+    "Cached Tools | PyPy": [
+      {
+        "Ruby_2.7.": "2.7.6|x64"
+      },
+      {
+        "Ruby_3.0.": "3.0.4 (Default)|x64"
+      },
+      {
+        "Ruby_3.1.": "3.1.2|x64"
+      }
+    ]
+  },
+  {
+    "Databases | PostgreSQL": [
+      {
+        "PyPy_2.7.": "2.7.18|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)"
+      },
+      {
+        "PyPy_3.7.": "3.7.13|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)"
+      },
+      {
+        "PyPy_3.8.": "3.8.12|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)"
+      },
+      {
+        "PyPy_3.9.": "3.9.10|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)"
+      }
+    ]
+  },
+  {
+    "Databases | MongoDB": [
+      {
+        "PostgreSQL_ServiceName": "ServiceName|postgresql-x64-14"
+      },
+      {
+        "PostgreSQL_Version": "Version|14.5"
+      },
+      {
+        "PostgreSQL_ServiceStatus": "ServiceStatus|Stopped"
+      },
+      {
+        "PostgreSQL_ServiceStartType": "ServiceStartType|Disabled"
+      },
+      {
+        "PostgreSQL_EnvironmentVariables": "EnvironmentVariables|PGBIN=C:\\Program Files\\PostgreSQL\\14\\bin <br> PGDATA=C:\\Program Files\\PostgreSQL\\14\\data <br> PGROOT=C:\\Program Files\\PostgreSQL\\14 "
+      },
+      {
+        "PostgreSQL_Path": "Path|C:\\Program Files\\PostgreSQL\\14"
+      },
+      {
+        "PostgreSQL_UserName": "UserName|postgres"
+      },
+      {
+        "PostgreSQL_Password": "Password|root"
+      }
+    ]
+  },
+  {
+    "Database tools": [
+      {
+        "MongoDB": "5.0.13.0|MongoDB|Stopped|Disabled"
+      }
+    ]
+  },
+  {
+    "Web Servers": [
+      {
+        "AzCosmosDBEmulator": "Azure CosmosDb Emulator 2.14.9.0"
+      },
+      {
+        "DacFx": "DacFx 16.0.6296.0"
+      },
+      {
+        "MySQL": "MySQL 8.0.31.0"
+      },
+      {
+        "SQLPS": "SQLPS 1.0"
+      },
+      {
+        "SQLOLEDBDriver": "SQL OLEDB Driver 18.6.3.0"
+      }
+    ]
+  },
+  {
+    "Visual Studio Enterprise 2022": [
+      {
+        "WebServers_Apache": "Apache|2.4.54|C:\\tools\\Apache24\\conf\\httpd.conf|Apache|Stopped|80"
+      },
+      {
+        "WebServers_Nginx": "Nginx|1.23.1|C:\\tools\\nginx-1.23.1\\conf\\nginx.conf|nginx|Stopped|80"
+      }
+    ]
+  },
+  {
+    "Visual Studio Enterprise 2022 | Workloads, components and extensions:": [
+      {
+        "VisualStudioEnterprise2022": "Visual Studio Enterprise 2022|17.3.32929.385|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise"
+      }
+    ]
+  },
+  {
+    "Visual Studio Enterprise 2022 | Microsoft Visual C++:": [
+      {
+        "VisualStudio_ProBITools.MicrosoftAnalysisServicesModelingProjects2022": "ProBITools.MicrosoftAnalysisServicesModelingProjects2022|3.0.4"
+      },
+      {
+        "VisualStudio_ProBITools.MicrosoftReportProjectsforVisualStudio2022": "ProBITools.MicrosoftReportProjectsforVisualStudio2022|3.0.1"
+      },
+      {
+        "VisualStudio_VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects": "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects|2.0.0"
+      },
+      {
+        "VisualStudio_WindowsDriverKit": "Windows Driver Kit|10.1.22621.382"
+      },
+      {
+        "VisualStudio_WindowsDriverKitVisualStudioExtension": "Windows Driver Kit Visual Studio Extension|10.0.22621.0"
+      },
+      {
+        "VisualStudio_WindowsSoftwareDevelopmentKit": "Windows Software Development Kit|10.1.22621.1"
+      },
+      {
+        "VisualStudio_WixToolset.WixToolsetVisualStudio2022Extension": "WixToolset.WixToolsetVisualStudio2022Extension|1.0.0.18"
+      },
+      {
+        "VisualStudio_android": "android|32.0.476.0"
+      },
+      {
+        "VisualStudio_Component.Android.NDK.R21E": "Component.Android.NDK.R21E|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Android.SDK.MAUI": "Component.Android.SDK.MAUI|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Android.SDK25.Private": "Component.Android.SDK25.Private|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Ant": "Component.Ant|1.9.3.8"
+      },
+      {
+        "VisualStudio_Component.Dotfuscator": "Component.Dotfuscator|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Linux.CMake": "Component.Linux.CMake|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.MDD.Android": "Component.MDD.Android|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.MDD.Linux": "Component.MDD.Linux|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.MDD.Linux.GCC.arm": "Component.MDD.Linux.GCC.arm|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Microsoft.VisualStudio.LiveShare.2022": "Component.Microsoft.VisualStudio.LiveShare.2022|1.0.5545"
+      },
+      {
+        "VisualStudio_Component.Microsoft.VisualStudio.RazorExtension": "Component.Microsoft.VisualStudio.RazorExtension|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Microsoft.VisualStudio.Web.AzureFunctions": "Component.Microsoft.VisualStudio.Web.AzureFunctions|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Microsoft.Web.LibraryManager": "Component.Microsoft.Web.LibraryManager|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Microsoft.WebTools.BrowserLink.WebLivePreview": "Component.Microsoft.WebTools.BrowserLink.WebLivePreview|17.3.58.47684"
+      },
+      {
+        "VisualStudio_Component.Microsoft.Windows.DriverKit": "Component.Microsoft.Windows.DriverKit|10.0.22621.0"
+      },
+      {
+        "VisualStudio_Component.OpenJDK": "Component.OpenJDK|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.UnityEngine.x64": "Component.UnityEngine.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Unreal": "Component.Unreal|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Unreal.Android": "Component.Unreal.Android|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Unreal.Ide": "Component.Unreal.Ide|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.VSInstallerProjects2022": "Component.VSInstallerProjects2022|2.0.0"
+      },
+      {
+        "VisualStudio_Component.WixToolset.VisualStudioExtension.Dev17": "Component.WixToolset.VisualStudioExtension.Dev17|1.0.0.18"
+      },
+      {
+        "VisualStudio_Component.WixToolset.VisualStudioExtension.Schemas3": "Component.WixToolset.VisualStudioExtension.Schemas3|1.0.0.18"
+      },
+      {
+        "VisualStudio_Component.WixToolset.VisualStudioExtension.Schemas4": "Component.WixToolset.VisualStudioExtension.Schemas4|1.0.0.18"
+      },
+      {
+        "VisualStudio_Component.Xamarin": "Component.Xamarin|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Component.Xamarin.RemotedSimulator": "Component.Xamarin.RemotedSimulator|17.3.32708.82"
+      },
+      {
+        "VisualStudio_ios": "ios|16.0.517.517"
+      },
+      {
+        "VisualStudio_maccatalyst": "maccatalyst|15.4.465.465"
+      },
+      {
+        "VisualStudio_maui.android": "maui.android|6.0.541.0"
+      },
+      {
+        "VisualStudio_maui.blazor": "maui.blazor|6.0.541.0"
+      },
+      {
+        "VisualStudio_maui.core": "maui.core|6.0.541.0"
+      },
+      {
+        "VisualStudio_maui.ios": "maui.ios|6.0.541.0"
+      },
+      {
+        "VisualStudio_maui.maccatalyst": "maui.maccatalyst|6.0.541.0"
+      },
+      {
+        "VisualStudio_maui.windows": "maui.windows|6.0.541.0"
+      },
+      {
+        "VisualStudio_Microsoft.Component.Azure.DataLake.Tools": "Microsoft.Component.Azure.DataLake.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.ClickOnce": "Microsoft.Component.ClickOnce|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.CodeAnalysis.SDK": "Microsoft.Component.CodeAnalysis.SDK|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.MSBuild": "Microsoft.Component.MSBuild|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.NetFX.Native": "Microsoft.Component.NetFX.Native|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.PythonTools": "Microsoft.Component.PythonTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.PythonTools.Web": "Microsoft.Component.PythonTools.Web|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Component.VC.Runtime.UCRTSDK": "Microsoft.Component.VC.Runtime.UCRTSDK|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.ComponentGroup.Blend": "Microsoft.ComponentGroup.Blend|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.ComponentGroup.ClickOnce.Publish": "Microsoft.ComponentGroup.ClickOnce.Publish|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.5.2.TargetingPack": "Microsoft.Net.Component.4.5.2.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.6.2.TargetingPack": "Microsoft.Net.Component.4.6.2.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.6.TargetingPack": "Microsoft.Net.Component.4.6.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.7.1.TargetingPack": "Microsoft.Net.Component.4.7.1.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.7.2.TargetingPack": "Microsoft.Net.Component.4.7.2.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.7.TargetingPack": "Microsoft.Net.Component.4.7.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.8.1.SDK": "Microsoft.Net.Component.4.8.1.SDK|17.3.32720.241"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.8.1.TargetingPack": "Microsoft.Net.Component.4.8.1.TargetingPack|17.3.32720.241"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.8.SDK": "Microsoft.Net.Component.4.8.SDK|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.Component.4.8.TargetingPack": "Microsoft.Net.Component.4.8.TargetingPack|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.ComponentGroup.4.8.DeveloperTools": "Microsoft.Net.ComponentGroup.4.8.DeveloperTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.ComponentGroup.DevelopmentPrerequisites": "Microsoft.Net.ComponentGroup.DevelopmentPrerequisites|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.Net.ComponentGroup.TargetingPacks.Common": "Microsoft.Net.ComponentGroup.TargetingPacks.Common|17.3.32708.82"
+      },
+      {
+        "VisualStudio_microsoft.net.runtime.android": "microsoft.net.runtime.android|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_microsoft.net.runtime.android.aot": "microsoft.net.runtime.android.aot|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_microsoft.net.runtime.ios": "microsoft.net.runtime.ios|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_microsoft.net.runtime.maccatalyst": "microsoft.net.runtime.maccatalyst|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_microsoft.net.runtime.mono.tooling": "microsoft.net.runtime.mono.tooling|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_microsoft.net.sdk.emscripten": "microsoft.net.sdk.emscripten|6.0.6.46402"
+      },
+      {
+        "VisualStudio_Microsoft.NetCore.Component.DevelopmentTools": "Microsoft.NetCore.Component.DevelopmentTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.NetCore.Component.Runtime.6.0": "Microsoft.NetCore.Component.Runtime.6.0|17.3.32929.385"
+      },
+      {
+        "VisualStudio_Microsoft.NetCore.Component.SDK": "Microsoft.NetCore.Component.SDK|17.3.32929.385"
+      },
+      {
+        "VisualStudio_Microsoft.NetCore.Component.Web": "Microsoft.NetCore.Component.Web|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.AppInsights.Tools": "Microsoft.VisualStudio.Component.AppInsights.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.AspNet": "Microsoft.VisualStudio.Component.AspNet|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.AspNet45": "Microsoft.VisualStudio.Component.AspNet45|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.AuthoringTools": "Microsoft.VisualStudio.Component.Azure.AuthoringTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.ClientLibs": "Microsoft.VisualStudio.Component.Azure.ClientLibs|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.Compute.Emulator": "Microsoft.VisualStudio.Component.Azure.Compute.Emulator|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.Powershell": "Microsoft.VisualStudio.Component.Azure.Powershell|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools": "Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools": "Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.Waverton": "Microsoft.VisualStudio.Component.Azure.Waverton|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools": "Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.ClassDesigner": "Microsoft.VisualStudio.Component.ClassDesigner|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.CodeMap": "Microsoft.VisualStudio.Component.CodeMap|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Common.Azure.Tools": "Microsoft.VisualStudio.Component.Common.Azure.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.CoreEditor": "Microsoft.VisualStudio.Component.CoreEditor|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Debugger.JustInTime": "Microsoft.VisualStudio.Component.Debugger.JustInTime|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Debugger.Snapshot": "Microsoft.VisualStudio.Component.Debugger.Snapshot|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.DiagnosticTools": "Microsoft.VisualStudio.Component.DiagnosticTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.DockerTools": "Microsoft.VisualStudio.Component.DockerTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.DotNetModelBuilder": "Microsoft.VisualStudio.Component.DotNetModelBuilder|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.DslTools": "Microsoft.VisualStudio.Component.DslTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Embedded": "Microsoft.VisualStudio.Component.Embedded|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.EntityFramework": "Microsoft.VisualStudio.Component.EntityFramework|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.FSharp": "Microsoft.VisualStudio.Component.FSharp|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.FSharp.Desktop": "Microsoft.VisualStudio.Component.FSharp.Desktop|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.FSharp.WebTemplates": "Microsoft.VisualStudio.Component.FSharp.WebTemplates|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.GraphDocument": "Microsoft.VisualStudio.Component.GraphDocument|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Graphics": "Microsoft.VisualStudio.Component.Graphics|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Graphics.Tools": "Microsoft.VisualStudio.Component.Graphics.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.IISExpress": "Microsoft.VisualStudio.Component.IISExpress|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.IntelliCode": "Microsoft.VisualStudio.Component.IntelliCode|17.3.32804.24"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd": "Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.JavaScript.Diagnostics": "Microsoft.VisualStudio.Component.JavaScript.Diagnostics|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.JavaScript.TypeScript": "Microsoft.VisualStudio.Component.JavaScript.TypeScript|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.LinqToSql": "Microsoft.VisualStudio.Component.LinqToSql|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.LiveUnitTesting": "Microsoft.VisualStudio.Component.LiveUnitTesting|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.ManagedDesktop.Core": "Microsoft.VisualStudio.Component.ManagedDesktop.Core|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites": "Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Merq": "Microsoft.VisualStudio.Component.Merq|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.MonoDebugger": "Microsoft.VisualStudio.Component.MonoDebugger|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.MSODBC.SQL": "Microsoft.VisualStudio.Component.MSODBC.SQL|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils": "Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Node.Tools": "Microsoft.VisualStudio.Component.Node.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.NuGet": "Microsoft.VisualStudio.Component.NuGet|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.NuGet.BuildTools": "Microsoft.VisualStudio.Component.NuGet.BuildTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.PortableLibrary": "Microsoft.VisualStudio.Component.PortableLibrary|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Roslyn.Compiler": "Microsoft.VisualStudio.Component.Roslyn.Compiler|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Roslyn.LanguageServices": "Microsoft.VisualStudio.Component.Roslyn.LanguageServices|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Sharepoint.Tools": "Microsoft.VisualStudio.Component.Sharepoint.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.SQL.CLR": "Microsoft.VisualStudio.Component.SQL.CLR|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.SQL.DataSources": "Microsoft.VisualStudio.Component.SQL.DataSources|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime": "Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.SQL.SSDT": "Microsoft.VisualStudio.Component.SQL.SSDT|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.TeamOffice": "Microsoft.VisualStudio.Component.TeamOffice|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.TestTools.CodedUITest": "Microsoft.VisualStudio.Component.TestTools.CodedUITest|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.TestTools.WebLoadTest": "Microsoft.VisualStudio.Component.TestTools.WebLoadTest|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.TextTemplating": "Microsoft.VisualStudio.Component.TextTemplating|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.TypeScript.TSServer": "Microsoft.VisualStudio.Component.TypeScript.TSServer|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Unity": "Microsoft.VisualStudio.Component.Unity|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.UWP.VC.ARM64": "Microsoft.VisualStudio.Component.UWP.VC.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.UWP.VC.ARM64EC": "Microsoft.VisualStudio.Component.UWP.VC.ARM64EC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64": "Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64.Spectre": "Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64": "Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64.Spectre": "Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ASAN": "Microsoft.VisualStudio.Component.VC.ASAN|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL": "Microsoft.VisualStudio.Component.VC.ATL|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM": "Microsoft.VisualStudio.Component.VC.ATL.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64": "Microsoft.VisualStudio.Component.VC.ATL.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64EC": "Microsoft.VisualStudio.Component.VC.ATL.ARM64EC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64EC.Spectre": "Microsoft.VisualStudio.Component.VC.ATL.ARM64EC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.Spectre": "Microsoft.VisualStudio.Component.VC.ATL.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATLMFC": "Microsoft.VisualStudio.Component.VC.ATLMFC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre": "Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.CLI.Support": "Microsoft.VisualStudio.Component.VC.CLI.Support|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.CMake.Project": "Microsoft.VisualStudio.Component.VC.CMake.Project|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.CoreIde": "Microsoft.VisualStudio.Component.VC.CoreIde|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.DiagnosticTools": "Microsoft.VisualStudio.Component.VC.DiagnosticTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Llvm.Clang": "Microsoft.VisualStudio.Component.VC.Llvm.Clang|17.3.32714.208"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset": "Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM": "Microsoft.VisualStudio.Component.VC.MFC.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64": "Microsoft.VisualStudio.Component.VC.MFC.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64EC": "Microsoft.VisualStudio.Component.VC.MFC.ARM64EC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64EC.Spectre": "Microsoft.VisualStudio.Component.VC.MFC.ARM64EC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Modules.x86.x64": "Microsoft.VisualStudio.Component.VC.Modules.x86.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Redist.14.Latest": "Microsoft.VisualStudio.Component.VC.Redist.14.Latest|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Redist.MSM": "Microsoft.VisualStudio.Component.VC.Redist.MSM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.ARM64EC.Spectre": "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64EC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre": "Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest": "Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest": "Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.ARM": "Microsoft.VisualStudio.Component.VC.Tools.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.ARM64": "Microsoft.VisualStudio.Component.VC.Tools.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.ARM64EC": "Microsoft.VisualStudio.Component.VC.Tools.ARM64EC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.x86.x64": "Microsoft.VisualStudio.Component.VC.Tools.x86.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM": "Microsoft.VisualStudio.Component.VC.v141.ARM|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre": "Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM64": "Microsoft.VisualStudio.Component.VC.v141.ARM64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre": "Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ATL": "Microsoft.VisualStudio.Component.VC.v141.ATL|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre": "Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.MFC": "Microsoft.VisualStudio.Component.VC.v141.MFC|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre": "Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.x86.x64": "Microsoft.VisualStudio.Component.VC.v141.x86.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre": "Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.VSSDK": "Microsoft.VisualStudio.Component.VSSDK|17.3.32901.149"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Wcf.Tooling": "Microsoft.VisualStudio.Component.Wcf.Tooling|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Web": "Microsoft.VisualStudio.Component.Web|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.WebDeploy": "Microsoft.VisualStudio.Component.WebDeploy|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Windows10SDK": "Microsoft.VisualStudio.Component.Windows10SDK|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Windows10SDK.19041": "Microsoft.VisualStudio.Component.Windows10SDK.19041|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Windows10SDK.20348": "Microsoft.VisualStudio.Component.Windows10SDK.20348|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Windows11SDK.22000": "Microsoft.VisualStudio.Component.Windows11SDK.22000|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Windows11SDK.22621": "Microsoft.VisualStudio.Component.Windows11SDK.22621|17.3.32720.241"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.Workflow": "Microsoft.VisualStudio.Component.Workflow|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Component.WslDebugging": "Microsoft.VisualStudio.Component.WslDebugging|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native": "Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices": "Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites": "Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools": "Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.AzureFunctions": "Microsoft.VisualStudio.ComponentGroup.AzureFunctions|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.All": "Microsoft.VisualStudio.ComponentGroup.Maui.All|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Android": "Microsoft.VisualStudio.ComponentGroup.Maui.Android|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Blazor": "Microsoft.VisualStudio.ComponentGroup.Maui.Blazor|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.iOS": "Microsoft.VisualStudio.ComponentGroup.Maui.iOS|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.MacCatalyst": "Microsoft.VisualStudio.ComponentGroup.Maui.MacCatalyst|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Shared": "Microsoft.VisualStudio.ComponentGroup.Maui.Shared|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Windows": "Microsoft.VisualStudio.ComponentGroup.Maui.Windows|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging": "Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core": "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core|17.3.32921.402"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang": "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang|17.3.32714.208"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard": "Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.Support": "Microsoft.VisualStudio.ComponentGroup.UWP.Support|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.VC.v142": "Microsoft.VisualStudio.ComponentGroup.UWP.VC.v142|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin": "Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.VC.Tools.142.x86.x64": "Microsoft.VisualStudio.ComponentGroup.VC.Tools.142.x86.x64|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites": "Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Web": "Microsoft.VisualStudio.ComponentGroup.Web|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Web.CloudTools": "Microsoft.VisualStudio.ComponentGroup.Web.CloudTools|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions": "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake": "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine": "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.Azure": "Microsoft.VisualStudio.Workload.Azure|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.CoreEditor": "Microsoft.VisualStudio.Workload.CoreEditor|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.Data": "Microsoft.VisualStudio.Workload.Data|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.DataScience": "Microsoft.VisualStudio.Workload.DataScience|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.ManagedDesktop": "Microsoft.VisualStudio.Workload.ManagedDesktop|17.3.32728.75"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.ManagedGame": "Microsoft.VisualStudio.Workload.ManagedGame|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.NativeCrossPlat": "Microsoft.VisualStudio.Workload.NativeCrossPlat|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.NativeDesktop": "Microsoft.VisualStudio.Workload.NativeDesktop|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.NativeGame": "Microsoft.VisualStudio.Workload.NativeGame|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.NativeMobile": "Microsoft.VisualStudio.Workload.NativeMobile|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.NetCrossPlat": "Microsoft.VisualStudio.Workload.NetCrossPlat|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.NetWeb": "Microsoft.VisualStudio.Workload.NetWeb|17.3.32728.75"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.Node": "Microsoft.VisualStudio.Workload.Node|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.Office": "Microsoft.VisualStudio.Workload.Office|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.Python": "Microsoft.VisualStudio.Workload.Python|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.Universal": "Microsoft.VisualStudio.Workload.Universal|17.3.32708.82"
+      },
+      {
+        "VisualStudio_Microsoft.VisualStudio.Workload.VisualStudioExtension": "Microsoft.VisualStudio.Workload.VisualStudioExtension|17.3.32708.82"
+      },
+      {
+        "VisualStudio_runtimes.ios": "runtimes.ios|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_runtimes.maccatalyst": "runtimes.maccatalyst|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_wasm.tools": "wasm.tools|6.0.1022.47605"
+      },
+      {
+        "VisualStudio_ProBITools.MicrosoftAnalysisServicesModelingProjects2022": "ProBITools.MicrosoftAnalysisServicesModelingProjects2022|3.0.4"
+      },
+      {
+        "VisualStudio_ProBITools.MicrosoftReportProjectsforVisualStudio2022": "ProBITools.MicrosoftReportProjectsforVisualStudio2022|3.0.1"
+      },
+      {
+        "VisualStudio_VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects": "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects|2.0.0"
+      },
+      {
+        "VisualStudio_WindowsDriverKit": "Windows Driver Kit|10.1.22621.382"
+      },
+      {
+        "VisualStudio_WindowsDriverKitVisualStudioExtension": "Windows Driver Kit Visual Studio Extension|10.0.22621.0"
+      },
+      {
+        "VisualStudio_WindowsSoftwareDevelopmentKit": "Windows Software Development Kit|10.1.22621.1"
+      },
+      {
+        "VisualStudio_WixToolset.WixToolsetVisualStudio2022Extension": "WixToolset.WixToolsetVisualStudio2022Extension|1.0.0.18"
+      }
+    ]
+  },
+  {
+    "Visual Studio Enterprise 2022 | Installed Windows SDKs": [
+      {
+        "MicrosoftVisualC++2010Redistributable_x64": "Microsoft Visual C++ 2010 Redistributable|x64|10.0.40219"
+      },
+      {
+        "MicrosoftVisualC++2010Redistributable_x86": "Microsoft Visual C++ 2010 Redistributable|x86|10.0.40219"
+      },
+      {
+        "MicrosoftVisualC++2012AdditionalRuntime_x64": "Microsoft Visual C++ 2012 Additional Runtime|x64|11.0.61030"
+      },
+      {
+        "MicrosoftVisualC++2012MinimumRuntime_x64": "Microsoft Visual C++ 2012 Minimum Runtime|x64|11.0.61030"
+      },
+      {
+        "MicrosoftVisualC++2013AdditionalRuntime_x64": "Microsoft Visual C++ 2013 Additional Runtime|x64|12.0.40660"
+      },
+      {
+        "MicrosoftVisualC++2013MinimumRuntime_x64": "Microsoft Visual C++ 2013 Minimum Runtime|x64|12.0.40660"
+      },
+      {
+        "MicrosoftVisualC++2022AdditionalRuntime_x64": "Microsoft Visual C++ 2022 Additional Runtime|x64|14.32.31332"
+      },
+      {
+        "MicrosoftVisualC++2022DebugRuntime_x64": "Microsoft Visual C++ 2022 Debug Runtime|x64|14.32.31332"
+      },
+      {
+        "MicrosoftVisualC++2022MinimumRuntime_x64": "Microsoft Visual C++ 2022 Minimum Runtime|x64|14.32.31332"
+      },
+      {
+        "MicrosoftVisualC++2022AdditionalRuntime_x86": "Microsoft Visual C++ 2022 Additional Runtime|x86|14.32.31332"
+      },
+      {
+        "MicrosoftVisualC++2022DebugRuntime_x86": "Microsoft Visual C++ 2022 Debug Runtime|x86|14.32.31332"
+      },
+      {
+        "MicrosoftVisualC++2022MinimumRuntime_x86": "Microsoft Visual C++ 2022 Minimum Runtime|x86|14.32.31332"
+      }
+    ]
+  },
+  {
+    ".NET Core SDK": [
+      {
+        "Windows_SDK_10.0.17763.0": "Windows SDK 10.0.17763.0"
+      },
+      {
+        "Windows_SDK_10.0.19041.0": "Windows SDK 10.0.19041.0"
+      },
+      {
+        "Windows_SDK_10.0.20348.0": "Windows SDK 10.0.20348.0"
+      },
+      {
+        "Windows_SDK_10.0.22000.0": "Windows SDK 10.0.22000.0"
+      },
+      {
+        "Windows_SDK_10.0.22621.0": "Windows SDK 10.0.22621.0"
+      }
+    ]
+  },
+  {
+    ".NET Core Runtime": [
+      {
+        "NET_Core_SDK": ".NET Core SDKs: 3.1.120 3.1.202 3.1.302 3.1.424 5.0.104 5.0.214 5.0.303 5.0.408 6.0.402"
+      }
+    ]
+  },
+  {
+    ".NET Framework": [
+      {
+        "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10"
+      },
+      {
+        "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10"
+      },
+      {
+        "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10"
+      }
+    ]
+  },
+  {
+    ".NET tools": [
+      {
+        "NET_Framework_4.8 4.8.1": ".NET Framework: 4.8 4.8.1"
+      }
+    ]
+  },
+  {
+    "PowerShell Tools": [
+      {
+        "NET_Tools_nbgv": "nbgv 3.5.113+a908c6d9d2"
+      }
+    ]
+  },
+  {
+    "PowerShell Tools | Azure Powershell Modules": [
+      {
+        "PowerShellTools": "PowerShell 7.2.6"
+      }
+    ]
+  },
+  {
+    "PowerShell Tools | Powershell Modules": [
+      {
+        "AzurePowershellModule_Az": "Az|6.6.0.zip<br>7.5.0|C:\\Modules\\az_\\<version\\>"
+      },
+      {
+        "AzurePowershellModule_Azure": "Azure|2.1.0 [Installed]<br>3.8.0.zip<br>4.2.1.zip<br>5.1.1.zip<br>5.3.0|C:\\Modules\\azure_\\<version\\>"
+      },
+      {
+        "AzurePowershellModule_AzureRM": "AzureRM|2.1.0 [Installed]<br>3.8.0.zip<br>4.2.1.zip<br>5.1.1.zip<br>6.7.0.zip<br>6.13.1|C:\\Modules\\azurerm_\\<version\\>"
+      }
+    ]
+  },
+  {
+    "Android": [
+      {
+        "PowershellModule_AWSPowerShell": "AWSPowerShell|4.1.186"
+      },
+      {
+        "PowershellModule_DockerMsftProvider": "DockerMsftProvider|1.0.0.8"
+      },
+      {
+        "PowershellModule_MarkdownPS": "MarkdownPS|1.9"
+      },
+      {
+        "PowershellModule_Microsoft.Graph": "Microsoft.Graph|1.13.0"
+      },
+      {
+        "PowershellModule_Pester": "Pester|3.4.0<br>5.3.3"
+      },
+      {
+        "PowershellModule_PowerShellGet": "PowerShellGet|1.0.0.1<br>2.2.5"
+      },
+      {
+        "PowershellModule_PSScriptAnalyzer": "PSScriptAnalyzer|1.20.0<br>1.21.0"
+      },
+      {
+        "PowershellModule_PSWindowsUpdate": "PSWindowsUpdate|2.2.0.3"
+      },
+      {
+        "PowershellModule_SqlServer": "SqlServer|21.1.18256"
+      },
+      {
+        "PowershellModule_VSSetup": "VSSetup|2.2.16"
+      }
+    ]
+  },
+  {
+    "Android | Environment variables": [
+      {
+        "Android_AndroidCommandLineTools": "Android Command Line Tools|7.0"
+      },
+      {
+        "Android_AndroidEmulator": "Android Emulator|31.3.12"
+      },
+      {
+        "Android_AndroidSDKBuild-tools": "Android SDK Build-tools|33.0.0<br>32.0.0<br>31.0.0<br>30.0.0 30.0.1 30.0.2 30.0.3<br>29.0.0 29.0.1 29.0.2 29.0.3<br>28.0.0 28.0.1 28.0.2 28.0.3<br>27.0.0 27.0.1 27.0.2 27.0.3"
+      },
+      {
+        "Android_AndroidSDKPlatforms": "Android SDK Platforms|android-33 (rev 2)<br>android-32 (rev 1)<br>android-31 (rev 1)<br>android-30 (rev 3)<br>android-29 (rev 5)<br>android-28 (rev 6)<br>android-27 (rev 3)"
+      },
+      {
+        "Android_AndroidSDKPlatform-Tools": "Android SDK Platform-Tools|33.0.3"
+      },
+      {
+        "Android_AndroidSupportRepository": "Android Support Repository|47.0.0"
+      },
+      {
+        "Android_CMake": "CMake|3.18.1<br>3.22.1"
+      },
+      {
+        "Android_GooglePlayservices": "Google Play services|49"
+      },
+      {
+        "Android_GoogleRepository": "Google Repository|58"
+      },
+      {
+        "Android_NDK": "NDK|23.2.8568313<br>24.0.8215888<br>25.1.8937393"
+      },
+      {
+        "Android_SDKPatchApplierv4": "SDK Patch Applier v4|1"
+      }
+    ]
+  },
+  {
+    "Cached Docker images": [
+      {
+        "Env_ANDROID_HOME": "ANDROID_HOME|C:\\Android\\android-sdk"
+      },
+      {
+        "Env_ANDROID_NDK": "ANDROID_NDK|C:\\Android\\android-sdk\\ndk\\25.1.8937393"
+      },
+      {
+        "Env_ANDROID_NDK_HOME": "ANDROID_NDK_HOME|C:\\Android\\android-sdk\\ndk\\25.1.8937393"
+      },
+      {
+        "Env_ANDROID_NDK_LATEST_HOME": "ANDROID_NDK_LATEST_HOME|C:\\Android\\android-sdk\\ndk\\25.1.8937393"
+      },
+      {
+        "Env_ANDROID_NDK_ROOT": "ANDROID_NDK_ROOT|C:\\Android\\android-sdk\\ndk\\25.1.8937393"
+      },
+      {
+        "Env_ANDROID_SDK_ROOT": "ANDROID_SDK_ROOT|C:\\Android\\android-sdk"
+      }
+    ]
+  },
+  {
+    "Cached Docker images": [
+      {
+        "CachedDockerImage_mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022": "mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022|sha256:86ef1feae54df685bc33ea234c23babb704d4027a39404a072d922883a8a8049 "
+      },
+      {
+        "CachedDockerImage_mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022": "mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022|sha256:73956aba99a6ee0b867774c2b5faeec11b153329f43c8c729c2c27a2024c4b98 "
+      },
+      {
+        "CachedDockerImage_mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022": "mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022|sha256:42b5c55b4918f3c56ec4a5e6a1b0735b624941bd885a13c12e30dc7a81ba2fb6 "
+      },
+      {
+        "CachedDockerImage_mcr.microsoft.com/windows/nanoserver:ltsc2022": "mcr.microsoft.com/windows/nanoserver:ltsc2022|sha256:fefb912e2942912f1cd55bfe6bbb697a601a7787caf5c1875aaf105c86a28027 "
+      },
+      {
+        "CachedDockerImage_mcr.microsoft.com/windows/servercore:ltsc2022": "mcr.microsoft.com/windows/servercore:ltsc2022|sha256:6983a9d56e4d8d1fac3819e4bed8ff537400ea21150b9d65bfbdc0ef3c27c99c "
       }
     ]
   }
