@@ -44,10 +44,8 @@ class ArchiveItems {
         $final = @()
         foreach ($item in $this.items) {
             $headersLevel = $item.Headers.Count
-            $headers = @($item.Headers[$headersLevel-1])
-            if ($headersLevel -ge 4) {
-                $headers = @($item.Headers[$headersLevel-2], $item.Headers[$headersLevel-1])
-            } 
+            $headers = $headersLevel -ge 4 ? @($item.Headers[$headersLevel-2], $item.Headers[$headersLevel-1]) : @($item.Headers[$headersLevel-1])
+
             $final += [PSCustomObject]@{
                 Id = $item.Id
                 Title = $item.Title
@@ -64,11 +62,8 @@ class ArchiveItems {
         $groupItems = @()
 
         foreach ($item in $this.items) {
-            $headersLevel = $item.Headers.Count
-            $headersPath = $item.Headers[$headersLevel-1]
-            if ($headersLevel -ge 4) {
-                $headersPath = $item.Headers[$headersLevel-2] + " | " + $item.Headers[$headersLevel-1]
-            }
+            $headersLevel = $lastHeaders.Count
+            $headersPath = $headersLevel -ge 4 ? ($lastHeaders[$headersLevel-2] + " | " + $lastHeaders[$headersLevel-1]) : $lastHeaders[$headersLevel-1]
 
             $isSameGroup = -not (Compare-Object $item.Headers $lastHeaders)
             if (-not $isSameGroup) {
