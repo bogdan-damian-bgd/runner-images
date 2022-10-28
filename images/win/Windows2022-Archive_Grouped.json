@@ -1,23 +1,23 @@
 [
   {
-    "Enabled windows optional features": [
+    "Microsoft Windows Server 2022 Datacenter": [
       {
         "OSVersion": "OS Version: 10.0.20348 Build 1129"
       },
       {
-        "Image Version": "Image Version: "
+        "ImageVersion": "Image Version: "
       }
     ]
   },
   {
-    "Language and Runtime": [
+    "Enabled windows optional features": [
       {
         "WSL": "Windows Subsystem for Linux [WSLv1]"
       }
     ]
   },
   {
-    "Package Management": [
+    "Language and Runtime": [
       {
         "Bash": "Bash 5.1.16(1)-release"
       },
@@ -51,9 +51,9 @@
     ]
   },
   {
-    "Package Management | Environment variables": [
+    "Package Management": [
       {
-        "Choco": "Chocolatey 1.1.0"
+        "Choco": "Chocolatey 1.2.0"
       },
       {
         "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
@@ -80,7 +80,7 @@
         "Ruby": "RubyGems 3.2.33"
       },
       {
-        "Vcpkg": "Vcpkg (build from master \\<79fa9d85c>)"
+        "Vcpkg": "Vcpkg (build from master \\<455d8d85e>)"
       },
       {
         "Yarn": "Yarn 1.22.19"
@@ -88,17 +88,14 @@
     ]
   },
   {
-    "Project Management": [
+    "Package Management | Environment variables": [
       {
         "Env_VCPKG_INSTALLATION_ROOT": "VCPKG_INSTALLATION_ROOT|C:\\vcpkg"
-      },
-      {
-        "Env_VCPKG_ROOT": "VCPKG_ROOT|C:\\vcpkg"
       }
     ]
   },
   {
-    "Tools": [
+    "Project Management": [
       {
         "Ant": "Ant 1.10.12"
       },
@@ -114,7 +111,7 @@
     ]
   },
   {
-    "CLI Tools": [
+    "Tools": [
       {
         "7zip": "7zip 22.01"
       },
@@ -140,16 +137,16 @@
         "CMake": "CMake 3.24.2"
       },
       {
-        "CodeQLBundle": "CodeQL Action Bundle 2.11.0"
+        "CodeQLBundle": "CodeQL Action Bundle 2.11.1"
       },
       {
-        "Docker": "Docker 20.10.19"
+        "Docker": "Docker 20.10.20"
       },
       {
         "DockerCompose": "Docker Compose v1 1.29.2"
       },
       {
-        "DockerComposeV2": "Docker Compose v2 2.11.2"
+        "DockerComposeV2": "Docker Compose v2 2.12.2"
       },
       {
         "DockerWincred": "Docker-wincred 0.7.0"
@@ -158,7 +155,7 @@
         "GHC": "ghc 9.4.2"
       },
       {
-        "Git": "Git 2.37.3.windows.1"
+        "Git": "Git 2.38.1.windows.1"
       },
       {
         "GitLFS": "Git LFS 3.2.0"
@@ -227,17 +224,17 @@
         "YAMLLint": "yamllint 1.28.0"
       },
       {
-        "ImageMagick": "ImageMagick 7.1.0-50"
+        "ImageMagick": "ImageMagick 7.1.0-51"
       }
     ]
   },
   {
-    "Rust Tools": [
+    "CLI Tools": [
       {
-        "Alibaba": "Alibaba Cloud CLI 3.0.131"
+        "Alibaba": "Alibaba Cloud CLI 3.0.132"
       },
       {
-        "AWSCLI": "AWS CLI 2.8.3"
+        "AWSCLI": "AWS CLI 2.8.5"
       },
       {
         "AWSSAM": "AWS SAM CLI 1.60.0"
@@ -252,7 +249,7 @@
         "AzureDevopsExt": "Azure DevOps CLI extension 0.25.0"
       },
       {
-        "GH": "GitHub CLI 2.17.0"
+        "GH": "GitHub CLI 2.18.1"
       },
       {
         "Hub": "Hub CLI 2.14.2"
@@ -260,7 +257,7 @@
     ]
   },
   {
-    "Rust Tools | Packages": [
+    "Rust Tools": [
       {
         "Rust": "Rust 1.64.0"
       },
@@ -276,7 +273,7 @@
     ]
   },
   {
-    "Browsers and webdrivers": [
+    "Rust Tools | Packages": [
       {
         "Bindgen": "bindgen 0.61.0"
       },
@@ -298,7 +295,7 @@
     ]
   },
   {
-    "Browsers and webdrivers | Environment variables": [
+    "Browsers and webdrivers": [
       {
         "GoogleChrome": "Google Chrome 106.0.5249.119"
       },
@@ -306,13 +303,13 @@
         "ChromeDriver": "Chrome Driver 106.0.5249.61"
       },
       {
-        "MicrosoftEdge": "Microsoft Edge 106.0.1370.47"
+        "MicrosoftEdge": "Microsoft Edge 106.0.1370.52"
       },
       {
-        "MicrosoftEdgeDriver": "Microsoft Edge Driver 106.0.1370.47"
+        "MicrosoftEdgeDriver": "Microsoft Edge Driver 106.0.1370.52"
       },
       {
-        "MozillaFirefox": "Mozilla Firefox 105.0.3"
+        "MozillaFirefox": "Mozilla Firefox 106.0.1"
       },
       {
         "GeckoDriver": "Gecko Driver 0.32.0"
@@ -326,7 +323,7 @@
     ]
   },
   {
-    "Java": [
+    "Browsers and webdrivers | Environment variables": [
       {
         "Env_CHROMEWEBDRIVER": "CHROMEWEBDRIVER|C:\\SeleniumWebDrivers\\ChromeDriver"
       },
@@ -342,7 +339,7 @@
     ]
   },
   {
-    "Shells": [
+    "Java": [
       {
         "Java_JAVA_HOME_8_X64": "8.0.345+1 (default)|Eclipse Temurin|JAVA_HOME_8_X64"
       },
@@ -355,7 +352,7 @@
     ]
   },
   {
-    "MSYS2": [
+    "Shells": [
       {
         "Shell_gitbash.exe": "gitbash.exe|C:\\Program Files\\Git\\bin\\bash.exe"
       },
@@ -368,14 +365,14 @@
     ]
   },
   {
-    "Cached Tools | Go": [
+    "MSYS2": [
       {
         "Pacman": "Pacman 6.0.1"
       }
     ]
   },
   {
-    "Cached Tools | Node": [
+    "Cached Tools | Go": [
       {
         "Go_GOROOT_1_17_X64": "1.17.13 (Default)|x64|GOROOT_1_17_X64"
       },
@@ -388,7 +385,7 @@
     ]
   },
   {
-    "Cached Tools | Python": [
+    "Cached Tools | Node": [
       {
         "Node_12.22.": "12.22.12|x64"
       },
@@ -401,7 +398,7 @@
     ]
   },
   {
-    "Cached Tools | Ruby": [
+    "Cached Tools | Python": [
       {
         "Python_3.7.": "3.7.9|x64, x86"
       },
@@ -412,12 +409,12 @@
         "Python_3.9.": "3.9.13 (Default)|x64, x86"
       },
       {
-        "Python_3.10.": "3.10.7|x64, x86"
+        "Python_3.10.": "3.10.8|x64, x86"
       }
     ]
   },
   {
-    "Cached Tools | PyPy": [
+    "Cached Tools | Ruby": [
       {
         "Ruby_2.7.": "2.7.6|x64"
       },
@@ -430,7 +427,7 @@
     ]
   },
   {
-    "Databases | PostgreSQL": [
+    "Cached Tools | PyPy": [
       {
         "PyPy_2.7.": "2.7.18|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)"
       },
@@ -446,7 +443,7 @@
     ]
   },
   {
-    "Databases | MongoDB": [
+    "Databases | PostgreSQL": [
       {
         "PostgreSQL_ServiceName": "ServiceName|postgresql-x64-14"
       },
@@ -474,14 +471,14 @@
     ]
   },
   {
-    "Database tools": [
+    "Databases | MongoDB": [
       {
         "MongoDB": "5.0.13.0|MongoDB|Stopped|Disabled"
       }
     ]
   },
   {
-    "Web Servers": [
+    "Database tools": [
       {
         "AzCosmosDBEmulator": "Azure CosmosDb Emulator 2.14.9.0"
       },
@@ -500,24 +497,24 @@
     ]
   },
   {
-    "Visual Studio Enterprise 2022": [
+    "Web Servers": [
       {
         "WebServers_Apache": "Apache|2.4.54|C:\\tools\\Apache24\\conf\\httpd.conf|Apache|Stopped|80"
       },
       {
-        "WebServers_Nginx": "Nginx|1.23.1|C:\\tools\\nginx-1.23.1\\conf\\nginx.conf|nginx|Stopped|80"
+        "WebServers_Nginx": "Nginx|1.23.2|C:\\tools\\nginx-1.23.2\\conf\\nginx.conf|nginx|Stopped|80"
       }
     ]
   },
   {
-    "Visual Studio Enterprise 2022 | Workloads, components and extensions:": [
+    "Visual Studio Enterprise 2022": [
       {
         "VisualStudioEnterprise2022": "Visual Studio Enterprise 2022|17.3.32929.385|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise"
       }
     ]
   },
   {
-    "Visual Studio Enterprise 2022 | Microsoft Visual C++:": [
+    "Visual Studio Enterprise 2022 | Workloads, components and extensions:": [
       {
         "VisualStudio_ProBITools.MicrosoftAnalysisServicesModelingProjects2022": "ProBITools.MicrosoftAnalysisServicesModelingProjects2022|3.0.4"
       },
@@ -1367,7 +1364,7 @@
     ]
   },
   {
-    "Visual Studio Enterprise 2022 | Installed Windows SDKs": [
+    "Visual Studio Enterprise 2022 | Microsoft Visual C++:": [
       {
         "MicrosoftVisualC++2010Redistributable_x64": "Microsoft Visual C++ 2010 Redistributable|x64|10.0.40219"
       },
@@ -1407,7 +1404,7 @@
     ]
   },
   {
-    ".NET Core SDK": [
+    "Visual Studio Enterprise 2022 | Installed Windows SDKs": [
       {
         "Windows_SDK_10.0.17763.0": "Windows SDK 10.0.17763.0"
       },
@@ -1426,14 +1423,14 @@
     ]
   },
   {
-    ".NET Core Runtime": [
+    ".NET Core SDK": [
       {
         "NET_Core_SDK": ".NET Core SDKs: 3.1.120 3.1.202 3.1.302 3.1.424 5.0.104 5.0.214 5.0.303 5.0.408 6.0.402"
       }
     ]
   },
   {
-    ".NET Framework": [
+    ".NET Core Runtime": [
       {
         "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10"
       },
@@ -1446,28 +1443,28 @@
     ]
   },
   {
-    ".NET tools": [
+    ".NET Framework": [
       {
         "NET_Framework_4.8 4.8.1": ".NET Framework: 4.8 4.8.1"
       }
     ]
   },
   {
+    ".NET tools": [
+      {
+        "NET_Tools_nbgv": "nbgv 3.5.119+5d25f54fec"
+      }
+    ]
+  },
+  {
     "PowerShell Tools": [
       {
-        "NET_Tools_nbgv": "nbgv 3.5.113+a908c6d9d2"
+        "PowerShellTools": "PowerShell 7.2.7"
       }
     ]
   },
   {
     "PowerShell Tools | Azure Powershell Modules": [
-      {
-        "PowerShellTools": "PowerShell 7.2.6"
-      }
-    ]
-  },
-  {
-    "PowerShell Tools | Powershell Modules": [
       {
         "AzurePowershellModule_Az": "Az|6.6.0.zip<br>7.5.0|C:\\Modules\\az_\\<version\\>"
       },
@@ -1480,9 +1477,9 @@
     ]
   },
   {
-    "Android": [
+    "PowerShell Tools | Powershell Modules": [
       {
-        "PowershellModule_AWSPowerShell": "AWSPowerShell|4.1.186"
+        "PowershellModule_AWSPowerShell": "AWSPowerShell|4.1.191"
       },
       {
         "PowershellModule_DockerMsftProvider": "DockerMsftProvider|1.0.0.8"
@@ -1500,7 +1497,7 @@
         "PowershellModule_PowerShellGet": "PowerShellGet|1.0.0.1<br>2.2.5"
       },
       {
-        "PowershellModule_PSScriptAnalyzer": "PSScriptAnalyzer|1.20.0<br>1.21.0"
+        "PowershellModule_PSScriptAnalyzer": "PSScriptAnalyzer|1.21.0"
       },
       {
         "PowershellModule_PSWindowsUpdate": "PSWindowsUpdate|2.2.0.3"
@@ -1514,7 +1511,7 @@
     ]
   },
   {
-    "Android | Environment variables": [
+    "Android": [
       {
         "Android_AndroidCommandLineTools": "Android Command Line Tools|7.0"
       },
@@ -1551,7 +1548,7 @@
     ]
   },
   {
-    "Cached Docker images": [
+    "Android | Environment variables": [
       {
         "Env_ANDROID_HOME": "ANDROID_HOME|C:\\Android\\android-sdk"
       },

@@ -7,7 +7,7 @@
     ]
   },
   {
-    "Id": "Image Version",
+    "Id": "ImageVersion",
     "Title": "Image Version: ",
     "Headers": [
       "Microsoft Windows Server 2022 Datacenter"
@@ -92,7 +92,7 @@
   },
   {
     "Id": "Choco",
-    "Title": "Chocolatey 1.1.0",
+    "Title": "Chocolatey 1.2.0",
     "Headers": [
       "Package Management"
     ]
@@ -155,7 +155,7 @@
   },
   {
     "Id": "Vcpkg",
-    "Title": "Vcpkg (build from master \\<79fa9d85c>)",
+    "Title": "Vcpkg (build from master \\<455d8d85e>)",
     "Headers": [
       "Package Management"
     ]
@@ -170,14 +170,6 @@
   {
     "Id": "Env_VCPKG_INSTALLATION_ROOT",
     "Title": "VCPKG_INSTALLATION_ROOT|C:\\vcpkg",
-    "Headers": [
-      "Package Management",
-      "Environment variables"
-    ]
-  },
-  {
-    "Id": "Env_VCPKG_ROOT",
-    "Title": "VCPKG_ROOT|C:\\vcpkg",
     "Headers": [
       "Package Management",
       "Environment variables"
@@ -269,14 +261,14 @@
   },
   {
     "Id": "CodeQLBundle",
-    "Title": "CodeQL Action Bundle 2.11.0",
+    "Title": "CodeQL Action Bundle 2.11.1",
     "Headers": [
       "Tools"
     ]
   },
   {
     "Id": "Docker",
-    "Title": "Docker 20.10.19",
+    "Title": "Docker 20.10.20",
     "Headers": [
       "Tools"
     ]
@@ -290,7 +282,7 @@
   },
   {
     "Id": "DockerComposeV2",
-    "Title": "Docker Compose v2 2.11.2",
+    "Title": "Docker Compose v2 2.12.2",
     "Headers": [
       "Tools"
     ]
@@ -311,7 +303,7 @@
   },
   {
     "Id": "Git",
-    "Title": "Git 2.37.3.windows.1",
+    "Title": "Git 2.38.1.windows.1",
     "Headers": [
       "Tools"
     ]
@@ -472,21 +464,21 @@
   },
   {
     "Id": "ImageMagick",
-    "Title": "ImageMagick 7.1.0-50",
+    "Title": "ImageMagick 7.1.0-51",
     "Headers": [
       "Tools"
     ]
   },
   {
     "Id": "Alibaba",
-    "Title": "Alibaba Cloud CLI 3.0.131",
+    "Title": "Alibaba Cloud CLI 3.0.132",
     "Headers": [
       "CLI Tools"
     ]
   },
   {
     "Id": "AWSCLI",
-    "Title": "AWS CLI 2.8.3",
+    "Title": "AWS CLI 2.8.5",
     "Headers": [
       "CLI Tools"
     ]
@@ -521,7 +513,7 @@
   },
   {
     "Id": "GH",
-    "Title": "GitHub CLI 2.17.0",
+    "Title": "GitHub CLI 2.18.1",
     "Headers": [
       "CLI Tools"
     ]
@@ -625,21 +617,21 @@
   },
   {
     "Id": "MicrosoftEdge",
-    "Title": "Microsoft Edge 106.0.1370.47",
+    "Title": "Microsoft Edge 106.0.1370.52",
     "Headers": [
       "Browsers and webdrivers"
     ]
   },
   {
     "Id": "MicrosoftEdgeDriver",
-    "Title": "Microsoft Edge Driver 106.0.1370.47",
+    "Title": "Microsoft Edge Driver 106.0.1370.52",
     "Headers": [
       "Browsers and webdrivers"
     ]
   },
   {
     "Id": "MozillaFirefox",
-    "Title": "Mozilla Firefox 105.0.3",
+    "Title": "Mozilla Firefox 106.0.1",
     "Headers": [
       "Browsers and webdrivers"
     ]
@@ -820,7 +812,7 @@
   },
   {
     "Id": "Python_3.10.",
-    "Title": "3.10.7|x64, x86",
+    "Title": "3.10.8|x64, x86",
     "Headers": [
       "Cached Tools",
       "Python"
@@ -998,7 +990,7 @@
   },
   {
     "Id": "WebServers_Nginx",
-    "Title": "Nginx|1.23.1|C:\\tools\\nginx-1.23.1\\conf\\nginx.conf|nginx|Stopped|80",
+    "Title": "Nginx|1.23.2|C:\\tools\\nginx-1.23.2\\conf\\nginx.conf|nginx|Stopped|80",
     "Headers": [
       "Web Servers"
     ]
@@ -3439,14 +3431,14 @@
   },
   {
     "Id": "NET_Tools_nbgv",
-    "Title": "nbgv 3.5.113+a908c6d9d2",
+    "Title": "nbgv 3.5.119+5d25f54fec",
     "Headers": [
       ".NET tools"
     ]
   },
   {
     "Id": "PowerShellTools",
-    "Title": "PowerShell 7.2.6",
+    "Title": "PowerShell 7.2.7",
     "Headers": [
       "PowerShell Tools"
     ]
@@ -3477,7 +3469,7 @@
   },
   {
     "Id": "PowershellModule_AWSPowerShell",
-    "Title": "AWSPowerShell|4.1.186",
+    "Title": "AWSPowerShell|4.1.191",
     "Headers": [
       "PowerShell Tools",
       "Powershell Modules"
@@ -3525,7 +3517,7 @@
   },
   {
     "Id": "PowershellModule_PSScriptAnalyzer",
-    "Title": "PSScriptAnalyzer|1.20.0<br>1.21.0",
+    "Title": "PSScriptAnalyzer|1.21.0",
     "Headers": [
       "PowerShell Tools",
       "Powershell Modules"
