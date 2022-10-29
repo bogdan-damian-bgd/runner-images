@@ -12,7 +12,7 @@ function Get-JavaVersions {
         Descending = $false
     }
 
-    return $javaVersions | Sort-Object $sortRules | ForEach-Object {
+    $output = $javaVersions | Sort-Object $sortRules | ForEach-Object {
         $javaPath = $_.Value
         # Take semver from the java path
         # The path contains '-' sign in the version number instead of '+' due to the following issue, need to substitute it back https://github.com/actions/runner-images/issues/3014
@@ -26,6 +26,9 @@ function Get-JavaVersions {
             "Vendor" = $VendorName
             "Environment Variable" = $_.Name
         }
-        $Archive.Add($version + $defaultPostfix + "|$VendorName|$($_.Name)", "Java_$($_.Name)") | Out-Null
     }
+
+    $output | ForEach-Object { $Archive.Add("$($_.Version)|$($_.Vendor)|$($_."Environment Variable")", "Java_$($_."Environment Variable")") | Out-Null }
+
+    return $output
 }

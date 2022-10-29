@@ -93,7 +93,7 @@ function Build-AndroidTable {
         }
     }
 
-    $output | ForEach-Object { $Archive.Add("$($_."Package Name")|$($_.Version)", "Android_" + ($_."Package Name").Replace(" ", "")) } | Out-Null
+    $output | ForEach-Object { $Archive.Add("$($_."Package Name")|$($_.Version)", "Android_$($_."Package Name")".Replace(" ", "")) } | Out-Null
 
     return $output
 }

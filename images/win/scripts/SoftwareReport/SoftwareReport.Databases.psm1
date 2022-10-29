@@ -25,7 +25,7 @@ function Get-PostgreSQLMarkdown
     )
 
     $Archive.SetHeader($name, 4) | Out-Null
-    $content | ForEach-Object { $Archive.Add("$($_.Property)|$($_.Value)", $name + "_" + $_.Property) } | Out-Null
+    $content | ForEach-Object { $Archive.Add("$($_.Property)|$($_.Value)", "$($name)_$($_.Property)") } | Out-Null
 
     $contentMdTable = $content | New-MDTable
     Build-MarkdownElement -Head $name -Content $contentMdTable

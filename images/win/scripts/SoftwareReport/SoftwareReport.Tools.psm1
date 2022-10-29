@@ -299,7 +299,7 @@ function Get-VisualCPPComponents {
                 Architecture = $arch
                 Version = $version
             }
-            $Archive.Add("$name|$arch|$version", $name.Replace(" ","") + "_$arch") | Out-Null
+            $Archive.Add("$name|$arch|$version", "$($name)_$($arch)".Replace(" ", "")) | Out-Null
         }
     }
 }

@@ -71,7 +71,7 @@ function Get-VisualStudioExtensions {
     $output = $extensions | Foreach-Object {
         [PSCustomObject]$_
     } | Select-Object Package, Version | Sort-Object Package
-    $output | ForEach-Object { $Archive.Add("$($_.Package)|$($_.Version)", "VisualStudio_" + ($_.Package).Replace(" ", "")) } | Out-Null
+    $output | ForEach-Object { $Archive.Add("$($_.Package)|$($_.Version)", "VisualStudio_$($_.Package)".Replace(" ", "")) } | Out-Null
 
     return $output
 }
