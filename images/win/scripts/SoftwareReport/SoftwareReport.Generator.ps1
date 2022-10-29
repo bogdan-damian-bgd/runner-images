@@ -29,13 +29,10 @@ $markdown += New-MDList -Style Unordered -Lines @(
     $archive.Add("Image Version: $env:IMAGE_VERSION", "ImageVersion")
 )
 
-if ((Test-IsWin19) -or (Test-IsWin22))
-{
-    $markdown += New-MDHeader $archive.SetHeader("Enabled windows optional features", 2) -Level 2
-    $markdown += New-MDList -Style Unordered -Lines @(
-        $archive.Add("Windows Subsystem for Linux [WSLv1]", "WSL")
-    )
-}
+$markdown += New-MDHeader $archive.SetHeader("Enabled windows optional features", 2) -Level 2
+$markdown += New-MDList -Style Unordered -Lines @(
+    $archive.Add("Windows Subsystem for Linux [WSLv1]", "WSL")
+)
 
 $markdown += New-MDHeader $archive.SetHeader("Installed Software", 2) -Level 2
 $markdown += New-MDHeader $archive.SetHeader("Language and Runtime", 3) -Level 3
