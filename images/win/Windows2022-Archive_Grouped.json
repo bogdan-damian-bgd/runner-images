@@ -37,7 +37,7 @@
         "Perl": "Perl 5.32.1"
       },
       {
-        "PHP": "PHP 8.1.11"
+        "PHP": "PHP 8.1.12"
       },
       {
         "Python": "Python 3.9.13"
@@ -59,7 +59,7 @@
         "Conda": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)"
       },
       {
-        "Composer": "Composer 2.4.3"
+        "Composer": "Composer 2.4.4"
       },
       {
         "Helm": "Helm 3.10.0"
@@ -80,7 +80,7 @@
         "Ruby": "RubyGems 3.2.33"
       },
       {
-        "Vcpkg": "Vcpkg (build from master \\<455d8d85e>)"
+        "Vcpkg": "Vcpkg (build from master \\<c72cefb25>)"
       },
       {
         "Yarn": "Yarn 1.22.19"
@@ -137,10 +137,10 @@
         "CMake": "CMake 3.24.2"
       },
       {
-        "CodeQLBundle": "CodeQL Action Bundle 2.11.1"
+        "CodeQLBundle": "CodeQL Action Bundle 2.11.2"
       },
       {
-        "Docker": "Docker 20.10.20"
+        "Docker": "Docker 20.10.21"
       },
       {
         "DockerCompose": "Docker Compose v1 1.29.2"
@@ -167,7 +167,7 @@
         "JQ": "jq 1.6"
       },
       {
-        "Kind": "Kind 0.16.0"
+        "Kind": "Kind 0.17.0"
       },
       {
         "Kubectl": "Kubectl 1.25.3"
@@ -191,7 +191,7 @@
         "Packer": "Packer 1.8.2"
       },
       {
-        "Pulumi": "Pulumi v3.43.1"
+        "Pulumi": "Pulumi v3.44.2"
       },
       {
         "R": "R 4.2.1"
@@ -231,10 +231,10 @@
   {
     "CLI Tools": [
       {
-        "Alibaba": "Alibaba Cloud CLI 3.0.132"
+        "Alibaba": "Alibaba Cloud CLI 3.0.134"
       },
       {
-        "AWSCLI": "AWS CLI 2.8.5"
+        "AWSCLI": "AWS CLI 2.8.6"
       },
       {
         "AWSSAM": "AWS SAM CLI 1.60.0"
@@ -297,10 +297,10 @@
   {
     "Browsers and webdrivers": [
       {
-        "GoogleChrome": "Google Chrome 106.0.5249.119"
+        "GoogleChrome": "Google Chrome 107.0.5304.63"
       },
       {
-        "ChromeDriver": "Chrome Driver 106.0.5249.61"
+        "ChromeDriver": "Chrome Driver 107.0.5304.62"
       },
       {
         "MicrosoftEdge": "Microsoft Edge 106.0.1370.52"
@@ -309,7 +309,7 @@
         "MicrosoftEdgeDriver": "Microsoft Edge Driver 106.0.1370.52"
       },
       {
-        "MozillaFirefox": "Mozilla Firefox 106.0.1"
+        "MozillaFirefox": "Mozilla Firefox 106.0.2"
       },
       {
         "GeckoDriver": "Gecko Driver 0.32.0"
@@ -344,10 +344,10 @@
         "Java_JAVA_HOME_8_X64": "8.0.345+1 (default)|Eclipse Temurin|JAVA_HOME_8_X64"
       },
       {
-        "Java_JAVA_HOME_11_X64": "11.0.16+101|Eclipse Temurin|JAVA_HOME_11_X64"
+        "Java_JAVA_HOME_11_X64": "11.0.17+8|Eclipse Temurin|JAVA_HOME_11_X64"
       },
       {
-        "Java_JAVA_HOME_17_X64": "17.0.4+101|Eclipse Temurin|JAVA_HOME_17_X64"
+        "Java_JAVA_HOME_17_X64": "17.0.5+8|Eclipse Temurin|JAVA_HOME_17_X64"
       }
     ]
   },
@@ -393,7 +393,10 @@
         "Node_14.20.": "14.20.1|x64"
       },
       {
-        "Node_16.17.": "16.17.1|x64"
+        "Node_16.18.": "16.18.0|x64"
+      },
+      {
+        "Node_18.12.": "18.12.0|x64"
       }
     ]
   },
@@ -410,6 +413,9 @@
       },
       {
         "Python_3.10.": "3.10.8|x64, x86"
+      },
+      {
+        "Python_3.11.": "3.11.0|x64, x86"
       }
     ]
   },
@@ -1479,7 +1485,7 @@
   {
     "PowerShell Tools | Powershell Modules": [
       {
-        "PowershellModule_AWSPowerShell": "AWSPowerShell|4.1.191"
+        "PowershellModule_AWSPowerShell": "AWSPowerShell|4.1.194"
       },
       {
         "PowershellModule_DockerMsftProvider": "DockerMsftProvider|1.0.0.8"

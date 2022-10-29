@@ -64,7 +64,7 @@
   },
   {
     "Id": "PHP",
-    "Title": "PHP 8.1.11",
+    "Title": "PHP 8.1.12",
     "Headers": [
       "Language and Runtime"
     ]
@@ -106,7 +106,7 @@
   },
   {
     "Id": "Composer",
-    "Title": "Composer 2.4.3",
+    "Title": "Composer 2.4.4",
     "Headers": [
       "Package Management"
     ]
@@ -155,7 +155,7 @@
   },
   {
     "Id": "Vcpkg",
-    "Title": "Vcpkg (build from master \\<455d8d85e>)",
+    "Title": "Vcpkg (build from master \\<c72cefb25>)",
     "Headers": [
       "Package Management"
     ]
@@ -261,14 +261,14 @@
   },
   {
     "Id": "CodeQLBundle",
-    "Title": "CodeQL Action Bundle 2.11.1",
+    "Title": "CodeQL Action Bundle 2.11.2",
     "Headers": [
       "Tools"
     ]
   },
   {
     "Id": "Docker",
-    "Title": "Docker 20.10.20",
+    "Title": "Docker 20.10.21",
     "Headers": [
       "Tools"
     ]
@@ -331,7 +331,7 @@
   },
   {
     "Id": "Kind",
-    "Title": "Kind 0.16.0",
+    "Title": "Kind 0.17.0",
     "Headers": [
       "Tools"
     ]
@@ -387,7 +387,7 @@
   },
   {
     "Id": "Pulumi",
-    "Title": "Pulumi v3.43.1",
+    "Title": "Pulumi v3.44.2",
     "Headers": [
       "Tools"
     ]
@@ -471,14 +471,14 @@
   },
   {
     "Id": "Alibaba",
-    "Title": "Alibaba Cloud CLI 3.0.132",
+    "Title": "Alibaba Cloud CLI 3.0.134",
     "Headers": [
       "CLI Tools"
     ]
   },
   {
     "Id": "AWSCLI",
-    "Title": "AWS CLI 2.8.5",
+    "Title": "AWS CLI 2.8.6",
     "Headers": [
       "CLI Tools"
     ]
@@ -603,14 +603,14 @@
   },
   {
     "Id": "GoogleChrome",
-    "Title": "Google Chrome 106.0.5249.119",
+    "Title": "Google Chrome 107.0.5304.63",
     "Headers": [
       "Browsers and webdrivers"
     ]
   },
   {
     "Id": "ChromeDriver",
-    "Title": "Chrome Driver 106.0.5249.61",
+    "Title": "Chrome Driver 107.0.5304.62",
     "Headers": [
       "Browsers and webdrivers"
     ]
@@ -631,7 +631,7 @@
   },
   {
     "Id": "MozillaFirefox",
-    "Title": "Mozilla Firefox 106.0.1",
+    "Title": "Mozilla Firefox 106.0.2",
     "Headers": [
       "Browsers and webdrivers"
     ]
@@ -698,14 +698,14 @@
   },
   {
     "Id": "Java_JAVA_HOME_11_X64",
-    "Title": "11.0.16+101|Eclipse Temurin|JAVA_HOME_11_X64",
+    "Title": "11.0.17+8|Eclipse Temurin|JAVA_HOME_11_X64",
     "Headers": [
       "Java"
     ]
   },
   {
     "Id": "Java_JAVA_HOME_17_X64",
-    "Title": "17.0.4+101|Eclipse Temurin|JAVA_HOME_17_X64",
+    "Title": "17.0.5+8|Eclipse Temurin|JAVA_HOME_17_X64",
     "Headers": [
       "Java"
     ]
@@ -779,8 +779,16 @@
     ]
   },
   {
-    "Id": "Node_16.17.",
-    "Title": "16.17.1|x64",
+    "Id": "Node_16.18.",
+    "Title": "16.18.0|x64",
+    "Headers": [
+      "Cached Tools",
+      "Node"
+    ]
+  },
+  {
+    "Id": "Node_18.12.",
+    "Title": "18.12.0|x64",
     "Headers": [
       "Cached Tools",
       "Node"
@@ -813,6 +821,14 @@
   {
     "Id": "Python_3.10.",
     "Title": "3.10.8|x64, x86",
+    "Headers": [
+      "Cached Tools",
+      "Python"
+    ]
+  },
+  {
+    "Id": "Python_3.11.",
+    "Title": "3.11.0|x64, x86",
     "Headers": [
       "Cached Tools",
       "Python"
@@ -3469,7 +3485,7 @@
   },
   {
     "Id": "PowershellModule_AWSPowerShell",
-    "Title": "AWSPowerShell|4.1.191",
+    "Title": "AWSPowerShell|4.1.194",
     "Headers": [
       "PowerShell Tools",
       "Powershell Modules"
