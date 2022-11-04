@@ -323,6 +323,6 @@ if ($cachedImages) {
 }
 
 Test-BlankElement -Markdown $markdown
-$markdown | Out-File -FilePath "C:\InstalledSoftware3.md"
-$archive.ToJson() | Out-File -FilePath "C:\InstalledSoftwareArchive-Table.json"
-$archive.ToJsonGrouped() | Out-File -FilePath "C:\InstalledSoftwareArchive-Grouped.json"
+$markdown | Out-File -FilePath "C:\InstalledSoftware.md"
+$archive.ToJson() | Out-File -FilePath "C:\InstalledSoftware-Archive-Table.json"
+$archive.ToJsonGrouped() | Out-File -FilePath "C:\InstalledSoftware-Archive-Grouped.json"
