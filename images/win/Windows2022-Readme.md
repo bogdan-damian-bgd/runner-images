@@ -1,6 +1,11 @@
+| Announcements |
+|-|
+| [[all OSs] Nodejs 12.x will be removed from the images on November, 14](https://github.com/actions/runner-images/issues/6482) |
+| [[all OSs] The VCPKG_ROOT variable will be removed from runner images](https://github.com/actions/runner-images/issues/6376) |
+***
 # Microsoft Windows Server 2022 Datacenter
 - OS Version: 10.0.20348 Build 1129
-- Image Version: 
+- Image Version: 20221027.1
 
 ## Enabled windows optional features
 - Windows Subsystem for Linux [WSLv1]
@@ -28,7 +33,7 @@
 - pip 22.3 (python 3.9)
 - Pipx 1.1.0
 - RubyGems 3.2.33
-- Vcpkg (build from master \<c72cefb25>)
+- Vcpkg (build from master \<48cc0c71e>)
 - Yarn 1.22.19
 
 #### Environment variables
@@ -85,7 +90,7 @@
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.134
 - AWS CLI 2.8.6
-- AWS SAM CLI 1.60.0
+- AWS SAM CLI 1.61.0
 - AWS Session Manager CLI 1.2.398.0
 - Azure CLI 2.41.0
 - Azure DevOps CLI extension 0.25.0
@@ -107,7 +112,7 @@
 - Rustfmt 1.5.1
 
 ### Browsers and webdrivers
-- Google Chrome 107.0.5304.63
+- Google Chrome 107.0.5304.88
 - Chrome Driver 107.0.5304.62
 - Microsoft Edge 106.0.1370.52
 - Microsoft Edge Driver 106.0.1370.52
@@ -571,7 +576,7 @@ All other versions are saved but not installed.
 | AWSPowerShell      | 4.1.194          |
 | DockerMsftProvider | 1.0.0.8          |
 | MarkdownPS         | 1.9              |
-| Microsoft.Graph    | 1.13.0           |
+| Microsoft.Graph    | 1.14.0           |
 | Pester             | 3.4.0<br>5.3.3   |
 | PowerShellGet      | 1.0.0.1<br>2.2.5 |
 | PSScriptAnalyzer   | 1.21.0           |
