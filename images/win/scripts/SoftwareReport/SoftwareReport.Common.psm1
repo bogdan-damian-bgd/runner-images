@@ -1,4 +1,4 @@
-using module ./SoftwareReport.Helpers.psm1
+using module ./../SoftwareReport/SoftwareReport.Helpers.psm1
 
 function Initialize-RustEnvironment {
     $env:RUSTUP_HOME = "C:\Users\Default\.rustup"

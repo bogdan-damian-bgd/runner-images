@@ -1,4 +1,4 @@
-using module ./SoftwareReport.Helpers.psm1
+using module ./../SoftwareReport/SoftwareReport.Helpers.psm1
 
 function Get-Aria2Version {
     (aria2c -v | Out-String) -match "(?<version>(\d+\.){1,}\d+)" | Out-Null
