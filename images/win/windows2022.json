@@ -281,15 +281,10 @@
             "type": "powershell",
             "pause_before": "2m",
             "scripts": [
-                "{{ template_dir }}/scripts/Installers/Wait-WindowsUpdatesForInstall.ps1"
+                "{{ template_dir }}/scripts/Installers/Wait-WindowsUpdatesForInstall.ps1",
+                "{{ template_dir }}/scripts/Tests/RunAll-Tests.ps1"
             ]
         },
-        {
-            "type": "powershell",
-            "inline": [
-                "pwsh -File '{{user `image_folder`}}\\Tests\\RunAll-Tests.ps1"
-            ]
-        },        
         {
             "type": "powershell",
             "inline": [
