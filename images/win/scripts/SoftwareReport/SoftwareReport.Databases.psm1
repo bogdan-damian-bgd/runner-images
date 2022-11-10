@@ -1,5 +1,9 @@
 function Get-PostgreSQLMarkdown
 {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $name = "PostgreSQL"
     $pgService = Get-CimInstance Win32_Service -Filter "Name LIKE 'postgresql-%'"
     $pgPath = $pgService.PathName
@@ -16,13 +20,21 @@ function Get-PostgreSQLMarkdown
         [PSCustomObject]@{ Property = "Path"; Value = $pgRoot },
         [PSCustomObject]@{ Property = "UserName"; Value = $env:PGUSER },
         [PSCustomObject]@{ Property = "Password"; Value = $env:PGPASSWORD }
-    ) | New-MDTable
+    )
 
-    Build-MarkdownElement -Head $name -Content $content
+    $Archive.SetHeader($name, 4) | Out-Null
+    $content | ForEach-Object { $Archive.Add("$($_.Property)|$($_.Value)", "$($name)_$($_.Property)") } | Out-Null
+
+    $contentMdTable = $content | New-MDTable
+    Build-MarkdownElement -Head $name -Content $contentMdTable
 }
 
 function Get-MongoDBMarkdown
 {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $name = "MongoDB"
     $mongoService = Get-Service -Name $name
     $mongoVersion = (Get-Command -Name 'mongo').Version.ToString()
@@ -31,14 +43,23 @@ function Get-MongoDBMarkdown
         ServiceName = $name
         ServiceStatus = $mongoService.Status
         ServiceStartType = $mongoService.StartType
-    } | New-MDTable
-    Build-MarkdownElement -Head $name -Content $content
+    }
+
+    $Archive.SetHeader($name, 4) | Out-Null
+    $Archive.Add("$($content.Version)|$($content.ServiceName)|$($content.ServiceStatus)|$($content.ServiceStartType)", $name) | Out-Null
+
+    $contentMdTable = $content | New-MDTable
+    Build-MarkdownElement -Head $name -Content $contentMdTable
 }
 
 function Build-DatabasesMarkdown
 {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $markdown = ""
-    $markdown += Get-PostgreSQLMarkdown
-    $markdown += Get-MongoDBMarkdown
+    $markdown += Get-PostgreSQLMarkdown $Archive
+    $markdown += Get-MongoDBMarkdown $Archive
     $markdown
 }

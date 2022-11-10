@@ -141,14 +141,20 @@ function Get-NVMNodeVersionList {
 }
 
 function Build-OSInfoSection {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $fieldsToInclude = @("System Version:", "Kernel Version:")
     $rawSystemInfo = Invoke-Expression "system_profiler SPSoftwareDataType"
     $parsedSystemInfo = $rawSystemInfo | Where-Object { -not ($_ | Select-String -NotMatch $fieldsToInclude) } | ForEach-Object { $_.Trim() }
     $output = ""
     $parsedSystemInfo[0] -match "System Version: macOS (?<version>\d+\.\d+)" | Out-Null
     $version = $Matches.Version
-    $output += New-MDHeader "macOS $version info" -Level 1
+    $output += New-MDHeader $Archive.SetHeader("macOS $version info", 1) -Level 1
     $output += New-MDList -Style Unordered -Lines $parsedSystemInfo -NoNewLine
+    $Archive.Add($parsedSystemInfo[0], "SystemVersion") | Out-Null
+    $Archive.Add($parsedSystemInfo[1], "KernelVersion") | Out-Null
     return $output
 }
 
@@ -554,6 +560,10 @@ function Get-ImageMagickVersion {
 }
 
 function Build-PackageManagementEnvironmentTable {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     return @(
         @{
             "Name" = "CONDA"
@@ -568,10 +578,15 @@ function Build-PackageManagementEnvironmentTable {
             "Name" = $_.Name
             "Value" = $_.Value
         }
+        $Archive.Add("$($_.Name)|$($_.Value)", "Env_$($_.Name)") | Out-Null
     }
 }
 
 function Build-MiscellaneousEnvironmentTable {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     return @(
         @{
             "Name" = "PARALLELS_DMG_URL"
@@ -582,6 +597,7 @@ function Build-MiscellaneousEnvironmentTable {
             "Name" = $_.Name
             "Value" = $_.Value
         }
+        $Archive.Add("$($_.Name)|$($_.Value)", "Env_$($_.Name)") | Out-Null
     }
 }
 
@@ -591,13 +607,21 @@ function Get-GraalVMVersion {
 }
 
 function Build-GraalVMTable {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $version = Get-GraalVMVersion
     $envVariables = "GRAALVM_11_ROOT"
 
-    return [PSCustomObject] @{
+    $output = [PSCustomObject] @{
         "Version" = $version
         "Environment variables" = $envVariables
     }
+
+    $Archive.Add("$($output.Version)|$($output."Environment variables")", "GraalVM_$($_."Environment variables")") | Out-Null
+
+    return $output
 }
 
 function Get-CodeQLBundleVersion {

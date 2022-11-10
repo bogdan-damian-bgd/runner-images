@@ -29,13 +29,20 @@ function Get-NginxVersion {
 }
 
 function Build-WebServersSection {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $output = ""
-    $output += New-MDHeader "Web Servers" -Level 3
-    $output += @(
+    $output += New-MDHeader $archive.SetHeader("Web Servers", 3) -Level 3
+    $servers += @(
         (Get-ApacheVersion),
         (Get-NginxVersion)
-    ) | Sort-Object Name | New-MDTable
-
+    )
+    $output += $servers | Sort-Object Name | New-MDTable
     $output += New-MDNewLine
+
+    $servers | ForEach-Object { $Archive.Add("$($_.Name)|$($_.Version)|$($_.ConfigFile)|$($_.ServiceStatus)|$($_.ListenPort)", "WebServers_$($_.Name)") } | Out-Null
+
     return $output
 }

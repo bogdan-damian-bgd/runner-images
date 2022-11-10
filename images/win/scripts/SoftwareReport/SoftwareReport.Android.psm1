@@ -27,8 +27,12 @@ function Get-AndroidInstalledPackages {
 }
 
 function Build-AndroidTable {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $packageInfo = Get-AndroidInstalledPackages
-    return @(
+    $output = @(
         @{
             "Package" = "Android Command Line Tools"
             "Version" = Get-AndroidCommandLineToolsVersion
@@ -87,6 +91,10 @@ function Build-AndroidTable {
             "Version" = $_.Version
         }
     }
+
+    $output | ForEach-Object { $Archive.Add("$($_."Package Name")|$($_.Version)", "Android_$($_."Package Name")".Replace(" ", "")) } | Out-Null
+
+    return $output
 }
 
 function Get-AndroidPackageVersions {
@@ -177,13 +185,21 @@ function Get-AndroidNdkVersions {
 }
 
 function Build-AndroidEnvironmentTable {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $androidVersions = Get-Item env:ANDROID_*
 
     $shoulddResolveLink = 'ANDROID_NDK', 'ANDROID_NDK_HOME', 'ANDROID_NDK_ROOT', 'ANDROID_NDK_LATEST_HOME'
-    return $androidVersions | Sort-Object -Property Name | ForEach-Object {
+    $output = $androidVersions | Sort-Object -Property Name | ForEach-Object {
         [PSCustomObject] @{
             "Name" = $_.Name
             "Value" = if ($shoulddResolveLink.Contains($_.Name )) { Get-PathWithLink($_.Value) } else {$_.Value}
         }
     }
+
+    $output | ForEach-Object { $Archive.Add("$($_.Name)|$($_.Value)", "Env_$($_.Name)") } | Out-Null
+
+    return $output
 }

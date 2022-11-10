@@ -277,6 +277,10 @@ function Get-GHVersion {
 }
 
 function Get-VisualCPPComponents {
+    param (
+        [ArchiveItems] $Archive
+    )
+
     $regKeys = @(
         "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*"
         "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*"
@@ -293,6 +297,7 @@ function Get-VisualCPPComponents {
                 Architecture = $arch
                 Version = $version
             }
+            $Archive.Add("$name|$arch|$version", "$($name)_$($arch)".Replace(" ", "")) | Out-Null
         }
     }
 }
