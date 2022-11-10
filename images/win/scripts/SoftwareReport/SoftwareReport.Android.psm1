@@ -1,4 +1,4 @@
-using module ./../SoftwareReport/SoftwareReport.Helpers.psm1
+#using module ./../SoftwareReport/SoftwareReport.Helpers.psm1
 Import-Module (Join-Path $PSScriptRoot "SoftwareReport.Helpers.psm1") -DisableNameChecking
 
 function Split-TableRowByColumns {
