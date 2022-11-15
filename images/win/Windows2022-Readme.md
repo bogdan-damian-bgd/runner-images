@@ -616,6 +616,5 @@ All other versions are saved but not installed.
 | mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022 | sha256:73956aba99a6ee0b867774c2b5faeec11b153329f43c8c729c2c27a2024c4b98  | 2022-10-11 |
 | mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022     | sha256:42b5c55b4918f3c56ec4a5e6a1b0735b624941bd885a13c12e30dc7a81ba2fb6  | 2022-10-11 |
 | mcr.microsoft.com/windows/nanoserver:ltsc2022                             | sha256:fefb912e2942912f1cd55bfe6bbb697a601a7787caf5c1875aaf105c86a28027  | 2022-10-07 |
-| mcr.microsoft.com/windows/servercore:ltsc2022                             | sha256:6983a9d56e4d8d1fac3819e4bed8ff537400ea21150b9d65bfbdc0ef3c27c99c  | 2022-10-07 |
-
+| mcr.microsoft.com/windows/servercore:ltsc2022                             | sha256:6983a9d56e4d8d1fac3819e4bed8ff537400ea21150b9d65bfbdc0ef3c27c99c  | 2022-10-08 |
 

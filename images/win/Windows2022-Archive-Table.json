@@ -1,0 +1,3726 @@
+[
+  {
+    "Id": "OSVersion",
+    "Title": "OS Version: 10.0.20348 Build 1129",
+    "Headers": [
+      "Microsoft Windows Server 2022 Datacenter"
+    ]
+  },
+  {
+    "Id": "ImageVersion",
+    "Title": "Image Version: ",
+    "Headers": [
+      "Microsoft Windows Server 2022 Datacenter"
+    ]
+  },
+  {
+    "Id": "WSL",
+    "Title": "Windows Subsystem for Linux [WSLv1]",
+    "Headers": [
+      "Enabled windows optional features"
+    ]
+  },
+  {
+    "Id": "Bash",
+    "Title": "Bash 5.1.16(1)-release",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Go",
+    "Title": "Go 1.17.13",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Julia",
+    "Title": "Julia 1.8.2",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "LLVM",
+    "Title": "LLVM 14.0.6",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Node",
+    "Title": "Node 16.18.0",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Perl",
+    "Title": "Perl 5.32.1",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "PHP",
+    "Title": "PHP 8.1.12",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Python",
+    "Title": "Python 3.9.13",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Ruby",
+    "Title": "Ruby 3.0.4p208",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Kotlin",
+    "Title": "Kotlin 1.7.20",
+    "Headers": [
+      "Language and Runtime"
+    ]
+  },
+  {
+    "Id": "Choco",
+    "Title": "Chocolatey 1.2.0",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Conda",
+    "Title": "Miniconda 4.12.0 (pre-installed on the image but not added to PATH)",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Composer",
+    "Title": "Composer 2.4.4",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Helm",
+    "Title": "Helm 3.10.0",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "NPM",
+    "Title": "NPM 8.19.2",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Nuget",
+    "Title": "NuGet 6.3.1.1",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Pipx",
+    "Title": "Pipx 1.1.0",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Pip",
+    "Title": "pip 22.3 (python 3.9)",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Ruby",
+    "Title": "RubyGems 3.2.33",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Vcpkg",
+    "Title": "Vcpkg (build from master \\<c72cefb25>)",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Yarn",
+    "Title": "Yarn 1.22.19",
+    "Headers": [
+      "Package Management"
+    ]
+  },
+  {
+    "Id": "Env_VCPKG_INSTALLATION_ROOT",
+    "Title": "VCPKG_INSTALLATION_ROOT|C:\\vcpkg",
+    "Headers": [
+      "Package Management",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Ant",
+    "Title": "Ant 1.10.12",
+    "Headers": [
+      "Project Management"
+    ]
+  },
+  {
+    "Id": "Gradle",
+    "Title": "Gradle 7.5",
+    "Headers": [
+      "Project Management"
+    ]
+  },
+  {
+    "Id": "Maven",
+    "Title": "Maven 3.8.6",
+    "Headers": [
+      "Project Management"
+    ]
+  },
+  {
+    "Id": "Sbt",
+    "Title": "sbt 1.7.2",
+    "Headers": [
+      "Project Management"
+    ]
+  },
+  {
+    "Id": "7zip",
+    "Title": "7zip 22.01",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Aria2",
+    "Title": "aria2 1.36.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "AzCopy",
+    "Title": "azcopy 10.16.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Bazel",
+    "Title": "Bazel 5.3.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Bazelisk",
+    "Title": "Bazelisk 1.13.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Bicep",
+    "Title": "Bicep 0.11.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Cabal",
+    "Title": "Cabal 3.8.1.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "CMake",
+    "Title": "CMake 3.24.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "CodeQLBundle",
+    "Title": "CodeQL Action Bundle 2.11.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Docker",
+    "Title": "Docker 20.10.21",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "DockerCompose",
+    "Title": "Docker Compose v1 1.29.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "DockerComposeV2",
+    "Title": "Docker Compose v2 2.12.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "DockerWincred",
+    "Title": "Docker-wincred 0.7.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "GHC",
+    "Title": "ghc 9.4.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Git",
+    "Title": "Git 2.38.1.windows.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "GitLFS",
+    "Title": "Git LFS 3.2.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "InnoSetup",
+    "Title": "InnoSetup 6.2.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "JQ",
+    "Title": "jq 1.6",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Kind",
+    "Title": "Kind 0.17.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Kubectl",
+    "Title": "Kubectl 1.25.3",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Mercurial",
+    "Title": "Mercurial 5.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "MinGW",
+    "Title": "Mingw-w64 11.2.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Newman",
+    "Title": "Newman 5.3.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "NSIS",
+    "Title": "NSIS v3.08",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "OpenSSL",
+    "Title": "OpenSSL 1.1.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Packer",
+    "Title": "Packer 1.8.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Pulumi",
+    "Title": "Pulumi v3.44.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "R",
+    "Title": "R 4.2.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "ServiceFabricSDK",
+    "Title": "Service Fabric SDK 9.0.1028.9590",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Stack",
+    "Title": "Stack 2.9.1",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "SVN",
+    "Title": "Subversion (SVN) 1.14.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "VSWhere",
+    "Title": "VSWhere 3.0.3",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Swig",
+    "Title": "Swig 4.0.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "WinApp",
+    "Title": "WinAppDriver 1.2.2009.02003",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Wix",
+    "Title": "WiX Toolset v3.11.2.4516",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Zstd",
+    "Title": "zstd 1.5.2",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "YAMLLint",
+    "Title": "yamllint 1.28.0",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "ImageMagick",
+    "Title": "ImageMagick 7.1.0-51",
+    "Headers": [
+      "Tools"
+    ]
+  },
+  {
+    "Id": "Alibaba",
+    "Title": "Alibaba Cloud CLI 3.0.134",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "AWSCLI",
+    "Title": "AWS CLI 2.8.6",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "AWSSAM",
+    "Title": "AWS SAM CLI 1.60.0",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "AWSSessionManager",
+    "Title": "AWS Session Manager CLI 1.2.398.0",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "AzureCLI",
+    "Title": "Azure CLI 2.41.0",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "AzureDevopsExt",
+    "Title": "Azure DevOps CLI extension 0.25.0",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "GH",
+    "Title": "GitHub CLI 2.18.1",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "Hub",
+    "Title": "Hub CLI 2.14.2",
+    "Headers": [
+      "CLI Tools"
+    ]
+  },
+  {
+    "Id": "Rust",
+    "Title": "Rust 1.64.0",
+    "Headers": [
+      "Rust Tools"
+    ]
+  },
+  {
+    "Id": "Rustup",
+    "Title": "Rustup 1.25.1",
+    "Headers": [
+      "Rust Tools"
+    ]
+  },
+  {
+    "Id": "Cargo",
+    "Title": "Cargo 1.64.0",
+    "Headers": [
+      "Rust Tools"
+    ]
+  },
+  {
+    "Id": "Rustdoc",
+    "Title": "Rustdoc 1.64.0",
+    "Headers": [
+      "Rust Tools"
+    ]
+  },
+  {
+    "Id": "Bindgen",
+    "Title": "bindgen 0.61.0",
+    "Headers": [
+      "Rust Tools",
+      "Packages"
+    ]
+  },
+  {
+    "Id": "CargoAudit",
+    "Title": "cargo-audit 0.17.2",
+    "Headers": [
+      "Rust Tools",
+      "Packages"
+    ]
+  },
+  {
+    "Id": "CargoOutdated",
+    "Title": "cargo-outdated 0.11.1",
+    "Headers": [
+      "Rust Tools",
+      "Packages"
+    ]
+  },
+  {
+    "Id": "Cbindgen",
+    "Title": "cbindgen 0.24.3",
+    "Headers": [
+      "Rust Tools",
+      "Packages"
+    ]
+  },
+  {
+    "Id": "Rustfmt",
+    "Title": "Rustfmt 1.5.1",
+    "Headers": [
+      "Rust Tools",
+      "Packages"
+    ]
+  },
+  {
+    "Id": "Clippy",
+    "Title": "Clippy 0.1.64",
+    "Headers": [
+      "Rust Tools",
+      "Packages"
+    ]
+  },
+  {
+    "Id": "GoogleChrome",
+    "Title": "Google Chrome 107.0.5304.63",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "ChromeDriver",
+    "Title": "Chrome Driver 107.0.5304.62",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "MicrosoftEdge",
+    "Title": "Microsoft Edge 106.0.1370.52",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "MicrosoftEdgeDriver",
+    "Title": "Microsoft Edge Driver 106.0.1370.52",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "MozillaFirefox",
+    "Title": "Mozilla Firefox 106.0.2",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "GeckoDriver",
+    "Title": "Gecko Driver 0.32.0",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "IEDriver",
+    "Title": "IE Driver 3.150.1.1",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "SeleniumServer",
+    "Title": "Selenium server 4.5.0",
+    "Headers": [
+      "Browsers and webdrivers"
+    ]
+  },
+  {
+    "Id": "Env_CHROMEWEBDRIVER",
+    "Title": "CHROMEWEBDRIVER|C:\\SeleniumWebDrivers\\ChromeDriver",
+    "Headers": [
+      "Browsers and webdrivers",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_EDGEWEBDRIVER",
+    "Title": "EDGEWEBDRIVER|C:\\SeleniumWebDrivers\\EdgeDriver",
+    "Headers": [
+      "Browsers and webdrivers",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_GECKOWEBDRIVER",
+    "Title": "GECKOWEBDRIVER|C:\\SeleniumWebDrivers\\GeckoDriver",
+    "Headers": [
+      "Browsers and webdrivers",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_SELENIUM_JAR_PATH",
+    "Title": "SELENIUM_JAR_PATH|C:\\selenium\\selenium-server.jar",
+    "Headers": [
+      "Browsers and webdrivers",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Java_JAVA_HOME_8_X64",
+    "Title": "8.0.345+1 (default)|Eclipse Temurin|JAVA_HOME_8_X64",
+    "Headers": [
+      "Java"
+    ]
+  },
+  {
+    "Id": "Java_JAVA_HOME_11_X64",
+    "Title": "11.0.17+8|Eclipse Temurin|JAVA_HOME_11_X64",
+    "Headers": [
+      "Java"
+    ]
+  },
+  {
+    "Id": "Java_JAVA_HOME_17_X64",
+    "Title": "17.0.5+8|Eclipse Temurin|JAVA_HOME_17_X64",
+    "Headers": [
+      "Java"
+    ]
+  },
+  {
+    "Id": "Shell_gitbash.exe",
+    "Title": "gitbash.exe|C:\\Program Files\\Git\\bin\\bash.exe",
+    "Headers": [
+      "Shells"
+    ]
+  },
+  {
+    "Id": "Shell_msys2bash.cmd",
+    "Title": "msys2bash.cmd|C:\\msys64\\usr\\bin\\bash.exe",
+    "Headers": [
+      "Shells"
+    ]
+  },
+  {
+    "Id": "Shell_wslbash.exe",
+    "Title": "wslbash.exe|C:\\Windows\\System32\\bash.exe",
+    "Headers": [
+      "Shells"
+    ]
+  },
+  {
+    "Id": "Pacman",
+    "Title": "Pacman 6.0.1",
+    "Headers": [
+      "MSYS2"
+    ]
+  },
+  {
+    "Id": "Go_GOROOT_1_17_X64",
+    "Title": "1.17.13 (Default)|x64|GOROOT_1_17_X64",
+    "Headers": [
+      "Cached Tools",
+      "Go"
+    ]
+  },
+  {
+    "Id": "Go_GOROOT_1_18_X64",
+    "Title": "1.18.7|x64|GOROOT_1_18_X64",
+    "Headers": [
+      "Cached Tools",
+      "Go"
+    ]
+  },
+  {
+    "Id": "Go_GOROOT_1_19_X64",
+    "Title": "1.19.2|x64|GOROOT_1_19_X64",
+    "Headers": [
+      "Cached Tools",
+      "Go"
+    ]
+  },
+  {
+    "Id": "Node_12.22.",
+    "Title": "12.22.12|x64",
+    "Headers": [
+      "Cached Tools",
+      "Node"
+    ]
+  },
+  {
+    "Id": "Node_14.20.",
+    "Title": "14.20.1|x64",
+    "Headers": [
+      "Cached Tools",
+      "Node"
+    ]
+  },
+  {
+    "Id": "Node_16.18.",
+    "Title": "16.18.0|x64",
+    "Headers": [
+      "Cached Tools",
+      "Node"
+    ]
+  },
+  {
+    "Id": "Node_18.12.",
+    "Title": "18.12.0|x64",
+    "Headers": [
+      "Cached Tools",
+      "Node"
+    ]
+  },
+  {
+    "Id": "Python_3.7.",
+    "Title": "3.7.9|x64, x86",
+    "Headers": [
+      "Cached Tools",
+      "Python"
+    ]
+  },
+  {
+    "Id": "Python_3.8.",
+    "Title": "3.8.10|x64, x86",
+    "Headers": [
+      "Cached Tools",
+      "Python"
+    ]
+  },
+  {
+    "Id": "Python_3.9.",
+    "Title": "3.9.13 (Default)|x64, x86",
+    "Headers": [
+      "Cached Tools",
+      "Python"
+    ]
+  },
+  {
+    "Id": "Python_3.10.",
+    "Title": "3.10.8|x64, x86",
+    "Headers": [
+      "Cached Tools",
+      "Python"
+    ]
+  },
+  {
+    "Id": "Python_3.11.",
+    "Title": "3.11.0|x64, x86",
+    "Headers": [
+      "Cached Tools",
+      "Python"
+    ]
+  },
+  {
+    "Id": "Ruby_2.7.",
+    "Title": "2.7.6|x64",
+    "Headers": [
+      "Cached Tools",
+      "Ruby"
+    ]
+  },
+  {
+    "Id": "Ruby_3.0.",
+    "Title": "3.0.4 (Default)|x64",
+    "Headers": [
+      "Cached Tools",
+      "Ruby"
+    ]
+  },
+  {
+    "Id": "Ruby_3.1.",
+    "Title": "3.1.2|x64",
+    "Headers": [
+      "Cached Tools",
+      "Ruby"
+    ]
+  },
+  {
+    "Id": "PyPy_2.7.",
+    "Title": "2.7.18|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)",
+    "Headers": [
+      "Cached Tools",
+      "PyPy"
+    ]
+  },
+  {
+    "Id": "PyPy_3.7.",
+    "Title": "3.7.13|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)",
+    "Headers": [
+      "Cached Tools",
+      "PyPy"
+    ]
+  },
+  {
+    "Id": "PyPy_3.8.",
+    "Title": "3.8.12|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)",
+    "Headers": [
+      "Cached Tools",
+      "PyPy"
+    ]
+  },
+  {
+    "Id": "PyPy_3.9.",
+    "Title": "3.9.10|PyPy 7.3.9 with MSC v.1929 64 bit (AMD64)",
+    "Headers": [
+      "Cached Tools",
+      "PyPy"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_ServiceName",
+    "Title": "ServiceName|postgresql-x64-14",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_Version",
+    "Title": "Version|14.5",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_ServiceStatus",
+    "Title": "ServiceStatus|Stopped",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_ServiceStartType",
+    "Title": "ServiceStartType|Disabled",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_EnvironmentVariables",
+    "Title": "EnvironmentVariables|PGBIN=C:\\Program Files\\PostgreSQL\\14\\bin <br> PGDATA=C:\\Program Files\\PostgreSQL\\14\\data <br> PGROOT=C:\\Program Files\\PostgreSQL\\14 ",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_Path",
+    "Title": "Path|C:\\Program Files\\PostgreSQL\\14",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_UserName",
+    "Title": "UserName|postgres",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "PostgreSQL_Password",
+    "Title": "Password|root",
+    "Headers": [
+      "Databases",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "Id": "MongoDB",
+    "Title": "5.0.13.0|MongoDB|Stopped|Disabled",
+    "Headers": [
+      "Databases",
+      "MongoDB"
+    ]
+  },
+  {
+    "Id": "AzCosmosDBEmulator",
+    "Title": "Azure CosmosDb Emulator 2.14.9.0",
+    "Headers": [
+      "Database tools"
+    ]
+  },
+  {
+    "Id": "DacFx",
+    "Title": "DacFx 16.0.6296.0",
+    "Headers": [
+      "Database tools"
+    ]
+  },
+  {
+    "Id": "MySQL",
+    "Title": "MySQL 8.0.31.0",
+    "Headers": [
+      "Database tools"
+    ]
+  },
+  {
+    "Id": "SQLPS",
+    "Title": "SQLPS 1.0",
+    "Headers": [
+      "Database tools"
+    ]
+  },
+  {
+    "Id": "SQLOLEDBDriver",
+    "Title": "SQL OLEDB Driver 18.6.3.0",
+    "Headers": [
+      "Database tools"
+    ]
+  },
+  {
+    "Id": "WebServers_Apache",
+    "Title": "Apache|2.4.54|C:\\tools\\Apache24\\conf\\httpd.conf|Apache|Stopped|80",
+    "Headers": [
+      "Web Servers"
+    ]
+  },
+  {
+    "Id": "WebServers_Nginx",
+    "Title": "Nginx|1.23.2|C:\\tools\\nginx-1.23.2\\conf\\nginx.conf|nginx|Stopped|80",
+    "Headers": [
+      "Web Servers"
+    ]
+  },
+  {
+    "Id": "VisualStudioEnterprise2022",
+    "Title": "Visual Studio Enterprise 2022|17.3.32929.385|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise",
+    "Headers": [
+      "Visual Studio Enterprise 2022"
+    ]
+  },
+  {
+    "Id": "VisualStudio_ProBITools.MicrosoftAnalysisServicesModelingProjects2022",
+    "Title": "ProBITools.MicrosoftAnalysisServicesModelingProjects2022|3.0.4",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_ProBITools.MicrosoftReportProjectsforVisualStudio2022",
+    "Title": "ProBITools.MicrosoftReportProjectsforVisualStudio2022|3.0.1",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects",
+    "Title": "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects|2.0.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WindowsDriverKit",
+    "Title": "Windows Driver Kit|10.1.22621.382",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WindowsDriverKitVisualStudioExtension",
+    "Title": "Windows Driver Kit Visual Studio Extension|10.0.22621.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WindowsSoftwareDevelopmentKit",
+    "Title": "Windows Software Development Kit|10.1.22621.1",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WixToolset.WixToolsetVisualStudio2022Extension",
+    "Title": "WixToolset.WixToolsetVisualStudio2022Extension|1.0.0.18",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_android",
+    "Title": "android|32.0.476.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Android.NDK.R21E",
+    "Title": "Component.Android.NDK.R21E|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Android.SDK.MAUI",
+    "Title": "Component.Android.SDK.MAUI|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Android.SDK25.Private",
+    "Title": "Component.Android.SDK25.Private|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Ant",
+    "Title": "Component.Ant|1.9.3.8",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Dotfuscator",
+    "Title": "Component.Dotfuscator|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Linux.CMake",
+    "Title": "Component.Linux.CMake|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.MDD.Android",
+    "Title": "Component.MDD.Android|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.MDD.Linux",
+    "Title": "Component.MDD.Linux|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.MDD.Linux.GCC.arm",
+    "Title": "Component.MDD.Linux.GCC.arm|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Microsoft.VisualStudio.LiveShare.2022",
+    "Title": "Component.Microsoft.VisualStudio.LiveShare.2022|1.0.5545",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Microsoft.VisualStudio.RazorExtension",
+    "Title": "Component.Microsoft.VisualStudio.RazorExtension|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Microsoft.VisualStudio.Web.AzureFunctions",
+    "Title": "Component.Microsoft.VisualStudio.Web.AzureFunctions|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Microsoft.Web.LibraryManager",
+    "Title": "Component.Microsoft.Web.LibraryManager|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Microsoft.WebTools.BrowserLink.WebLivePreview",
+    "Title": "Component.Microsoft.WebTools.BrowserLink.WebLivePreview|17.3.58.47684",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Microsoft.Windows.DriverKit",
+    "Title": "Component.Microsoft.Windows.DriverKit|10.0.22621.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.OpenJDK",
+    "Title": "Component.OpenJDK|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.UnityEngine.x64",
+    "Title": "Component.UnityEngine.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Unreal",
+    "Title": "Component.Unreal|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Unreal.Android",
+    "Title": "Component.Unreal.Android|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Unreal.Ide",
+    "Title": "Component.Unreal.Ide|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.VSInstallerProjects2022",
+    "Title": "Component.VSInstallerProjects2022|2.0.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.WixToolset.VisualStudioExtension.Dev17",
+    "Title": "Component.WixToolset.VisualStudioExtension.Dev17|1.0.0.18",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.WixToolset.VisualStudioExtension.Schemas3",
+    "Title": "Component.WixToolset.VisualStudioExtension.Schemas3|1.0.0.18",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.WixToolset.VisualStudioExtension.Schemas4",
+    "Title": "Component.WixToolset.VisualStudioExtension.Schemas4|1.0.0.18",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Xamarin",
+    "Title": "Component.Xamarin|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Component.Xamarin.RemotedSimulator",
+    "Title": "Component.Xamarin.RemotedSimulator|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_ios",
+    "Title": "ios|16.0.517.517",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maccatalyst",
+    "Title": "maccatalyst|15.4.465.465",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maui.android",
+    "Title": "maui.android|6.0.541.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maui.blazor",
+    "Title": "maui.blazor|6.0.541.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maui.core",
+    "Title": "maui.core|6.0.541.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maui.ios",
+    "Title": "maui.ios|6.0.541.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maui.maccatalyst",
+    "Title": "maui.maccatalyst|6.0.541.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_maui.windows",
+    "Title": "maui.windows|6.0.541.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.Azure.DataLake.Tools",
+    "Title": "Microsoft.Component.Azure.DataLake.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.ClickOnce",
+    "Title": "Microsoft.Component.ClickOnce|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.CodeAnalysis.SDK",
+    "Title": "Microsoft.Component.CodeAnalysis.SDK|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.MSBuild",
+    "Title": "Microsoft.Component.MSBuild|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.NetFX.Native",
+    "Title": "Microsoft.Component.NetFX.Native|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.PythonTools",
+    "Title": "Microsoft.Component.PythonTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.PythonTools.Web",
+    "Title": "Microsoft.Component.PythonTools.Web|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Component.VC.Runtime.UCRTSDK",
+    "Title": "Microsoft.Component.VC.Runtime.UCRTSDK|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.ComponentGroup.Blend",
+    "Title": "Microsoft.ComponentGroup.Blend|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.ComponentGroup.ClickOnce.Publish",
+    "Title": "Microsoft.ComponentGroup.ClickOnce.Publish|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.5.2.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.5.2.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.6.2.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.6.2.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.6.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.6.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.7.1.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.7.1.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.7.2.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.7.2.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.7.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.7.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.8.1.SDK",
+    "Title": "Microsoft.Net.Component.4.8.1.SDK|17.3.32720.241",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.8.1.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.8.1.TargetingPack|17.3.32720.241",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.8.SDK",
+    "Title": "Microsoft.Net.Component.4.8.SDK|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.Component.4.8.TargetingPack",
+    "Title": "Microsoft.Net.Component.4.8.TargetingPack|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.ComponentGroup.4.8.DeveloperTools",
+    "Title": "Microsoft.Net.ComponentGroup.4.8.DeveloperTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.ComponentGroup.DevelopmentPrerequisites",
+    "Title": "Microsoft.Net.ComponentGroup.DevelopmentPrerequisites|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.Net.ComponentGroup.TargetingPacks.Common",
+    "Title": "Microsoft.Net.ComponentGroup.TargetingPacks.Common|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_microsoft.net.runtime.android",
+    "Title": "microsoft.net.runtime.android|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_microsoft.net.runtime.android.aot",
+    "Title": "microsoft.net.runtime.android.aot|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_microsoft.net.runtime.ios",
+    "Title": "microsoft.net.runtime.ios|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_microsoft.net.runtime.maccatalyst",
+    "Title": "microsoft.net.runtime.maccatalyst|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_microsoft.net.runtime.mono.tooling",
+    "Title": "microsoft.net.runtime.mono.tooling|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_microsoft.net.sdk.emscripten",
+    "Title": "microsoft.net.sdk.emscripten|6.0.6.46402",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.NetCore.Component.DevelopmentTools",
+    "Title": "Microsoft.NetCore.Component.DevelopmentTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.NetCore.Component.Runtime.6.0",
+    "Title": "Microsoft.NetCore.Component.Runtime.6.0|17.3.32929.385",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.NetCore.Component.SDK",
+    "Title": "Microsoft.NetCore.Component.SDK|17.3.32929.385",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.NetCore.Component.Web",
+    "Title": "Microsoft.NetCore.Component.Web|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.AppInsights.Tools",
+    "Title": "Microsoft.VisualStudio.Component.AppInsights.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.AspNet",
+    "Title": "Microsoft.VisualStudio.Component.AspNet|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.AspNet45",
+    "Title": "Microsoft.VisualStudio.Component.AspNet45|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.AuthoringTools",
+    "Title": "Microsoft.VisualStudio.Component.Azure.AuthoringTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.ClientLibs",
+    "Title": "Microsoft.VisualStudio.Component.Azure.ClientLibs|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.Compute.Emulator",
+    "Title": "Microsoft.VisualStudio.Component.Azure.Compute.Emulator|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.Powershell",
+    "Title": "Microsoft.VisualStudio.Component.Azure.Powershell|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools",
+    "Title": "Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools",
+    "Title": "Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.Waverton",
+    "Title": "Microsoft.VisualStudio.Component.Azure.Waverton|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools",
+    "Title": "Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.ClassDesigner",
+    "Title": "Microsoft.VisualStudio.Component.ClassDesigner|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.CodeMap",
+    "Title": "Microsoft.VisualStudio.Component.CodeMap|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Common.Azure.Tools",
+    "Title": "Microsoft.VisualStudio.Component.Common.Azure.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.CoreEditor",
+    "Title": "Microsoft.VisualStudio.Component.CoreEditor|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Debugger.JustInTime",
+    "Title": "Microsoft.VisualStudio.Component.Debugger.JustInTime|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Debugger.Snapshot",
+    "Title": "Microsoft.VisualStudio.Component.Debugger.Snapshot|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.DiagnosticTools",
+    "Title": "Microsoft.VisualStudio.Component.DiagnosticTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.DockerTools",
+    "Title": "Microsoft.VisualStudio.Component.DockerTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.DotNetModelBuilder",
+    "Title": "Microsoft.VisualStudio.Component.DotNetModelBuilder|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.DslTools",
+    "Title": "Microsoft.VisualStudio.Component.DslTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Embedded",
+    "Title": "Microsoft.VisualStudio.Component.Embedded|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.EntityFramework",
+    "Title": "Microsoft.VisualStudio.Component.EntityFramework|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.FSharp",
+    "Title": "Microsoft.VisualStudio.Component.FSharp|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.FSharp.Desktop",
+    "Title": "Microsoft.VisualStudio.Component.FSharp.Desktop|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.FSharp.WebTemplates",
+    "Title": "Microsoft.VisualStudio.Component.FSharp.WebTemplates|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.GraphDocument",
+    "Title": "Microsoft.VisualStudio.Component.GraphDocument|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Graphics",
+    "Title": "Microsoft.VisualStudio.Component.Graphics|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Graphics.Tools",
+    "Title": "Microsoft.VisualStudio.Component.Graphics.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.IISExpress",
+    "Title": "Microsoft.VisualStudio.Component.IISExpress|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.IntelliCode",
+    "Title": "Microsoft.VisualStudio.Component.IntelliCode|17.3.32804.24",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd",
+    "Title": "Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.JavaScript.Diagnostics",
+    "Title": "Microsoft.VisualStudio.Component.JavaScript.Diagnostics|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.JavaScript.TypeScript",
+    "Title": "Microsoft.VisualStudio.Component.JavaScript.TypeScript|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.LinqToSql",
+    "Title": "Microsoft.VisualStudio.Component.LinqToSql|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.LiveUnitTesting",
+    "Title": "Microsoft.VisualStudio.Component.LiveUnitTesting|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.ManagedDesktop.Core",
+    "Title": "Microsoft.VisualStudio.Component.ManagedDesktop.Core|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites",
+    "Title": "Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Merq",
+    "Title": "Microsoft.VisualStudio.Component.Merq|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.MonoDebugger",
+    "Title": "Microsoft.VisualStudio.Component.MonoDebugger|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.MSODBC.SQL",
+    "Title": "Microsoft.VisualStudio.Component.MSODBC.SQL|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils",
+    "Title": "Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Node.Tools",
+    "Title": "Microsoft.VisualStudio.Component.Node.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.NuGet",
+    "Title": "Microsoft.VisualStudio.Component.NuGet|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.NuGet.BuildTools",
+    "Title": "Microsoft.VisualStudio.Component.NuGet.BuildTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.PortableLibrary",
+    "Title": "Microsoft.VisualStudio.Component.PortableLibrary|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Roslyn.Compiler",
+    "Title": "Microsoft.VisualStudio.Component.Roslyn.Compiler|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Roslyn.LanguageServices",
+    "Title": "Microsoft.VisualStudio.Component.Roslyn.LanguageServices|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Sharepoint.Tools",
+    "Title": "Microsoft.VisualStudio.Component.Sharepoint.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.SQL.CLR",
+    "Title": "Microsoft.VisualStudio.Component.SQL.CLR|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.SQL.DataSources",
+    "Title": "Microsoft.VisualStudio.Component.SQL.DataSources|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime",
+    "Title": "Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.SQL.SSDT",
+    "Title": "Microsoft.VisualStudio.Component.SQL.SSDT|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.TeamOffice",
+    "Title": "Microsoft.VisualStudio.Component.TeamOffice|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.TestTools.CodedUITest",
+    "Title": "Microsoft.VisualStudio.Component.TestTools.CodedUITest|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.TestTools.WebLoadTest",
+    "Title": "Microsoft.VisualStudio.Component.TestTools.WebLoadTest|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.TextTemplating",
+    "Title": "Microsoft.VisualStudio.Component.TextTemplating|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.TypeScript.TSServer",
+    "Title": "Microsoft.VisualStudio.Component.TypeScript.TSServer|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Unity",
+    "Title": "Microsoft.VisualStudio.Component.Unity|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.UWP.VC.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.UWP.VC.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.UWP.VC.ARM64EC",
+    "Title": "Microsoft.VisualStudio.Component.UWP.VC.ARM64EC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.ATL.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.MFC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.29.16.11.x86.x64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.ATL.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.MFC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.14.33.17.3.x86.x64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ASAN",
+    "Title": "Microsoft.VisualStudio.Component.VC.ASAN|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64EC",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.ARM64EC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.ARM64EC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.ARM64EC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATL.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATL.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATLMFC",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATLMFC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.CLI.Support",
+    "Title": "Microsoft.VisualStudio.Component.VC.CLI.Support|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.CMake.Project",
+    "Title": "Microsoft.VisualStudio.Component.VC.CMake.Project|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.CoreIde",
+    "Title": "Microsoft.VisualStudio.Component.VC.CoreIde|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.DiagnosticTools",
+    "Title": "Microsoft.VisualStudio.Component.VC.DiagnosticTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Llvm.Clang",
+    "Title": "Microsoft.VisualStudio.Component.VC.Llvm.Clang|17.3.32714.208",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset",
+    "Title": "Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.MFC.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.MFC.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64EC",
+    "Title": "Microsoft.VisualStudio.Component.VC.MFC.ARM64EC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.MFC.ARM64EC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.MFC.ARM64EC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Modules.x86.x64",
+    "Title": "Microsoft.VisualStudio.Component.VC.Modules.x86.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Redist.14.Latest",
+    "Title": "Microsoft.VisualStudio.Component.VC.Redist.14.Latest|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Redist.MSM",
+    "Title": "Microsoft.VisualStudio.Component.VC.Redist.MSM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.ARM64EC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64EC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest",
+    "Title": "Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest",
+    "Title": "Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.Tools.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.Tools.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.ARM64EC",
+    "Title": "Microsoft.VisualStudio.Component.VC.Tools.ARM64EC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+    "Title": "Microsoft.VisualStudio.Component.VC.Tools.x86.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.ARM|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM64",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.ARM64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ATL",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.ATL|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.MFC",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.MFC|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.x86.x64",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.x86.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre",
+    "Title": "Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.VSSDK",
+    "Title": "Microsoft.VisualStudio.Component.VSSDK|17.3.32901.149",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Wcf.Tooling",
+    "Title": "Microsoft.VisualStudio.Component.Wcf.Tooling|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Web",
+    "Title": "Microsoft.VisualStudio.Component.Web|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.WebDeploy",
+    "Title": "Microsoft.VisualStudio.Component.WebDeploy|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Windows10SDK",
+    "Title": "Microsoft.VisualStudio.Component.Windows10SDK|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Windows10SDK.19041",
+    "Title": "Microsoft.VisualStudio.Component.Windows10SDK.19041|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Windows10SDK.20348",
+    "Title": "Microsoft.VisualStudio.Component.Windows10SDK.20348|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Windows11SDK.22000",
+    "Title": "Microsoft.VisualStudio.Component.Windows11SDK.22000|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Windows11SDK.22621",
+    "Title": "Microsoft.VisualStudio.Component.Windows11SDK.22621|17.3.32720.241",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.Workflow",
+    "Title": "Microsoft.VisualStudio.Component.Workflow|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Component.WslDebugging",
+    "Title": "Microsoft.VisualStudio.Component.WslDebugging|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.AzureFunctions",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.AzureFunctions|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.All",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.All|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Android",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.Android|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Blazor",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.Blazor|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.iOS",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.iOS|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.MacCatalyst",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.MacCatalyst|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Shared",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.Shared|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Maui.Windows",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Maui.Windows|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core|17.3.32921.402",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang|17.3.32714.208",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.Support",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.UWP.Support|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.VC.v142",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.UWP.VC.v142|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.VC.Tools.142.x86.x64",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.VC.Tools.142.x86.x64|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Web",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Web|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.Web.CloudTools",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.Web.CloudTools|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine",
+    "Title": "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.Azure",
+    "Title": "Microsoft.VisualStudio.Workload.Azure|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.CoreEditor",
+    "Title": "Microsoft.VisualStudio.Workload.CoreEditor|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.Data",
+    "Title": "Microsoft.VisualStudio.Workload.Data|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.DataScience",
+    "Title": "Microsoft.VisualStudio.Workload.DataScience|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.ManagedDesktop",
+    "Title": "Microsoft.VisualStudio.Workload.ManagedDesktop|17.3.32728.75",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.ManagedGame",
+    "Title": "Microsoft.VisualStudio.Workload.ManagedGame|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.NativeCrossPlat",
+    "Title": "Microsoft.VisualStudio.Workload.NativeCrossPlat|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.NativeDesktop",
+    "Title": "Microsoft.VisualStudio.Workload.NativeDesktop|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.NativeGame",
+    "Title": "Microsoft.VisualStudio.Workload.NativeGame|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.NativeMobile",
+    "Title": "Microsoft.VisualStudio.Workload.NativeMobile|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.NetCrossPlat",
+    "Title": "Microsoft.VisualStudio.Workload.NetCrossPlat|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.NetWeb",
+    "Title": "Microsoft.VisualStudio.Workload.NetWeb|17.3.32728.75",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.Node",
+    "Title": "Microsoft.VisualStudio.Workload.Node|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.Office",
+    "Title": "Microsoft.VisualStudio.Workload.Office|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.Python",
+    "Title": "Microsoft.VisualStudio.Workload.Python|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.Universal",
+    "Title": "Microsoft.VisualStudio.Workload.Universal|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_Microsoft.VisualStudio.Workload.VisualStudioExtension",
+    "Title": "Microsoft.VisualStudio.Workload.VisualStudioExtension|17.3.32708.82",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_runtimes.ios",
+    "Title": "runtimes.ios|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_runtimes.maccatalyst",
+    "Title": "runtimes.maccatalyst|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_wasm.tools",
+    "Title": "wasm.tools|6.0.1022.47605",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_ProBITools.MicrosoftAnalysisServicesModelingProjects2022",
+    "Title": "ProBITools.MicrosoftAnalysisServicesModelingProjects2022|3.0.4",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_ProBITools.MicrosoftReportProjectsforVisualStudio2022",
+    "Title": "ProBITools.MicrosoftReportProjectsforVisualStudio2022|3.0.1",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects",
+    "Title": "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects|2.0.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WindowsDriverKit",
+    "Title": "Windows Driver Kit|10.1.22621.382",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WindowsDriverKitVisualStudioExtension",
+    "Title": "Windows Driver Kit Visual Studio Extension|10.0.22621.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WindowsSoftwareDevelopmentKit",
+    "Title": "Windows Software Development Kit|10.1.22621.1",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "VisualStudio_WixToolset.WixToolsetVisualStudio2022Extension",
+    "Title": "WixToolset.WixToolsetVisualStudio2022Extension|1.0.0.18",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Workloads, components and extensions:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2010Redistributable_x64",
+    "Title": "Microsoft Visual C++ 2010 Redistributable|x64|10.0.40219",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2010Redistributable_x86",
+    "Title": "Microsoft Visual C++ 2010 Redistributable|x86|10.0.40219",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2012AdditionalRuntime_x64",
+    "Title": "Microsoft Visual C++ 2012 Additional Runtime|x64|11.0.61030",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2012MinimumRuntime_x64",
+    "Title": "Microsoft Visual C++ 2012 Minimum Runtime|x64|11.0.61030",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2013AdditionalRuntime_x64",
+    "Title": "Microsoft Visual C++ 2013 Additional Runtime|x64|12.0.40660",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2013MinimumRuntime_x64",
+    "Title": "Microsoft Visual C++ 2013 Minimum Runtime|x64|12.0.40660",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2022AdditionalRuntime_x64",
+    "Title": "Microsoft Visual C++ 2022 Additional Runtime|x64|14.32.31332",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2022DebugRuntime_x64",
+    "Title": "Microsoft Visual C++ 2022 Debug Runtime|x64|14.32.31332",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2022MinimumRuntime_x64",
+    "Title": "Microsoft Visual C++ 2022 Minimum Runtime|x64|14.32.31332",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2022AdditionalRuntime_x86",
+    "Title": "Microsoft Visual C++ 2022 Additional Runtime|x86|14.32.31332",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2022DebugRuntime_x86",
+    "Title": "Microsoft Visual C++ 2022 Debug Runtime|x86|14.32.31332",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "MicrosoftVisualC++2022MinimumRuntime_x86",
+    "Title": "Microsoft Visual C++ 2022 Minimum Runtime|x86|14.32.31332",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Microsoft Visual C++:"
+    ]
+  },
+  {
+    "Id": "Windows_SDK_10.0.17763.0",
+    "Title": "Windows SDK 10.0.17763.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Installed Windows SDKs"
+    ]
+  },
+  {
+    "Id": "Windows_SDK_10.0.19041.0",
+    "Title": "Windows SDK 10.0.19041.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Installed Windows SDKs"
+    ]
+  },
+  {
+    "Id": "Windows_SDK_10.0.20348.0",
+    "Title": "Windows SDK 10.0.20348.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Installed Windows SDKs"
+    ]
+  },
+  {
+    "Id": "Windows_SDK_10.0.22000.0",
+    "Title": "Windows SDK 10.0.22000.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Installed Windows SDKs"
+    ]
+  },
+  {
+    "Id": "Windows_SDK_10.0.22621.0",
+    "Title": "Windows SDK 10.0.22621.0",
+    "Headers": [
+      "Visual Studio Enterprise 2022",
+      "Installed Windows SDKs"
+    ]
+  },
+  {
+    "Id": "NET_Core_SDK",
+    "Title": ".NET Core SDKs: 3.1.120 3.1.202 3.1.302 3.1.424 5.0.104 5.0.214 5.0.303 5.0.408 6.0.402",
+    "Headers": [
+      ".NET Core SDK"
+    ]
+  },
+  {
+    "Id": "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App",
+    "Title": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10",
+    "Headers": [
+      ".NET Core Runtime"
+    ]
+  },
+  {
+    "Id": "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App",
+    "Title": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10",
+    "Headers": [
+      ".NET Core Runtime"
+    ]
+  },
+  {
+    "Id": "NET_Core_Runtime_C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App",
+    "Title": ".Net Core Runtime (C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App): 3.1.4 3.1.6 3.1.20 3.1.30 5.0.4 5.0.9 5.0.17 6.0.10",
+    "Headers": [
+      ".NET Core Runtime"
+    ]
+  },
+  {
+    "Id": "NET_Framework_4.8 4.8.1",
+    "Title": ".NET Framework: 4.8 4.8.1",
+    "Headers": [
+      ".NET Framework"
+    ]
+  },
+  {
+    "Id": "NET_Tools_nbgv",
+    "Title": "nbgv 3.5.119+5d25f54fec",
+    "Headers": [
+      ".NET tools"
+    ]
+  },
+  {
+    "Id": "PowerShellTools",
+    "Title": "PowerShell 7.2.7",
+    "Headers": [
+      "PowerShell Tools"
+    ]
+  },
+  {
+    "Id": "AzurePowershellModule_Az",
+    "Title": "Az|6.6.0.zip<br>7.5.0|C:\\Modules\\az_\\<version\\>",
+    "Headers": [
+      "PowerShell Tools",
+      "Azure Powershell Modules"
+    ]
+  },
+  {
+    "Id": "AzurePowershellModule_Azure",
+    "Title": "Azure|2.1.0 [Installed]<br>3.8.0.zip<br>4.2.1.zip<br>5.1.1.zip<br>5.3.0|C:\\Modules\\azure_\\<version\\>",
+    "Headers": [
+      "PowerShell Tools",
+      "Azure Powershell Modules"
+    ]
+  },
+  {
+    "Id": "AzurePowershellModule_AzureRM",
+    "Title": "AzureRM|2.1.0 [Installed]<br>3.8.0.zip<br>4.2.1.zip<br>5.1.1.zip<br>6.7.0.zip<br>6.13.1|C:\\Modules\\azurerm_\\<version\\>",
+    "Headers": [
+      "PowerShell Tools",
+      "Azure Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_AWSPowerShell",
+    "Title": "AWSPowerShell|4.1.194",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_DockerMsftProvider",
+    "Title": "DockerMsftProvider|1.0.0.8",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_MarkdownPS",
+    "Title": "MarkdownPS|1.9",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_Microsoft.Graph",
+    "Title": "Microsoft.Graph|1.13.0",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_Pester",
+    "Title": "Pester|3.4.0<br>5.3.3",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_PowerShellGet",
+    "Title": "PowerShellGet|1.0.0.1<br>2.2.5",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_PSScriptAnalyzer",
+    "Title": "PSScriptAnalyzer|1.21.0",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_PSWindowsUpdate",
+    "Title": "PSWindowsUpdate|2.2.0.3",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_SqlServer",
+    "Title": "SqlServer|21.1.18256",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "PowershellModule_VSSetup",
+    "Title": "VSSetup|2.2.16",
+    "Headers": [
+      "PowerShell Tools",
+      "Powershell Modules"
+    ]
+  },
+  {
+    "Id": "Android_AndroidCommandLineTools",
+    "Title": "Android Command Line Tools|7.0",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_AndroidEmulator",
+    "Title": "Android Emulator|31.3.12",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_AndroidSDKBuild-tools",
+    "Title": "Android SDK Build-tools|33.0.0<br>32.0.0<br>31.0.0<br>30.0.0 30.0.1 30.0.2 30.0.3<br>29.0.0 29.0.1 29.0.2 29.0.3<br>28.0.0 28.0.1 28.0.2 28.0.3<br>27.0.0 27.0.1 27.0.2 27.0.3",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_AndroidSDKPlatforms",
+    "Title": "Android SDK Platforms|android-33 (rev 2)<br>android-32 (rev 1)<br>android-31 (rev 1)<br>android-30 (rev 3)<br>android-29 (rev 5)<br>android-28 (rev 6)<br>android-27 (rev 3)",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_AndroidSDKPlatform-Tools",
+    "Title": "Android SDK Platform-Tools|33.0.3",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_AndroidSupportRepository",
+    "Title": "Android Support Repository|47.0.0",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_CMake",
+    "Title": "CMake|3.18.1<br>3.22.1",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_GooglePlayservices",
+    "Title": "Google Play services|49",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_GoogleRepository",
+    "Title": "Google Repository|58",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_NDK",
+    "Title": "NDK|23.2.8568313<br>24.0.8215888<br>25.1.8937393",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Android_SDKPatchApplierv4",
+    "Title": "SDK Patch Applier v4|1",
+    "Headers": [
+      "Android"
+    ]
+  },
+  {
+    "Id": "Env_ANDROID_HOME",
+    "Title": "ANDROID_HOME|C:\\Android\\android-sdk",
+    "Headers": [
+      "Android",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_ANDROID_NDK",
+    "Title": "ANDROID_NDK|C:\\Android\\android-sdk\\ndk\\25.1.8937393",
+    "Headers": [
+      "Android",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_ANDROID_NDK_HOME",
+    "Title": "ANDROID_NDK_HOME|C:\\Android\\android-sdk\\ndk\\25.1.8937393",
+    "Headers": [
+      "Android",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_ANDROID_NDK_LATEST_HOME",
+    "Title": "ANDROID_NDK_LATEST_HOME|C:\\Android\\android-sdk\\ndk\\25.1.8937393",
+    "Headers": [
+      "Android",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_ANDROID_NDK_ROOT",
+    "Title": "ANDROID_NDK_ROOT|C:\\Android\\android-sdk\\ndk\\25.1.8937393",
+    "Headers": [
+      "Android",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "Env_ANDROID_SDK_ROOT",
+    "Title": "ANDROID_SDK_ROOT|C:\\Android\\android-sdk",
+    "Headers": [
+      "Android",
+      "Environment variables"
+    ]
+  },
+  {
+    "Id": "CachedDockerImage_mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022",
+    "Title": "mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022|sha256:86ef1feae54df685bc33ea234c23babb704d4027a39404a072d922883a8a8049 ",
+    "Headers": [
+      "Cached Docker images"
+    ]
+  },
+  {
+    "Id": "CachedDockerImage_mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022",
+    "Title": "mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022|sha256:73956aba99a6ee0b867774c2b5faeec11b153329f43c8c729c2c27a2024c4b98 ",
+    "Headers": [
+      "Cached Docker images"
+    ]
+  },
+  {
+    "Id": "CachedDockerImage_mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022",
+    "Title": "mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022|sha256:42b5c55b4918f3c56ec4a5e6a1b0735b624941bd885a13c12e30dc7a81ba2fb6 ",
+    "Headers": [
+      "Cached Docker images"
+    ]
+  },
+  {
+    "Id": "CachedDockerImage_mcr.microsoft.com/windows/nanoserver:ltsc2022",
+    "Title": "mcr.microsoft.com/windows/nanoserver:ltsc2022|sha256:fefb912e2942912f1cd55bfe6bbb697a601a7787caf5c1875aaf105c86a28027 ",
+    "Headers": [
+      "Cached Docker images"
+    ]
+  },
+  {
+    "Id": "CachedDockerImage_mcr.microsoft.com/windows/servercore:ltsc2022",
+    "Title": "mcr.microsoft.com/windows/servercore:ltsc2022|sha256:6983a9d56e4d8d1fac3819e4bed8ff537400ea21150b9d65bfbdc0ef3c27c99c ",
+    "Headers": [
+      "Cached Docker images"
+    ]
+  }
+]
