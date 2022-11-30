@@ -14,13 +14,15 @@ function Get-ToolcachePythonVersions {
 
 function Get-ToolcachePyPyVersions {
     $toolcachePath = Join-Path $env:HOME "hostedtoolcache/PyPy/*/x64"
-    Get-ChildItem -Path $toolcachePath | Sort-Object { [Version] $_.Parent.Name } | ForEach-Object {
+    $output = Get-ChildItem -Path $toolcachePath | Sort-Object { [Version] $_.Parent.Name } | ForEach-Object {
         $foundVersionPath = $_.FullName
         $foundVersionName = (Get-Item ($foundVersionPath -replace "x64") | Sort-Object -Property {[version]$_.name} -Descending | Select-Object -First 1).name
         $arrPyPyVersion = ((& "$foundVersionPath/bin/python" -c "import sys;print(sys.version.split('\n')[1])") -split " ")
         $pypyVersion = "$($arrPyPyVersion[0]) $($arrPyPyVersion[1])"
         return "{0} {1}]" -f $foundVersionName, $pypyVersion
     }
+
+    return $output
 }
 
 function Get-ToolcacheNodeVersions {
@@ -35,37 +37,43 @@ function Get-ToolcacheGoTable {
         $Instance."Environment Variable" = "GOROOT_$($Version.major)_$($Version.minor)_X64"
     }
 
-    $Content = $ToolInstances | New-MDTable -Columns ([ordered]@{
-        Version = "left";
-        Architecture = "left";
-        "Environment Variable" = "left"
-    })
+    $Content = $ToolInstances | ForEach-Object {
+        return [PSCustomObject]@{
+            Version = $_.Version
+            Architecture = $_.Architecture
+            "Environment Variable" = $_."Environment Variable"
+        }
+    }
 
     return $Content
 }
 
-function Build-ToolcacheSection { 
-    $output = ""
-    $output += New-MDHeader "Cached Tools" -Level 3
-    $output += New-MDHeader "Ruby" -Level 4
-    $output += New-MDList -Lines (Get-ToolcacheRubyVersions) -Style Unordered
-    $output += New-MDHeader "Python" -Level 4
-    $output += New-MDList -Lines (Get-ToolcachePythonVersions) -Style Unordered
-    $output += New-MDHeader "PyPy" -Level 4
-    $output += New-MDList -Lines (Get-ToolcachePyPyVersions) -Style Unordered
-    $output += New-MDHeader "Node.js" -Level 4
-    $output += New-MDList -Lines (Get-ToolcacheNodeVersions) -Style Unordered
-    $output += New-MDHeader "Go" -Level 4
-    $output += Get-ToolcacheGoTable
+function Add-ToolcacheSections { 
+    param (
+        [HeaderNode] $HeaderNode
+    )
 
-    return $output
+    $rubyVersions = [ToolVersionsNode]::new("Ruby", $(Get-ToolcacheRubyVersions))
+    $HeaderNode.AddNode($rubyVersions)
+
+    $pythonVersions = [ToolVersionsNode]::new("Python", $(Get-ToolcachePythonVersions))
+    $HeaderNode.AddNode($pythonVersions)    
+
+    $pypyVersions = [ToolVersionsNode]::new("Pypy", $(Get-ToolcachePyPyVersions))
+    $HeaderNode.AddNode($pypyVersions)
+
+    $nodejsVersions = [ToolVersionsNode]::new("Node.js", $(Get-ToolcacheNodeVersions))
+    $HeaderNode.AddNode($nodejsVersions)
+
+    $goTable = $HeaderNode.AddHeaderNode("Go")
+    $goTable.AddTableNode($(Get-ToolcacheGoTable))
 }
 
 function Get-PowerShellModules {
     $modules = (Get-ToolsetValue powershellModules).name
 
     $psModules = Get-Module -Name $modules -ListAvailable | Sort-Object Name | Group-Object Name
-    $psModules | ForEach-Object {
+    $output = $psModules | ForEach-Object {
         $moduleName = $_.Name
         $moduleVersions = ($_.group.Version | Sort-Object -Unique) -join '<br>'
 
@@ -74,4 +82,6 @@ function Get-PowerShellModules {
             Version = $moduleVersions
         }
     }
+
+    return $output
 }

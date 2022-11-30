@@ -4,7 +4,7 @@ function Build-VSMacTable {
     $vsMacVersions = Get-ToolsetValue "xamarin.vsmac.versions"
     $defaultVSMacVersion = Get-ToolsetValue "xamarin.vsmac.default"
 
-    $vsMacVersions | ForEach-Object {
+    $output = $vsMacVersions | ForEach-Object {
         $isDefault = $_ -eq $defaultVSMacVersion
         $vsPath = "/Applications/Visual Studio $_.app"
         if ($isDefault) {
@@ -21,11 +21,13 @@ function Build-VSMacTable {
             "Path" = $vsPath
         }
     }
+
+    return $output
 }
 
 function Get-NUnitVersion {
     $version = Run-Command "nunit3-console --version" | Select-Object -First 1 | Take-Part -Part 3
-    return "NUnit ${version}"
+    return "${version}"
 }
 
 function Build-XamarinTable {
@@ -35,7 +37,7 @@ function Build-XamarinTable {
         $defaultSymlink = $xamarinBundles[0].symlink
     }
 
-    return $xamarinBundles | ForEach-Object {
+    $output = $xamarinBundles | ForEach-Object {
         $defaultPostfix = ($_.symlink -eq $defaultSymlink ) ? " (default)" : ""
         [PSCustomObject] @{
             "symlink" = $_.symlink + $defaultPostfix 
@@ -45,4 +47,6 @@ function Build-XamarinTable {
             "Xamarin.Android" = $_.android
         }
     }
+
+    return $output
 }

@@ -78,7 +78,7 @@ function Get-XcodePlatformOrder {
 
 function Get-XcodeCommandLineToolsVersion {
     $xcodeCommandLineToolsVersion = Run-Command "pkgutil --pkg-info com.apple.pkg.CLTools_Executables" | Select -Index 1 | Take-Part -Part 1
-    return "Xcode Command Line Tools $xcodeCommandLineToolsVersion"
+    return $xcodeCommandLineToolsVersion
 }
 
 function Build-XcodeTable {
@@ -226,13 +226,15 @@ function Build-XcodeSimulatorsTable {
 }
 
 function Build-XcodeSupportToolsSection {
+    param (
+        [HeaderNode] $HeaderNode
+    )
+
     $xcpretty = Run-Command "xcpretty --version"
     $xcversion = Run-Command "xcversion --version" | Select-String "^[0-9]"
 
-    $toolList = @(
-        "xcpretty $xcpretty",
-        "xcversion $xcversion"
-    )
+    $HeaderNode.AddToolNode("xcpretty", $xcpretty)
+    $HeaderNode.AddToolNode("xcversion", $xcversion)
 
     $nomadOutput = Run-Command "gem list nomad-cli"
     $nomadCLI = [regex]::matches($nomadOutput, "(\d+.){2}\d+").Value
@@ -240,14 +242,7 @@ function Build-XcodeSupportToolsSection {
     $nomadShenzhen = [regex]::matches($nomadShenzhenOutput, "(\d+.){2}\d+").Value
 
     if ($os.IsLessThanMonterey) {
-        $toolList += @(
-            "Nomad CLI $nomadCLI",
-            "Nomad shenzhen CLI $nomadShenzhen"
-        )
+        $HeaderNode.AddToolNode("Nomad CLI", $nomadCLI)
+        $HeaderNode.AddToolNode("Nomad shenzhen CLI", $nomadShenzhen)
     }
-
-    $output = ""
-    $output += New-MDHeader "Xcode Support Tools" -Level 4
-    $output += New-MDList -Style Unordered -Lines $toolList
-    return $output
 }
