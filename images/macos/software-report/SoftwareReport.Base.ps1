@@ -20,7 +20,7 @@ class SoftwareReport {
     }
 
     [String] ToMarkdown() {
-        return $this.Root.ToMarkdown(1)
+        return $this.Root.ToMarkdown(1).Trim()
     }
 
     # This method is Nodes factory that simplifies parsing different types of notes
@@ -58,6 +58,13 @@ class HeaderNode: BaseNode {
     }
 
     [void] AddNode([BaseNode] $node) {
+        if ($node.GetType() -eq [TableNode]) {
+            $existingTableNodesCount = $this.Children.Where({ $_.GetType() -eq [TableNode] }).Count
+            if ($existingTableNodesCount -gt 0) {
+                throw "Having multiple TableNode on the same header level is not supported"
+            }
+        }
+
         $this.Children.Add($node)
     }
 
@@ -80,7 +87,7 @@ class HeaderNode: BaseNode {
     }
 
     [void] AddTableNode([Array] $Table) {
-       $this.AddNode([TableNode]::new($Table))
+       $this.AddNode([TableNode]::FromObjectsArray($Table))
     }
 
     [void] AddNoteNode([String] $Content) {
@@ -89,13 +96,13 @@ class HeaderNode: BaseNode {
 
     [String] ToMarkdown($level) {
         $sb = [System.Text.StringBuilder]::new()
+        $sb.AppendLine()
         $sb.AppendLine("$("#" * $level) $($this.Title)")
         $this.Children  | ForEach-Object {
             $sb.AppendLine($_.ToMarkdown($level + 1))
         }
 
-        # Preserve only one new line symbol at the end
-        return $sb.ToString().TrimEnd() + "`n"
+        return $sb.ToString().TrimEnd()
     }
 
     [PSCustomObject] ToJsonObject() {
@@ -182,13 +189,13 @@ class ToolVersionsNode: BaseNode {
 
     [String] ToMarkdown($level) {
         $sb = [System.Text.StringBuilder]::new()
+        $sb.AppendLine()
         $sb.AppendLine("$("#" * $level) $($this.ToolName)")
         $this.Versions | ForEach-Object {
             $sb.AppendLine("- $_")
         }
 
-        # Preserve only one new line symbol at the end
-        return $sb.ToString().TrimEnd() + "`n"
+        return $sb.ToString().TrimEnd()
     }
 
     [String] ToString() {
@@ -226,44 +233,65 @@ class ToolVersionsNode: BaseNode {
 
 # It is a node type to describe tables
 class TableNode: BaseNode {
+    # It is easier to store the table as rendered lines because we will simplify finding differences in rows later
+    [String] $Headers
     [System.Collections.ArrayList] $Rows
 
-    TableNode() {}
-
-    TableNode([Array] $Table) {
-        # It is easier to store the table as rendered lines because we will simplify finding differences in rows later
-        # So we render table right now
-
-        # take column names from the first row in table because all rows that should have the same columns
-        $headers = $Table[0].PSObject.Properties.Name
-
-        $this.Rows = @()
-        $this.Rows.Add($this.ArrayToTableRow($headers))
-        $this.Rows.Add($this.ArrayToTableRow(@("-") * $headers.Count))
-        $Table | ForEach-Object {
-            $this.Rows.Add($this.ArrayToTableRow($_.PSObject.Properties.Value))
-        }
+    TableNode($Headers, $Rows) {
+        $this.Headers = $Headers
+        $this.Rows = $Rows
     }
 
-    hidden [String] ArrayToTableRow([Array] $Values) {
-        return "| " + [String]::Join(" | ", $Values) + " |"
+    static [TableNode] FromObjectsArray([Array] $Table) {
+        # take column names from the first row in table because all rows that should have the same columns
+        [String] $tableHeaders = [TableNode]::ArrayToTableRow($Table[0].PSObject.Properties.Name)
+        [System.Collections.ArrayList] $tableRows = @()
+
+        $Table | ForEach-Object {
+            $tableRows.Add([TableNode]::ArrayToTableRow($_.PSObject.Properties.Value))
+        }
+
+        return [TableNode]::new($tableHeaders, $tableRows)
     }
 
     [String] ToMarkdown($level) {
-        return $this.Rows -join "`n"
+        $maxColumnWidths = $this.Headers.Split("|") | ForEach-Object { $_.Length }
+        $columnsCount = $maxColumnWidths.Count
+
+        $this.Rows | ForEach-Object {
+            $columnWidths = $_.Split("|") | ForEach-Object { $_.Length }
+            for ($colIndex = 0; $colIndex -lt $columnsCount; $colIndex++) {
+                $maxColumnWidths[$colIndex] = [Math]::Max($maxColumnWidths[$colIndex], $columnWidths[$colIndex])
+            }
+        }
+
+        $delimeterLine = [String]::Join("|", @("-") * $columnsCount)
+
+        $sb = [System.Text.StringBuilder]::new()
+        @($this.Headers) + @($delimeterLine) + $this.Rows | ForEach-Object {
+            $sb.Append("|")
+            $row = $_.Split("|")
+            for ($colIndex = 0; $colIndex -lt $columnsCount; $colIndex++) {
+                $padSymbol = $row[$colIndex] -eq "-" ? "-" : " "
+                $cellContent = $row[$colIndex].PadRight($maxColumnWidths[$colIndex], $padSymbol)
+                $sb.Append(" $($cellContent) |")
+            }
+            $sb.AppendLine()
+        }
+
+        return $sb.ToString().TrimEnd()
     }
 
     [PSCustomObject] ToJsonObject() {
         return [PSCustomObject]@{
             NodeType = $this.GetType().Name
+            Headers = $this.Headers
             Rows = $this.Rows
         }
     }
 
     static [TableNode] FromJsonObject($jsonObj) {
-        $node = [TableNode]::new()
-        $node.Rows = $jsonObj.Rows
-        return $node
+        return [TableNode]::new($jsonObj.Headers, $jsonObj.Rows)
     }
 
     [Boolean] IsSimilarTo([BaseNode] $OtherNode) {
@@ -271,11 +299,34 @@ class TableNode: BaseNode {
             return $false
         }
 
+        # We don't support having multiple TableNode instances on the same header level so such check is fine
         return $true
     }
 
     [Boolean] IsIdenticalTo([BaseNode] $OtherNode) {
-        return $this.IsSimilarTo($OtherNode)
+        if (-not $this.IsSimilarTo($OtherNode)) {
+            return $false
+        }
+
+        if ($this.Headers -ne $OtherNode.Headers) {
+            return $false
+        }
+
+        if ($this.Rows.Count -ne $OtherNode.Rows.Count) {
+            return $false
+        }
+
+        for ($rowIndex = 0; $rowIndex -lt $this.Rows.Count; $rowIndex++) {
+            if ($this.Rows[$rowIndex] -ne $OtherNode.Rows[$rowIndex]) {
+                return $false
+            }
+        }
+
+        return $true
+    }
+
+    hidden static [String] ArrayToTableRow([Array] $Values) {
+        return [String]::Join("|", $Values)
     }
 }
 
