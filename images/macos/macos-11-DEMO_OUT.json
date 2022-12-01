@@ -14,8 +14,8 @@
     },
     {
       "NodeType": "ToolNode",
-      "ToolName": "Image Version: 20221121",
-      "Version": "ImageVersion"
+      "ToolName": "Image Version:",
+      "Version": "20221121"
     },
     {
       "NodeType": "HeaderNode",
@@ -48,17 +48,17 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "GCC 9",
-              "Version": "(Homebrew GCC 9.5.0) 9.5.0 - available by `gcc-9` alias"
+              "Version": "(Homebrew GCC 9.5.0) - available by `gcc-9` alias"
             },
             {
               "NodeType": "ToolNode",
               "ToolName": "GCC 10",
-              "Version": "(Homebrew GCC 10.4.0) 10.4.0 - available by `gcc-10` alias"
+              "Version": "(Homebrew GCC 10.4.0) - available by `gcc-10` alias"
             },
             {
               "NodeType": "ToolNode",
               "ToolName": "GCC 11",
-              "Version": "(Homebrew GCC 11.3.0) 11.3.0 - available by `gcc-11` alias"
+              "Version": "(Homebrew GCC 11.3.0) - available by `gcc-11` alias"
             },
             {
               "NodeType": "ToolNode",
@@ -83,7 +83,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "Julia",
-              "Version": "1.8.2"
+              "Version": "julia 1.8.2"
             },
             {
               "NodeType": "ToolNode",
@@ -183,12 +183,12 @@
             },
             {
               "NodeType": "ToolNode",
-              "ToolName": "Pip 2",
+              "ToolName": "Pip2",
               "Version": "20.3.4 (python 2.7)"
             },
             {
               "NodeType": "ToolNode",
-              "ToolName": "Pip 3",
+              "ToolName": "Pip3",
               "Version": "22.3 (python 3.11)"
             },
             {
@@ -394,7 +394,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "yq",
-              "Version": "(https://github.com/mikefarah/yq/) version 4.29.2"
+              "Version": "version 4.29.2"
             },
             {
               "NodeType": "ToolNode",
@@ -516,7 +516,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "Yamllint",
-              "Version": "1.28.0"
+              "Version": "yamllint 1.28.0"
             },
             {
               "NodeType": "ToolNode",
@@ -542,7 +542,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "Google Chrome",
-              "Version": "107.0.5304.110"
+              "Version": "107.0.5304.121"
             },
             {
               "NodeType": "ToolNode",
@@ -567,7 +567,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "geckodriver",
-              "Version": "0.32.0"
+              "Version": "geckodriver 0.32.0"
             },
             {
               "NodeType": "ToolNode",

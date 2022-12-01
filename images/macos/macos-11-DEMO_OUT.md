@@ -1,21 +1,21 @@
 # macOS 11.7 info
 - System Version: macOS 11.7.1 (20G918)
 - Kernel Version: Darwin 20.6.0
-- Image Version: 20221121 ImageVersion
+- Image Version: 20221121
 ## Installed Software
 ### Language and Runtime
 - .NET SDK 3.1.101 3.1.201 3.1.302 3.1.424 5.0.102 5.0.202 5.0.302 5.0.408 6.0.402
 - Bash 3.2.57(1)-release
 - Clang/LLVM 13 (13.0.0) - default
 - Clang/LLVM 14 (14.0.6) - available on `'$(brew --prefix llvm@14)/bin/clang'`
-- GCC 9 (Homebrew GCC 9.5.0) 9.5.0 - available by `gcc-9` alias
-- GCC 10 (Homebrew GCC 10.4.0) 10.4.0 - available by `gcc-10` alias
-- GCC 11 (Homebrew GCC 11.3.0) 11.3.0 - available by `gcc-11` alias
+- GCC 9 (Homebrew GCC 9.5.0) - available by `gcc-9` alias
+- GCC 10 (Homebrew GCC 10.4.0) - available by `gcc-10` alias
+- GCC 11 (Homebrew GCC 11.3.0) - available by `gcc-11` alias
 - GNU Fortran 9 (Homebrew GCC 9.5.0) 9.5.0 - available by `gfortran-9` alias
 - GNU Fortran 10 (Homebrew GCC 10.4.0) 10.4.0 - available by `gfortran-10` alias
 - GNU Fortran 11 (Homebrew GCC 11.3.0) 11.3.0 - available by `gfortran-11` alias
 - Go 1.17.13
-- Julia 1.8.2
+- Julia julia 1.8.2
 - Kotlin 1.7.20-release-201
 - MSBuild 16.10.1.51301 (from /Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/15.0/bin/MSBuild.dll)
 - Node.js v16.18.0
@@ -36,8 +36,8 @@
 - Miniconda 4.12.0
 - NPM 8.19.2
 - NuGet 6.3.1.1
-- Pip 2 20.3.4 (python 2.7)
-- Pip 3 22.3 (python 3.11)
+- Pip2 20.3.4 (python 2.7)
+- Pip3 22.3 (python 3.11)
 - Pipx 1.1.0
 - RubyGems 3.0.3.1
 - Vcpkg 2022 (build from master \<49931943a>)
@@ -57,7 +57,7 @@
 ### Utilities
 - 7-Zip 17.04
 - aria2 1.36.0
-- azcopy 10.16.2
+- azcopy 
 - bazel 5.3.2
 - bazelisk 1.14.0
 - bsdtar 3.3.2 - available by 'tar' alias
@@ -82,7 +82,7 @@
 - Sox 14.4.2
 - Subversion (SVN) 1.14.2
 - Switchaudio-osx 1.1.0
-- yq (https://github.com/mikefarah/yq/) version 4.29.2
+- yq version 4.29.2
 - zstd 1.5.2
 
 ### Tools
@@ -108,18 +108,18 @@
 - Xcode Command Line Tools 13.2.0.0.1.1638488800
 
 ### Linters
-- Yamllint 1.28.0
+- Yamllint yamllint 1.28.0
 - Swift 0.48.0
 
 ### Browsers
 - Safari 16.1 (16614.2.9.1.13)
 - SafariDriver 16.1 (16614.2.9.1.13)
-- Google Chrome 107.0.5304.110
+- Google Chrome 107.0.5304.121
 - ChromeDriver 107.0.5304.62
 - Microsoft Edge 107.0.1418.28
 - Microsoft Edge WebDriver 107.0.1418.28
 - Mozilla Firefox 106.0.3
-- geckodriver 0.32.0
+- geckodriver geckodriver 0.32.0
 - Selenium server 4.5.0
 #### Environment variables
 | Name | Value |
