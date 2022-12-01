@@ -61,6 +61,10 @@ class HeaderNode: BaseNode {
         $this.Children.Add($node)
     }
 
+    [void] AddNodes([Array] $nodes) {
+        $nodes | ForEach-Object { $this.Children.Add($_) }
+    }
+
     [HeaderNode] AddHeaderNode([String] $Title) {
         $node = [HeaderNode]::new($Title)
         $this.AddNode($node)

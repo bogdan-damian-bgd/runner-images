@@ -27,7 +27,7 @@ function Build-VSMacTable {
 
 function Get-NUnitVersion {
     $version = Run-Command "nunit3-console --version" | Select-Object -First 1 | Take-Part -Part 3
-    return "${version}"
+    return $version
 }
 
 function Build-XamarinTable {

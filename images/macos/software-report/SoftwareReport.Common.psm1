@@ -1,6 +1,6 @@
 function Get-BashVersion {
     $version = bash -c 'echo ${BASH_VERSION}'
-    return "$version"
+    return $version
 }
 
 function Get-DotnetVersionList {
@@ -15,12 +15,12 @@ function Get-GoVersion {
         $goOutput = $goOutput.Substring(2)
     }
 
-    return "$goOutput"
+    return $goOutput
 }
 
 function Get-RVersion {
     $rVersion = Run-Command "R --version | grep 'R version'" | Take-Part -Part 2
-    return "$rVersion"
+    return $rVersion
 }
 
 function Get-RustVersion {
@@ -70,7 +70,7 @@ function Get-Cargoaudit {
 
 function Get-RustupVersion {
     $rustupVersion = Run-Command "rustup --version" | Select-Object -First 1 | Take-Part -Part 1
-    return "${rustupVersion}"
+    return $rustupVersion
 }
 
 function Get-VcpkgVersion {
@@ -79,44 +79,32 @@ function Get-VcpkgVersion {
     return "$vcpkgVersion (build from master \<$commitId>)"
 }
 
-function Add-GccVersions {
-    param (
-        [HeaderNode] $HeaderNode
-    )
-
+function Get-GccVersions {
     $versionList = Get-ToolsetValue -KeyPath gcc.versions
     $versionList | Foreach-Object {
         $nameVersion = Run-Command "gcc-${_} --version" | Select-Object -First 1
-        $version = $nameVersion.Substring("gcc-${_}".Length).Trim()
-        $HeaderNode.AddToolNode("GCC ${_}", "$version - available by ``gcc-${_}`` alias")
+        $version = $nameVersion.TrimStart("gcc-${_}").Trim() -replace '\).*$', ')'
+        return [ToolNode]::new("GCC ${_}", "$version - available by ``gcc-${_}`` alias")
     }
 }
 
-function Add-FortranVersions {
-    param (
-        [HeaderNode] $HeaderNode
-    )
-
+function Get-FortranVersions {
     $versionList = Get-ToolsetValue -KeyPath gcc.versions
     $versionList | Foreach-Object {
         $nameVersion = Run-Command "gfortran-${_} --version" | Select-Object -First 1
-        $version = $nameVersion.Substring("GNU Fortran".Length).Trim()
-        $HeaderNode.AddToolNode("GNU Fortran ${_}", "$version - available by ``gfortran-${_}`` alias")
+        $version = $nameVersion.TrimStart("GNU Fortran").Trim()
+        return [ToolNode]::new("GNU Fortran ${_}", "$version - available by ``gfortran-${_}`` alias")
     }
 }
 
-function Add-ClangLLVMVersions {
-    param (
-        [HeaderNode] $HeaderNode
-    )
-
+function Get-ClangLLVMVersions {
     $toolsetVersion = '$(brew --prefix llvm@{0})/bin/clang' -f (Get-ToolsetValue 'llvm.version')
     $locationsList = @("$((Get-Command clang).Source)", $toolsetVersion)
     $locationsList | Foreach-Object {
         (Run-Command "${_} --version" | Out-String) -match "(?<version>\d+\.\d+\.\d+)" | Out-Null
         $version = $Matches.version
         $majorVersion = $version.Substring(0, 2)
-        $HeaderNode.AddToolNode("Clang/LLVM $majorVersion", "($version) " + $(if(${_} -Match "brew") {"- available on ```'${_}`'``"} else {"- default"}))
+        return [ToolNode]::new("Clang/LLVM $majorVersion", "($version) " + $(if(${_} -Match "brew") {"- available on ```'${_}`'``"} else {"- default"}))
     }
 }
 
@@ -124,7 +112,7 @@ function Get-NVMVersion {
     $nvmPath = Join-Path $env:HOME ".nvm" "nvm.sh"
     $nvmInitCommand = ". ${nvmPath} > /dev/null 2>&1 || true"
     $nodejsVersion = Run-Command "${nvmInitCommand} && nvm --version"
-    return "$nodejsVersion"
+    return $nodejsVersion
 }
 
 function Get-PipVersion {
@@ -152,7 +140,7 @@ function Get-NVMNodeVersionList {
     $nodejsVersionsRaw = Run-Command "${nvmInitCommand} && nvm ls"
     $nodeVersions = $nodejsVersionsRaw | ForEach-Object { $_.TrimStart(" ").TrimEnd(" *") } | Where-Object { $_.StartsWith("v") }
     $result = [string]::Join(" ", $nodeVersions)
-    return "$result"
+    return $result
 }
 
 function Build-OSInfoSection {
@@ -171,7 +159,7 @@ function Build-OSInfoSection {
     $osInfoNode = [HeaderNode]::new("macOS $version info")
     $osInfoNode.AddToolNode("System Version:", $systemVersion)
     $osInfoNode.AddToolNode("Kernel Version:", $kernelVersion)
-    $osInfoNode.AddToolNode(("Image Version: {0}" -f $ImageName.Split('_')[1]), "ImageVersion")
+    $osInfoNode.AddToolNode("Image Version:", $ImageName.Split('_')[1])
     return $osInfoNode
 }
 
@@ -185,62 +173,62 @@ function Get-MSBuildVersion {
 
 function Get-NodeVersion {
     $nodeVersion = Run-Command "node --version"
-    return "$nodeVersion"
+    return $nodeVersion
 }
 
 function Get-PerlVersion {
     $version = Run-Command "perl -e 'print substr(`$^V,1)'"
-    return "$version"
+    return $version
 }
 
 function Get-PythonVersion {
     $pythonVersion = Run-Command "python --version"
-    return $pythonVersion.Substring("Python".Length).Trim()
+    return $pythonVersion.TrimStart("Python").Trim()
 }
 
 function Get-Python3Version {
     $python3Version = Run-Command "python3 --version"
-    return $python3Version.Substring("Python".Length).Trim()
+    return $python3Version.TrimStart("Python").Trim()
 }
 
 function Get-RubyVersion {
     $rubyVersion = Run-Command "ruby --version" | Take-Part -Part 1
-    return "$rubyVersion"
+    return $rubyVersion
 }
 
 function Get-PHPVersion {
     $PHPVersion = Run-Command "php --version" | Select-Object -First 1 | Take-Part -Part 0,1
-    return $PHPVersion.Substring("PHP".Length).Trim()
+    return $PHPVersion.TrimStart("PHP").Trim()
 }
 
 function Get-JuliaVersion {
     $juliaVersion = Run-Command "julia --version" | Take-Part -Part 0,2
-    return $juliaVersion.Substring("Julia".Length).Trim()
+    return $juliaVersion.TrimStart("Julia").Trim()
 }
 
 function Get-BundlerVersion {
     $bundlerVersion = Run-Command "bundle --version"
-    return $bundlerVersion.Substring("Bundler".Length).Trim()
+    return $bundlerVersion.TrimStart("Bundler").Trim()
 }
 
 function Get-CarthageVersion {
     $carthageVersion = Run-Command "carthage version" -SuppressStderr
-    return "$carthageVersion"
+    return $carthageVersion
 }
 
 function Get-CocoaPodsVersion {
     $cocoaPodsVersion = Run-Command "pod --version"
-    return "$cocoaPodsVersion"
+    return $cocoaPodsVersion
 }
 
 function Get-HomebrewVersion {
     $homebrewVersion = Run-Command "brew --version" | Select-Object -First 1
-    return $homebrewVersion.Substring("Homebrew".Length).Trim()
+    return $homebrewVersion.TrimStart("Homebrew").Trim()
 }
 
 function Get-NPMVersion {
     $NPMVersion = Run-Command "npm --version"
-    return "$NPMVersion"
+    return $NPMVersion
 }
 
 function Get-YarnVersion {
@@ -255,7 +243,7 @@ function Get-NuGetVersion {
 
 function Get-CondaVersion {
     $condaVersion = Invoke-Expression "conda --version"
-    return $condaVersion.Substring("conda".Length).Trim()
+    return $condaVersion.TrimStart("conda").Trim()
 }
 
 function Get-RubyGemsVersion {
@@ -265,7 +253,7 @@ function Get-RubyGemsVersion {
 
 function Get-ComposerVersion {
     $composerVersion = Run-Command "composer --version" | Take-Part -Part 2
-    return "$composerVersion"
+    return $composerVersion
 }
 
 function Get-MavenVersion {
@@ -276,12 +264,12 @@ function Get-MavenVersion {
 #gradle output differs on the first launch – a welcome message, that we don't need is rendered. The solution is to take the last "Gradle" occurrence from the output
 function Get-GradleVersion {
     $gradleVersion = (Run-Command "gradle --version" | Select-String "Gradle")[-1]
-    return $gradleVersion.Line.Substring("Gradle".Length).Trim()
+    return $gradleVersion.Line.TrimStart("Gradle").Trim()
 }
 
 function Get-ApacheAntVersion {
     $apacheAntVersion = Run-Command "ant -version"  | Take-Part -Part 0,1,3
-    return $apacheAntVersion.Substring("Apache Ant(TM)".Length).Trim()
+    return $apacheAntVersion.TrimStart("Apache Ant(TM)").Trim()
 }
 
 function Get-CurlVersion {
@@ -328,7 +316,7 @@ function Get-PackerVersion {
 
 function Get-OpenSSLVersion {
     $opensslVersion = Get-Item /usr/local/opt/openssl@1.1 | ForEach-Object {"{0} ``({1} -> {2})``" -f (Run-Command "openssl version"), $_.FullName, $_.Target}
-    return $opensslVersion.Substring("OpenSSL".Length).Trim()
+    return $opensslVersion.TrimStart("OpenSSL").Trim()
 }
 
 function Get-JqVersion {
@@ -338,17 +326,17 @@ function Get-JqVersion {
 
 function Get-GPGVersion {
     $gpgVersion = Run-Command "gpg --version" | Select-String 'gpg (GnuPG)' -SimpleMatch
-    return $gpgVersion.Line.Substring("gpg (GnuPG)".Length).Trim()
+    return $gpgVersion.Line.TrimStart("gpg (GnuPG)").Trim()
 }
 
 function Get-PostgresClientVersion {
     $postgresClientVersion = Run-Command "psql --version"
-    return $postgresClientVersion.Substring("psql (PostgreSQL)".Length).Trim()
+    return $postgresClientVersion.TrimStart("psql (PostgreSQL)").Trim()
 }
 
 function Get-PostgresServerVersion {
     $postgresServerVersion = Run-Command "pg_config --version"
-    return $postgresServerVersion.Substring("PostgreSQL".Length).Trim()
+    return $postgresServerVersion.TrimStart("PostgreSQL").Trim()
 }
 
 function Get-Aria2Version {
@@ -368,12 +356,12 @@ function Get-ZstdVersion {
 
 function Get-BazelVersion {
     $bazelVersion = Run-Command "bazel --version" | Take-Part -Part 0 -Delimiter "-"
-    return $bazelVersion.Substring("bazel".Length).Trim()
+    return $bazelVersion.TrimStart("bazel").Trim()
 }
 
 function Get-BazeliskVersion {
     $bazeliskVersion = Run-Command "brew list bazelisk --versions"
-    return $bazeliskVersion.Substring("bazelisk".Length).Trim()
+    return $bazeliskVersion.TrimStart("bazelisk").Trim()
 }
 
 function Get-HelmVersion {
@@ -393,7 +381,7 @@ function Get-MongodVersion {
 
 function Get-7zipVersion {
     $7zip = Run-Command "7z i" | Select-String "7-Zip" | Take-Part -Part 0,2
-    return $7zip.Substring("7-Zip".Length).Trim()
+    return $7zip.TrimStart("7-Zip").Trim()
 }
 
 function Get-GnuTarVersion {
@@ -408,7 +396,7 @@ function Get-BsdtarVersion {
 
 function Get-NewmanVersion {
     $newmanVersion = Run-Command "newman --version"
-    return "$newmanVersion"
+    return $newmanVersion
 }
 
 function Get-VirtualBoxVersion {
@@ -418,12 +406,12 @@ function Get-VirtualBoxVersion {
 
 function Get-VagrantVersion {
     $vagrant = Run-Command "vagrant -v"
-    return $vagrant.Substring("Vagrant".Length).Trim()
+    return $vagrant.TrimStart("Vagrant").Trim()
 }
 
 function Get-ParallelVersion {
     $parallelVersion = Run-Command "parallel --version" | Select-String "GNU parallel" | Select-Object -First 1
-    return $parallelVersion.Substring("GNU parallel".Length).Trim()
+    return $parallelVersion.TrimStart("GNU parallel").Trim()
 }
 
 function Get-FastlaneVersion {
@@ -508,7 +496,7 @@ function Get-SwiftFormatVersion {
 
 function Get-YamllintVersion {
     $yamllintVersion = Run-Command "yamllint --version"
-    return $yamllintVersion.Substring("Yamllint".Length).Trim()
+    return $yamllintVersion.TrimStart("Yamllint").Trim()
 }
 
 function Get-SwiftLintVersion {
@@ -518,7 +506,7 @@ function Get-SwiftLintVersion {
 
 function Get-PowershellVersion {
     $powershellVersion = Run-Command "powershell --version"
-    return $powershellVersion.Substring("PowerShell".Length).Trim()
+    return $powershellVersion.TrimStart("PowerShell").Trim()
 }
 
 function Get-SwigVersion {
@@ -533,7 +521,7 @@ function Get-BicepVersion {
 
 function Get-KotlinVersion {
     $kotlinVersion = Run-Command "kotlin -version" | Take-Part -Part 2
-    return "$kotlinVersion"
+    return $kotlinVersion
 }
 
 function Get-SbtVersion {
@@ -568,12 +556,12 @@ function Get-TclTkVersion {
 
 function Get-YqVersion {
     $yqVersion = Run-Command "yq --version"
-    return $yqVersion.Substring("yq)".Length).Trim()
+    return ($yqVersion.TrimStart("yq)") -replace '\(https.*\)', '').Trim()
 }
 
 function Get-ImageMagickVersion {
     $imagemagickVersion = Run-Command "magick --version" | Select-Object -First 1 | Take-Part -Part 1,2
-    return $imagemagickVersion.Substring("ImageMagick".Length).Trim()
+    return $imagemagickVersion.TrimStart("ImageMagick").Trim()
 }
 
 function Build-PackageManagementEnvironmentTable {

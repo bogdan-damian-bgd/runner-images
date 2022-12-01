@@ -7,7 +7,6 @@ param (
 $ErrorActionPreference = "Stop"
 
 . ("$PSScriptRoot/SoftwareReport.Base.ps1")
-Import-Module MarkdownPS
 Import-Module "$PSScriptRoot/SoftwareReport.Common.psm1" -DisableNameChecking
 Import-Module "$PSScriptRoot/SoftwareReport.Xcode.psm1" -DisableNameChecking
 Import-Module "$PSScriptRoot/SoftwareReport.Android.psm1" -DisableNameChecking
@@ -34,16 +33,16 @@ $installedSoftware = $softwareReport.Root.AddHeaderNode("Installed Software")
 $languageAndRuntime = $installedSoftware.AddHeaderNode("Language and Runtime")
 $languageAndRuntime.AddToolNode(".NET SDK", $(Get-DotnetVersionList))
 $languageAndRuntime.AddToolNode("Bash", $(Get-BashVersion))
-Add-ClangLLVMVersions $languageAndRuntime
-Add-GccVersions $languageAndRuntime
-Add-FortranVersions $languageAndRuntime
+$languageAndRuntime.AddNodes($(Get-ClangLLVMVersions))
+$languageAndRuntime.AddNodes($(Get-GccVersions))
+$languageAndRuntime.AddNodes($(Get-FortranVersions))
 $languageAndRuntime.AddToolNode("Go", $(Get-GoVersion))
 $languageAndRuntime.AddToolNode("Julia", $(Get-JuliaVersion))
 $languageAndRuntime.AddToolNode("Kotlin", $(Get-KotlinVersion))
 $languageAndRuntime.AddToolNode("MSBuild", $(Get-MSBuildVersion))
 $languageAndRuntime.AddToolNode("Node.js", $(Get-NodeVersion))
 $languageAndRuntime.AddToolNode("NVM", $(Get-NVMVersion))
-$languageAndRuntime.AddToolNode("NVM - Cached node versions", $(Get-NVMNodeVersionList))     #Bogi3
+$languageAndRuntime.AddToolNode("NVM - Cached node versions", $(Get-NVMNodeVersionList))
 $languageAndRuntime.AddToolNode("Perl", $(Get-PerlVersion))
 $languageAndRuntime.AddToolNode("PHP", $(Get-PHPVersion))
 $languageAndRuntime.AddToolNode("Python", $(Get-PythonVersion))
@@ -61,8 +60,8 @@ $packageManagement.AddToolNode("Homebrew", $(Get-HomebrewVersion))
 $packageManagement.AddToolNode("Miniconda", $(Get-CondaVersion))
 $packageManagement.AddToolNode("NPM", $(Get-NPMVersion))
 $packageManagement.AddToolNode("NuGet", $(Get-NuGetVersion))
-$packageManagement.AddToolNode("Pip 2", $(Get-PipVersion -Version 2))
-$packageManagement.AddToolNode("Pip 3", $(Get-PipVersion -Version 3))
+$packageManagement.AddToolNode("Pip2", $(Get-PipVersion -Version 2))
+$packageManagement.AddToolNode("Pip3", $(Get-PipVersion -Version 3))
 $packageManagement.AddToolNode("Pipx", $(Get-PipxVersion))
 $packageManagement.AddToolNode("RubyGems", $(Get-RubyGemsVersion))
 $packageManagement.AddToolNode("Vcpkg", $(Get-VcpkgVersion))
@@ -156,7 +155,7 @@ $linters.AddToolNode("Swift", $(Get-SwiftLintVersion))
 
 # Browsers
 $browsers = $installedSoftware.AddHeaderNode("Browsers")
-Add-BrowserSection $browsers
+$browsers.AddNodes($(Build-BrowserSection))
 $browsers.AddNode($(Build-BrowserWebdriversEnvironmentTable))
 
 # Java
@@ -169,7 +168,7 @@ $graalvm.AddTableNode($(Build-GraalVMTable))
 
 # Toolcache
 $toolcache = $installedSoftware.AddHeaderNode("Cached Tools")
-Add-ToolcacheSections $toolcache
+$toolcache.AddNodes($(Build-ToolcacheSection))
 
 # Rust
 $rust = $installedSoftware.AddHeaderNode("Rust Tools")
@@ -204,7 +203,7 @@ $vsForMac.AddTableNode($(Build-VSMacTable))
 
 if (-not $os.IsCatalina) {
     $note = 
-@'
+    @'
 To use Visual Studio 2019 by default rename the app:
 mv "/Applications/Visual Studio.app" "/Applications/Visual Studio 2022.app"
 mv "/Applications/Visual Studio 2019.app" "/Applications/Visual Studio.app"
@@ -228,7 +227,7 @@ $xcodeInfo = Get-XcodeInfoList
 $xcode.AddTableNode($(Build-XcodeTable $xcodeInfo))
 
 $xcodeTools = $xcode.AddHeaderNode("Xcode Support Tools")
-Build-XcodeSupportToolsSection $xcodeTools
+$xcodeTools.AddNodes($(Build-XcodeSupportToolsSection))
 
 $installedSdks = $xcode.AddHeaderNode("Installed SDKs")
 $installedSdks.AddTableNode($(Build-XcodeSDKTable $xcodeInfo))
@@ -248,16 +247,16 @@ $androidEnv = $android.AddHeaderNode("Environment variables")
 $androidEnv.AddTableNode($(Build-AndroidEnvironmentTable))
 
 $miscellaneous = $installedSoftware.AddHeaderNode("Miscellaneous")
-$miscellaneous.AddToolNode("libXext",$(Get-LibXextVersion))
-$miscellaneous.AddToolNode("libXft",$(Get-LibXftVersion))
-$miscellaneous.AddToolNode("Tcl/Tk",$(Get-TclTkVersion))
-$miscellaneous.AddToolNode("Zlib",$(Get-ZlibVersion))
+$miscellaneous.AddToolNode("libXext", $(Get-LibXextVersion))
+$miscellaneous.AddToolNode("libXft", $(Get-LibXftVersion))
+$miscellaneous.AddToolNode("Tcl/Tk", $(Get-TclTkVersion))
+$miscellaneous.AddToolNode("Zlib", $(Get-ZlibVersion))
 
 if ($os.IsMonterey) {
     $miscellaneousEnv = $miscellaneous.AddHeaderNode("Environment variables")
     $miscellaneousEnv.AddTableNode($(Build-MiscellaneousEnvironmentTable))
 
-$notes = @'
+    $notes = @'
 If you want to use Parallels Desktop you should download a package from URL stored in
 PARALLELS_DMG_URL environment variable. A system extension is allowed for this version.
 '@
@@ -270,9 +269,9 @@ PARALLELS_DMG_URL environment variable. A system extension is allowed for this v
 #
 $dateTime = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
 $systemInfo = [string]::Join([System.Environment]::NewLine, @(
-    "Date: ${dateTime}",
-    "Image name: ${ImageName}"
-))
+        "Date: ${dateTime}",
+        "Image name: ${ImageName}"
+    ))
 
 if (-not (Test-Path $OutputDirectory)) { New-Item -Path $OutputDirectory -ItemType Directory | Out-Null }
 
@@ -280,7 +279,7 @@ if (-not (Test-Path $OutputDirectory)) { New-Item -Path $OutputDirectory -ItemTy
 # Write final reports
 #
 Write-Host $markdownExtended
-$systemInfo | Out-File -FilePath "${OutputDirectory}/systeminfo.txt" -Encoding UTF8NoBOM
-$softwareReport.ToJson() | Out-File -FilePath "${OutputDirectory}/systeminfo.json" -Encoding UTF8NoBOM
-$softwareReport.ToMarkdown() | Out-File -FilePath "${OutputDirectory}/systeminfo.md" -Encoding UTF8NoBOM
+$systemInfo | Out-File -FilePath "${OutputDirectory}/systeminfo2.txt" -Encoding UTF8NoBOM
+$softwareReport.ToJson() | Out-File -FilePath "${OutputDirectory}/systeminfo2.json" -Encoding UTF8NoBOM
+$softwareReport.ToMarkdown() | Out-File -FilePath "${OutputDirectory}/systeminfo2.md" -Encoding UTF8NoBOM
 

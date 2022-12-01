@@ -226,15 +226,13 @@ function Build-XcodeSimulatorsTable {
 }
 
 function Build-XcodeSupportToolsSection {
-    param (
-        [HeaderNode] $HeaderNode
-    )
+    $toolNodes = @()
 
     $xcpretty = Run-Command "xcpretty --version"
     $xcversion = Run-Command "xcversion --version" | Select-String "^[0-9]"
 
-    $HeaderNode.AddToolNode("xcpretty", $xcpretty)
-    $HeaderNode.AddToolNode("xcversion", $xcversion)
+    $toolNodes += [ToolNode]::new("xcpretty", $xcpretty)
+    $toolNodes += [ToolNode]::new("xcversion", $xcversion)
 
     $nomadOutput = Run-Command "gem list nomad-cli"
     $nomadCLI = [regex]::matches($nomadOutput, "(\d+.){2}\d+").Value
@@ -242,7 +240,9 @@ function Build-XcodeSupportToolsSection {
     $nomadShenzhen = [regex]::matches($nomadShenzhenOutput, "(\d+.){2}\d+").Value
 
     if ($os.IsLessThanMonterey) {
-        $HeaderNode.AddToolNode("Nomad CLI", $nomadCLI)
-        $HeaderNode.AddToolNode("Nomad shenzhen CLI", $nomadShenzhen)
+        $toolNodes += [ToolNode]::new("Nomad CLI", $nomadCLI)
+        $toolNodes += [ToolNode]::new("Nomad shenzhen CLI", $nomadShenzhen)
     }
+
+    return $toolNodes
 }

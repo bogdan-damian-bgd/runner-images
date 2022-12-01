@@ -1,17 +1,15 @@
-function Add-BrowserSection {
-    param (
-        [HeaderNode] $HeaderNode
+function Build-BrowserSection {
+    return @(
+        [ToolNode]::new("Safari", $(Get-SafariVersion))
+        [ToolNode]::new("SafariDriver", $(Get-SafariDriverVersion))
+        [ToolNode]::new("Google Chrome", $(Get-ChromeVersion))
+        [ToolNode]::new("ChromeDriver", $(Get-ChromeDriverVersion))
+        [ToolNode]::new("Microsoft Edge", $(Get-EdgeVersion))
+        [ToolNode]::new("Microsoft Edge WebDriver", $(Get-EdgeDriverVersion))
+        [ToolNode]::new("Mozilla Firefox", $(Get-FirefoxVersion))
+        [ToolNode]::new("geckodriver", $(Get-GeckodriverVersion))
+        [ToolNode]::new("Selenium server", $(Get-SeleniumVersion))
     )
-
-    $HeaderNode.AddToolNode("Safari", $(Get-SafariVersion))
-    $HeaderNode.AddToolNode("SafariDriver", $(Get-SafariDriverVersion))
-    $HeaderNode.AddToolNode("Google Chrome", $(Get-ChromeVersion))
-    $HeaderNode.AddToolNode("ChromeDriver", $(Get-ChromeDriverVersion))
-    $HeaderNode.AddToolNode("Microsoft Edge", $(Get-EdgeVersion))
-    $HeaderNode.AddToolNode("Microsoft Edge WebDriver", $(Get-EdgeDriverVersion))
-    $HeaderNode.AddToolNode("Mozilla Firefox", $(Get-FirefoxVersion))
-    $HeaderNode.AddToolNode("geckodriver", $(Get-GeckodriverVersion))
-    $HeaderNode.AddToolNode("Selenium server", $(Get-SeleniumVersion))
 }
 
 function Get-SafariVersion {
@@ -28,19 +26,19 @@ function Get-SafariDriverVersion {
 function Get-ChromeVersion {
     $chromePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
     $version = Run-Command "'${chromePath}' --version"
-    return $version.Substring("Google Chrome".Length).Trim()
+    return $version.TrimStart("Google Chrome").Trim()
 }
 
 function Get-ChromeDriverVersion {
     $rawOutput = Run-Command "chromedriver --version"
     $version = $rawOutput | Take-Part -Part 1
-    return "${version}"
+    return $version
 }
 
 function Get-EdgeVersion {
     $edgePath = "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
     $version = Run-Command "'${edgePath}' --version"
-    return $version.Substring("Microsoft Edge".Length).Trim()
+    return $version.TrimStart("Microsoft Edge").Trim()
 }
 
 function Get-EdgeDriverVersion {
@@ -50,12 +48,12 @@ function Get-EdgeDriverVersion {
 function Get-FirefoxVersion {
     $firefoxPath = "/Applications/Firefox.app/Contents/MacOS/firefox"
     $version = Run-Command "'${firefoxPath}' --version"
-    return $version.Substring("Mozilla Firefox".Length).Trim()
+    return $version.TrimStart("Mozilla Firefox").Trim()
 }
 
 function Get-GeckodriverVersion {
     $version = Run-Command "geckodriver --version" | Select-Object -First 1
-    return $version.Substring("geckodriver".Length).Trim()
+    return $version.TrimStart("geckodriver".Length).Trim()
 }
 
 function Get-SeleniumVersion {
