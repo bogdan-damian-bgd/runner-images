@@ -63,17 +63,17 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "GNU Fortran 9",
-              "Version": "(Homebrew GCC 9.5.0) 9.5.0 - available by `gfortran-9` alias"
+              "Version": "(Homebrew GCC 9.5.0) - available by `gfortran-9` alias"
             },
             {
               "NodeType": "ToolNode",
               "ToolName": "GNU Fortran 10",
-              "Version": "(Homebrew GCC 10.4.0) 10.4.0 - available by `gfortran-10` alias"
+              "Version": "(Homebrew GCC 10.4.0) - available by `gfortran-10` alias"
             },
             {
               "NodeType": "ToolNode",
               "ToolName": "GNU Fortran 11",
-              "Version": "(Homebrew GCC 11.3.0) 11.3.0 - available by `gfortran-11` alias"
+              "Version": "(Homebrew GCC 11.3.0) - available by `gfortran-11` alias"
             },
             {
               "NodeType": "ToolNode",
@@ -83,7 +83,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "Julia",
-              "Version": "julia 1.8.2"
+              "Version": "1.8.2"
             },
             {
               "NodeType": "ToolNode",
@@ -516,7 +516,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "Yamllint",
-              "Version": "yamllint 1.28.0"
+              "Version": "1.28.0"
             },
             {
               "NodeType": "ToolNode",
@@ -567,7 +567,7 @@
             {
               "NodeType": "ToolNode",
               "ToolName": "geckodriver",
-              "Version": "geckodriver 0.32.0"
+              "Version": "0.32.0"
             },
             {
               "NodeType": "ToolNode",

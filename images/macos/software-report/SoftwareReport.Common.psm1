@@ -83,7 +83,7 @@ function Get-GccVersions {
     $versionList = Get-ToolsetValue -KeyPath gcc.versions
     $versionList | Foreach-Object {
         $nameVersion = Run-Command "gcc-${_} --version" | Select-Object -First 1
-        $version = $nameVersion.TrimStart("gcc-${_}").Trim() -replace '\).*$', ')'
+        $version = ($nameVersion -replace "^gcc-${_}").Trim() -replace '\).*$', ')'
         return [ToolNode]::new("GCC ${_}", "$version - available by ``gcc-${_}`` alias")
     }
 }
@@ -92,7 +92,7 @@ function Get-FortranVersions {
     $versionList = Get-ToolsetValue -KeyPath gcc.versions
     $versionList | Foreach-Object {
         $nameVersion = Run-Command "gfortran-${_} --version" | Select-Object -First 1
-        $version = $nameVersion.TrimStart("GNU Fortran").Trim()
+        $version = ($nameVersion -replace "^GNU Fortran").Trim() -replace '\).*$', ')'
         return [ToolNode]::new("GNU Fortran ${_}", "$version - available by ``gfortran-${_}`` alias")
     }
 }
@@ -183,12 +183,12 @@ function Get-PerlVersion {
 
 function Get-PythonVersion {
     $pythonVersion = Run-Command "python --version"
-    return $pythonVersion.TrimStart("Python").Trim()
+    return ($pythonVersion -replace "^Python").Trim()
 }
 
 function Get-Python3Version {
     $python3Version = Run-Command "python3 --version"
-    return $python3Version.TrimStart("Python").Trim()
+    return ($python3Version -replace "^Python").Trim()
 }
 
 function Get-RubyVersion {
@@ -198,17 +198,17 @@ function Get-RubyVersion {
 
 function Get-PHPVersion {
     $PHPVersion = Run-Command "php --version" | Select-Object -First 1 | Take-Part -Part 0,1
-    return $PHPVersion.TrimStart("PHP").Trim()
+    return ($PHPVersion -replace "^PHP").Trim()
 }
 
 function Get-JuliaVersion {
     $juliaVersion = Run-Command "julia --version" | Take-Part -Part 0,2
-    return $juliaVersion.TrimStart("Julia").Trim()
+    return ($juliaVersion -replace "^Julia").Trim()
 }
 
 function Get-BundlerVersion {
     $bundlerVersion = Run-Command "bundle --version"
-    return $bundlerVersion.TrimStart("Bundler").Trim()
+    return ($bundlerVersion -replace "^Bundler").Trim()
 }
 
 function Get-CarthageVersion {
@@ -223,7 +223,7 @@ function Get-CocoaPodsVersion {
 
 function Get-HomebrewVersion {
     $homebrewVersion = Run-Command "brew --version" | Select-Object -First 1
-    return $homebrewVersion.TrimStart("Homebrew").Trim()
+    return ($homebrewVersion -replace "^Homebrew").Trim()
 }
 
 function Get-NPMVersion {
@@ -243,7 +243,7 @@ function Get-NuGetVersion {
 
 function Get-CondaVersion {
     $condaVersion = Invoke-Expression "conda --version"
-    return $condaVersion.TrimStart("conda").Trim()
+    return ($condaVersion -replace "^conda").Trim()
 }
 
 function Get-RubyGemsVersion {
@@ -264,12 +264,12 @@ function Get-MavenVersion {
 #gradle output differs on the first launch – a welcome message, that we don't need is rendered. The solution is to take the last "Gradle" occurrence from the output
 function Get-GradleVersion {
     $gradleVersion = (Run-Command "gradle --version" | Select-String "Gradle")[-1]
-    return $gradleVersion.Line.TrimStart("Gradle").Trim()
+    return ($gradleVersion.Line -replace "^Gradle").Trim()
 }
 
 function Get-ApacheAntVersion {
     $apacheAntVersion = Run-Command "ant -version"  | Take-Part -Part 0,1,3
-    return $apacheAntVersion.TrimStart("Apache Ant(TM)").Trim()
+    return ($apacheAntVersion -replace "^Apache Ant\(TM\)").Trim()
 }
 
 function Get-CurlVersion {
@@ -316,7 +316,7 @@ function Get-PackerVersion {
 
 function Get-OpenSSLVersion {
     $opensslVersion = Get-Item /usr/local/opt/openssl@1.1 | ForEach-Object {"{0} ``({1} -> {2})``" -f (Run-Command "openssl version"), $_.FullName, $_.Target}
-    return $opensslVersion.TrimStart("OpenSSL").Trim()
+    return ($opensslVersion -replace "^OpenSSL").Trim()
 }
 
 function Get-JqVersion {
@@ -326,17 +326,17 @@ function Get-JqVersion {
 
 function Get-GPGVersion {
     $gpgVersion = Run-Command "gpg --version" | Select-String 'gpg (GnuPG)' -SimpleMatch
-    return $gpgVersion.Line.TrimStart("gpg (GnuPG)").Trim()
+    return ($gpgVersion.Line -replace "^gpg \(GnuPG\)").Trim()
 }
 
 function Get-PostgresClientVersion {
     $postgresClientVersion = Run-Command "psql --version"
-    return $postgresClientVersion.TrimStart("psql (PostgreSQL)").Trim()
+    return ($postgresClientVersion -replace "^psql \(PostgreSQL\)").Trim()
 }
 
 function Get-PostgresServerVersion {
     $postgresServerVersion = Run-Command "pg_config --version"
-    return $postgresServerVersion.TrimStart("PostgreSQL").Trim()
+    return ($postgresServerVersion -replace "^PostgreSQL").Trim()
 }
 
 function Get-Aria2Version {
@@ -356,12 +356,12 @@ function Get-ZstdVersion {
 
 function Get-BazelVersion {
     $bazelVersion = Run-Command "bazel --version" | Take-Part -Part 0 -Delimiter "-"
-    return $bazelVersion.TrimStart("bazel").Trim()
+    return ($bazelVersion -replace "^bazel").Trim()
 }
 
 function Get-BazeliskVersion {
     $bazeliskVersion = Run-Command "brew list bazelisk --versions"
-    return $bazeliskVersion.TrimStart("bazelisk").Trim()
+    return ($bazeliskVersion -replace "^bazelisk").Trim()
 }
 
 function Get-HelmVersion {
@@ -381,7 +381,7 @@ function Get-MongodVersion {
 
 function Get-7zipVersion {
     $7zip = Run-Command "7z i" | Select-String "7-Zip" | Take-Part -Part 0,2
-    return $7zip.TrimStart("7-Zip").Trim()
+    return ($7zip -replace "^7-Zip").Trim()
 }
 
 function Get-GnuTarVersion {
@@ -406,12 +406,12 @@ function Get-VirtualBoxVersion {
 
 function Get-VagrantVersion {
     $vagrant = Run-Command "vagrant -v"
-    return $vagrant.TrimStart("Vagrant").Trim()
+    return ($vagrant -replace "^Vagrant").Trim()
 }
 
 function Get-ParallelVersion {
     $parallelVersion = Run-Command "parallel --version" | Select-String "GNU parallel" | Select-Object -First 1
-    return $parallelVersion.TrimStart("GNU parallel").Trim()
+    return ($parallelVersion -replace "^GNU parallel").Trim()
 }
 
 function Get-FastlaneVersion {
@@ -496,7 +496,7 @@ function Get-SwiftFormatVersion {
 
 function Get-YamllintVersion {
     $yamllintVersion = Run-Command "yamllint --version"
-    return $yamllintVersion.TrimStart("Yamllint").Trim()
+    return ($yamllintVersion -replace "^Yamllint").Trim()
 }
 
 function Get-SwiftLintVersion {
@@ -506,7 +506,7 @@ function Get-SwiftLintVersion {
 
 function Get-PowershellVersion {
     $powershellVersion = Run-Command "powershell --version"
-    return $powershellVersion.TrimStart("PowerShell").Trim()
+    return ($powershellVersion -replace "^PowerShell").Trim()
 }
 
 function Get-SwigVersion {
@@ -556,12 +556,12 @@ function Get-TclTkVersion {
 
 function Get-YqVersion {
     $yqVersion = Run-Command "yq --version"
-    return ($yqVersion.TrimStart("yq)") -replace '\(https.*\)', '').Trim()
+    return (($yqVersion -replace "^yq") -replace '\(https.*\)', '').Trim()
 }
 
 function Get-ImageMagickVersion {
     $imagemagickVersion = Run-Command "magick --version" | Select-Object -First 1 | Take-Part -Part 1,2
-    return $imagemagickVersion.TrimStart("ImageMagick").Trim()
+    return ($imagemagickVersion -replace "^ImageMagick").Trim()
 }
 
 function Build-PackageManagementEnvironmentTable {

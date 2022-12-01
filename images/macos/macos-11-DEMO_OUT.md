@@ -11,11 +11,11 @@
 - GCC 9 (Homebrew GCC 9.5.0) - available by `gcc-9` alias
 - GCC 10 (Homebrew GCC 10.4.0) - available by `gcc-10` alias
 - GCC 11 (Homebrew GCC 11.3.0) - available by `gcc-11` alias
-- GNU Fortran 9 (Homebrew GCC 9.5.0) 9.5.0 - available by `gfortran-9` alias
-- GNU Fortran 10 (Homebrew GCC 10.4.0) 10.4.0 - available by `gfortran-10` alias
-- GNU Fortran 11 (Homebrew GCC 11.3.0) 11.3.0 - available by `gfortran-11` alias
+- GNU Fortran 9 (Homebrew GCC 9.5.0) - available by `gfortran-9` alias
+- GNU Fortran 10 (Homebrew GCC 10.4.0) - available by `gfortran-10` alias
+- GNU Fortran 11 (Homebrew GCC 11.3.0) - available by `gfortran-11` alias
 - Go 1.17.13
-- Julia julia 1.8.2
+- Julia 1.8.2
 - Kotlin 1.7.20-release-201
 - MSBuild 16.10.1.51301 (from /Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/15.0/bin/MSBuild.dll)
 - Node.js v16.18.0
@@ -108,7 +108,7 @@
 - Xcode Command Line Tools 13.2.0.0.1.1638488800
 
 ### Linters
-- Yamllint yamllint 1.28.0
+- Yamllint 1.28.0
 - Swift 0.48.0
 
 ### Browsers
@@ -119,7 +119,7 @@
 - Microsoft Edge 107.0.1418.28
 - Microsoft Edge WebDriver 107.0.1418.28
 - Mozilla Firefox 106.0.3
-- geckodriver geckodriver 0.32.0
+- geckodriver 0.32.0
 - Selenium server 4.5.0
 #### Environment variables
 | Name | Value |

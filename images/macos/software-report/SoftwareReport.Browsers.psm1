@@ -26,7 +26,7 @@ function Get-SafariDriverVersion {
 function Get-ChromeVersion {
     $chromePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
     $version = Run-Command "'${chromePath}' --version"
-    return $version.TrimStart("Google Chrome").Trim()
+    return ($version -replace ("^Google Chrome")).Trim()
 }
 
 function Get-ChromeDriverVersion {
@@ -38,7 +38,7 @@ function Get-ChromeDriverVersion {
 function Get-EdgeVersion {
     $edgePath = "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
     $version = Run-Command "'${edgePath}' --version"
-    return $version.TrimStart("Microsoft Edge").Trim()
+    return ($version -replace ("^Microsoft Edge")).Trim()
 }
 
 function Get-EdgeDriverVersion {
@@ -48,12 +48,12 @@ function Get-EdgeDriverVersion {
 function Get-FirefoxVersion {
     $firefoxPath = "/Applications/Firefox.app/Contents/MacOS/firefox"
     $version = Run-Command "'${firefoxPath}' --version"
-    return $version.TrimStart("Mozilla Firefox").Trim()
+    return ($version -replace "^Mozilla Firefox").Trim()
 }
 
 function Get-GeckodriverVersion {
     $version = Run-Command "geckodriver --version" | Select-Object -First 1
-    return $version.TrimStart("geckodriver".Length).Trim()
+    return ($version -replace "^geckodriver").Trim()
 }
 
 function Get-SeleniumVersion {
