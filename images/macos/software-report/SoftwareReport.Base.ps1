@@ -69,7 +69,7 @@ class HeaderNode: BaseNode {
     }
 
     [void] AddNodes([Array] $nodes) {
-        $nodes | ForEach-Object { $this.Children.Add($_) }
+        $nodes | ForEach-Object { $this.AddNode($_) }
     }
 
     [HeaderNode] AddHeaderNode([String] $Title) {
