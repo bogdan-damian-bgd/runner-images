@@ -103,8 +103,7 @@ function Get-ClangLLVMVersions {
     $locationsList | Foreach-Object {
         (Run-Command "${_} --version" | Out-String) -match "(?<version>\d+\.\d+\.\d+)" | Out-Null
         $version = $Matches.version
-        $majorVersion = $version.Substring(0, 2)
-        return [ToolNode]::new("Clang/LLVM $majorVersion", "($version) " + $(if(${_} -Match "brew") {"- available on ```'${_}`'``"} else {"- default"}))
+        return [ToolNode]::new("Clang/LLVM$(if(${_} -Match "brew") {" (Homebrew)"})", "$version " + $(if(${_} -Match "brew") {"- available on ```'${_}`'``"} else {"- default"}))
     }
 }
 
