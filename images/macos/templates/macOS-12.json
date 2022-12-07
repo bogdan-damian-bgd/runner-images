@@ -44,6 +44,15 @@
             "inline": "mkdir ~/image-generation"
         },
         {
+            "type": "shell",
+            "inline": "mkdir ~/image-generation-b"
+        },
+        {
+            "type": "file",
+            "source": "../linux22/config",
+            "destination": "~/image-generation-b/"
+        },        
+        {
             "type": "file",
             "source": "./provision/assets",
             "destination": "~/image-generation/"
