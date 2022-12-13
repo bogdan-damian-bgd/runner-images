@@ -6,7 +6,7 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-. ("$PSScriptRoot/SoftwareReport.Base.ps1")
+. ("$PSScriptRoot/software-report-base/SoftwareReport.Base.ps1")
 Import-Module "$PSScriptRoot/SoftwareReport.Common.psm1" -DisableNameChecking
 Import-Module "$PSScriptRoot/SoftwareReport.Xcode.psm1" -DisableNameChecking
 Import-Module "$PSScriptRoot/SoftwareReport.Android.psm1" -DisableNameChecking
