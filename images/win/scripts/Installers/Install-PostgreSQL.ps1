@@ -8,7 +8,7 @@ Set-SystemVariable -SystemVariable PGPASSWORD -Value $pgPwd
 
 # Define latest available version to install based on version specified in the toolset
 $toolsetVersion = (Get-ToolsetContent).postgresql.version
-$latestChocoPackage = Get-LatestChocoPackageVersion -TargetVersion $toolsetVersion -PackageName "postgresql"
+$latestChocoPackage = "14.5.1" #Get-LatestChocoPackageVersion -TargetVersion $toolsetVersion -PackageName "postgresql"
 
 # Install latest PostgreSQL
 Choco-Install -PackageName postgresql -ArgumentList "--params", "'/Password:$pgPwd /NoPath'", "--params-global", "--version=$latestChocoPackage"
