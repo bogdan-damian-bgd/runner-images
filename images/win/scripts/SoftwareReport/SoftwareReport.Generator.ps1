@@ -121,6 +121,15 @@ $cliTools.AddToolVersion("GitHub CLI", $(Get-GHVersion))
 $cliTools.AddToolVersion("Hub CLI", $(Get-HubVersion))
 
 # Rust Tools
+$v1 = Get-RustVersion
+Write-Host("Rust: $v1")
+# $v2 = Get-RustupVersion
+# Write-Host("Rustup: $v2")
+# $v3 = Get-RustCargoVersion
+# Write-Host("Cargo: $v3")
+# $v4 = Get-RustdocVersion
+# Write-Host("Rustdoc: $v4")
+
 $rustTools = $installedSoftware.AddHeader("Rust Tools")
 $rustTools.AddToolVersion("Cargo", $(Get-RustCargoVersion))
 $rustTools.AddToolVersion("Rust", $(Get-RustVersion))
